@@ -4,7 +4,10 @@
 //               For All Texts
 // ==============================================
 
-* { font-family: 'Raleway', Helvetica, Ubuntu, sans-serif;  }
+* {
+  font-family: 'Raleway', Helvetica, Ubuntu, sans-serif;
+  color: $niceBlack;
+}
 
 // ==============================================
 //                   Headers
@@ -22,20 +25,24 @@ h6{ font-size: $h6Size; font-weight: $fontFat   }
 // ==============================================
 p{ font-size: $paragraphSize; font-weight: $fontLight; }
 
-a {
-  color: $linkColor;
-  text-decoration: none;
-  @include niceTransition(color);
-
-  &:hover{
-    color: darken($linkColor, 15%);
-  }
-
-  &:active{
-    color: darken($linkColor, 20%);
-  }
-
-  &:visited{
-    color: $secondaryColor;
-  }
+// ==============================================
+//                  Helpers
+// ==============================================
+.textWhite {
+  color: $niceWhite;
 }
+
+.textCenter {
+  text-align: center;
+}
+
+.textRight {
+  text-align: right;
+}
+
+.textJustify {
+  text-align: justify;
+}
+
+
+

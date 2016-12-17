@@ -410,6 +410,9 @@ template {
 [hidden] {
   display: none; }
 
+*:focus {
+  outline: none; }
+
 /**
   * Variables
 
@@ -417,9 +420,14 @@ template {
   * Typography
   * Media Queries
   * Grid
+  * Nice Background
+  * Radius
+  * Button
+
 */
 * {
-  font-family: 'Raleway', Helvetica, Ubuntu, sans-serif; }
+  font-family: 'Raleway', Helvetica, Ubuntu, sans-serif;
+  color: #222222; }
 
 h1 {
   font-size: 2em;
@@ -449,6 +457,25 @@ p {
   font-size: 1em;
   font-weight: 200; }
 
+.textWhite {
+  color: #EEEEEE; }
+
+.textCenter {
+  text-align: center; }
+
+.textRight {
+  text-align: right; }
+
+.textJustify {
+  text-align: justify; }
+
+.flexRow {
+  display: flex; }
+  .flexRow .column {
+    flex: 1;
+    width: 100%;
+    padding: 5px; }
+
 a {
   color: #00a9f7;
   text-decoration: none;
@@ -458,18 +485,69 @@ a {
     color: #0075ab; }
   a:active {
     color: #006391; }
-  a:visited {
-    color: #ce9ed4; }
 
-.flexRow {
-  display: flex; }
-  .flexRow .column {
-    flex: 1;
-    background: -webkit-linear-gradient(135deg, #0086C4, #ce9ed4);
-    background: -moz-linear-gradient(135deg, #0086C4, #ce9ed4);
-    background: -o-linear-gradient(135deg, #0086C4, #ce9ed4);
-    background: linear-gradient(135deg, #0086C4, #ce9ed4);
+.button {
+  display: inline-block;
+  background: transparent;
+  border: solid 1px #0086C4;
+  color: #0086C4;
+  padding: 10px 20px;
+  border-radius: 52px;
+  cursor: pointer;
+  transition-property: color, background, border;
+  transition-duration: 300ms; }
+  .button:hover {
+    color: #EEEEEE;
+    background: #0086C4; }
+  .button:active {
+    background: #005278; }
+  .button.primary {
+    border: solid 1px #0086C4;
+    color: #0086C4; }
+    .button.primary:hover {
+      color: #EEEEEE;
+      background: #0086C4; }
+    .button.primary:active {
+      background: #005278; }
+  .button.secondary {
+    border: solid 1px #ce9ed4;
+    color: #ce9ed4; }
+    .button.secondary:hover {
+      color: #EEEEEE;
+      background: #ce9ed4; }
+    .button.secondary:active {
+      background: #b469bc; }
+  .button.danger {
+    border: solid 1px #CE152D;
+    color: #CE152D; }
+    .button.danger:hover {
+      color: #EEEEEE;
+      background: #CE152D; }
+    .button.danger:active {
+      background: #890e1e; }
+  .button.warning {
+    border: solid 1px #D6CF2B;
+    color: #D6CF2B; }
+    .button.warning:hover {
+      color: #EEEEEE;
+      background: #D6CF2B; }
+    .button.warning:active {
+      background: #97921d; }
+  .button.success {
+    border: solid 1px #00EEB7;
+    color: #00EEB7; }
+    .button.success:hover {
+      color: #EEEEEE;
+      background: #00EEB7; }
+    .button.success:active {
+      background: #00a27c; }
+  .button.small {
+    padding: 5px 10px; }
+  .button.large {
+    padding: 10px 20px;
+    font-size: 1.5em; }
+  .button.block {
     width: 100%;
-    padding: 5px; }
+    box-sizing: border-box; }
 
 /*# sourceMappingURL=sculptor.css.map */

@@ -5,7 +5,6 @@
   display: flex;
   & .column{
     flex: 1;
-    @include niceBackground($primaryColor, $secondaryColor);
     width: 100%;
     padding: $columnPadding;
   }
