@@ -42,6 +42,7 @@ footer,
 header,
 nav,
 section {
+  overflow: auto;
   display: block; }
 
 /**
@@ -413,6 +414,42 @@ template {
 *:focus {
   outline: none; }
 
+.niceMarry {
+  background: -webkit-linear-gradient(135deg, #0086C4, #B469BC);
+  background: -moz-linear-gradient(135deg, #0086C4, #B469BC);
+  background: -o-linear-gradient(135deg, #0086C4, #B469BC);
+  background: linear-gradient(135deg, #0086C4, #B469BC); }
+
+.niceMarryDark {
+  background: -webkit-linear-gradient(135deg, #002f45, #6C2BD6);
+  background: -moz-linear-gradient(135deg, #002f45, #6C2BD6);
+  background: -o-linear-gradient(135deg, #002f45, #6C2BD6);
+  background: linear-gradient(135deg, #002f45, #6C2BD6); }
+
+.niceSunThree {
+  background: -webkit-linear-gradient(135deg, #00EEB7, #FFB98D);
+  background: -moz-linear-gradient(135deg, #00EEB7, #FFB98D);
+  background: -o-linear-gradient(135deg, #00EEB7, #FFB98D);
+  background: linear-gradient(135deg, #00EEB7, #FFB98D); }
+
+.niceCoral {
+  background: -webkit-linear-gradient(135deg, #00EEB7, #0086C4);
+  background: -moz-linear-gradient(135deg, #00EEB7, #0086C4);
+  background: -o-linear-gradient(135deg, #00EEB7, #0086C4);
+  background: linear-gradient(135deg, #00EEB7, #0086C4); }
+
+.niceSundown {
+  background: -webkit-linear-gradient(135deg, #0086C4, #FFB98D);
+  background: -moz-linear-gradient(135deg, #0086C4, #FFB98D);
+  background: -o-linear-gradient(135deg, #0086C4, #FFB98D);
+  background: linear-gradient(135deg, #0086C4, #FFB98D); }
+
+.niceRose {
+  background: -webkit-linear-gradient(135deg, #CE152D, #f17282);
+  background: -moz-linear-gradient(135deg, #CE152D, #f17282);
+  background: -o-linear-gradient(135deg, #CE152D, #f17282);
+  background: linear-gradient(135deg, #CE152D, #f17282); }
+
 /**
   * Variables
 
@@ -430,7 +467,7 @@ template {
   color: #222222; }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.2em;
   font-weight: 200; }
 
 h2 {
@@ -456,18 +493,6 @@ h6 {
 p {
   font-size: 1em;
   font-weight: 200; }
-
-.textWhite {
-  color: #EEEEEE; }
-
-.textCenter {
-  text-align: center; }
-
-.textRight {
-  text-align: right; }
-
-.textJustify {
-  text-align: justify; }
 
 .flexRow {
   display: flex; }
@@ -552,6 +577,15 @@ a {
       background: #00EEB7; }
     .button.success:active {
       background: #00a27c; }
+  .button.blur {
+    background: rgba(238, 238, 238, 0.3);
+    color: #EEEEEE;
+    border: none; }
+    .button.blur:hover {
+      color: #EEEEEE;
+      background: rgba(174, 174, 174, 0.3); }
+    .button.blur:active {
+      background: rgba(111, 111, 111, 0.3); }
   .button.small {
     padding: 5px 10px; }
   .button.large {
@@ -576,6 +610,18 @@ a {
     border: 1px solid #606C76; }
   .formControl:focus {
     border: 1px solid #0086C4; }
+
+.textWhite {
+  color: #EEEEEE; }
+
+.textCenter {
+  text-align: center; }
+
+.textRight {
+  text-align: right; }
+
+.textJustify {
+  text-align: justify; }
 
 .floatRight {
   float: right; }
@@ -608,5 +654,16 @@ video.responsive {
 
 .screenWidth {
   width: 100vw; }
+
+.aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .aligner .center {
+    align-self: center; }
+  .aligner .top {
+    align-self: flex-start; }
+  .aligner .bottom {
+    align-self: flex-end; }
 
 /*# sourceMappingURL=sculptor.css.map */

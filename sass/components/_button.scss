@@ -110,6 +110,21 @@ a {
       background: darken($niceGreen, 15%);
     }
   }
+// ==============================================
+//            Success Button
+// ==============================================
+  &.blur{
+    background: $niceWhiteTransparent;
+    color: $niceWhite;
+    border: none;
+    &:hover{
+      color: $niceWhite;
+      background: darken($niceWhiteTransparent, 25%);
+    }
+    &:active{
+      background: darken($niceWhiteTransparent, 50%);
+    }
+  }
 
 // ==============================================
 //                Sizes
