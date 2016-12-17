@@ -1,0 +1,21 @@
+.formControl {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: $buttonPadding $buttonPadding*2;
+  margin: $buttonPadding 0;
+
+  background: $white;
+
+  border: 1px solid lighten($niceGrey, 15%);
+  border-radius: $radiusLight;
+  resize: none;
+
+  @include niceTransition(border);
+  
+  &:hover{
+    border: 1px solid $niceGrey;
+  }
+  &:focus{
+    border: 1px solid $primaryColor;
+  }
+}

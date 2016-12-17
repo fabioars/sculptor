@@ -561,4 +561,20 @@ a {
     width: 100%;
     box-sizing: border-box; }
 
+.formControl {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  margin: 10px 0;
+  background: #FFFFFF;
+  border: 1px solid #86929d;
+  border-radius: 8px;
+  resize: none;
+  transition-property: border;
+  transition-duration: 300ms; }
+  .formControl:hover {
+    border: 1px solid #606C76; }
+  .formControl:focus {
+    border: 1px solid #0086C4; }
+
 /*# sourceMappingURL=sculptor.css.map */
