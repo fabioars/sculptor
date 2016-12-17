@@ -1,0 +1,13 @@
+// ==============================================
+//               Flexible Grid
+// ==============================================
+.flexRow{
+  display: flex;
+  & .column{
+    flex: 1;
+    background: $primaryColor;
+    border: 1px solid $secondaryColor;
+    width: 100%;
+    padding: $columnPadding;
+  }
+}

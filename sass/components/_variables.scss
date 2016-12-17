@@ -2,7 +2,9 @@
   * Variables
 
   * Colors
+  * Typography
   * Media Queries
+  * Grid
 */
 
 
@@ -18,6 +20,15 @@ $successColor: $niceGreen !default;
 $errorColor: darken($niceRed, 15%) !default;
 $linkColor: $niceBlue !default;
 
+// ==============================================
+//                Typography
+// ==============================================
+$h1Size: 2.0em;
+$h2Size: 1.5em;
+$h3Size: 1.2em;
+$h4Size: 1.0em;
+$h5Size: 0.9em;
+$h6Size: 0.8em;
 
 // ==============================================
 //              Media Queries
@@ -38,3 +49,9 @@ $smallAnd-down : "only screen and (max-width : #{$smallScreen})" !default;
 $mediumAnd-down: "only screen and (max-width : #{$mediumScreen})" !default;
 
 $mediumOnly    : "only screen and (min-width : #{$smallScreenUp}) and (max-width : #{$mediumScreen})" !default;
+
+// ==============================================
+//                  Grid
+// ==============================================
+
+$columnPadding: 5px;

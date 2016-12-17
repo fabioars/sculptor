@@ -14,6 +14,7 @@
  */
 /* Document
    ========================================================================== */
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,400,600");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -413,7 +414,44 @@ template {
   * Variables
 
   * Colors
+  * Typography
   * Media Queries
+  * Grid
 */
+* {
+  font-family: 'Raleway', Helvetica, Ubuntu, sans-serif; }
+
+h1 {
+  font-size: 2em;
+  font-weight: 200; }
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 400; }
+
+h3 {
+  font-size: 1.2em;
+  font-weight: 600; }
+
+h4 {
+  font-size: 1em;
+  font-weight: 600; }
+
+h5 {
+  font-size: 0.9em;
+  font-weight: 600; }
+
+h6 {
+  font-size: 0.8em;
+  font-weight: 600; }
+
+.flexRow {
+  display: flex; }
+  .flexRow .column {
+    flex: 1;
+    background: #0086C4;
+    border: 1px solid #ce9ed4;
+    width: 100%;
+    padding: 5px; }
 
 /*# sourceMappingURL=sculptor.css.map */
