@@ -1,0 +1,40 @@
+/**
+  * Variables
+
+  * Colors
+  * Media Queries
+*/
+
+
+// ==============================================
+//                   Colors
+// ==============================================
+$primaryColor: $niceBlue !default;
+$primaryColorLight: lighten($primaryColor, 15%) !default;
+$primaryColorDark: darken($primaryColor, 15%) !default;
+
+$secondaryColor: lighten($nicePurple, 15%) !default;
+$successColor: $niceGreen !default;
+$errorColor: darken($niceRed, 15%) !default;
+$linkColor: $niceBlue !default;
+
+
+// ==============================================
+//              Media Queries
+// ==============================================
+
+$smallScreenUp : 601px !default;
+$mediumScreenUp: 993px !default;
+$largeScreenUp : 1201px !default;
+
+$smallScreen   : 600px !default;
+$mediumScreen  : 992px !default;
+$largeScreen   : 1200px !default;
+
+$mediumAndUp   : "only screen and (min-width : #{$smallScreenUp})" !default;
+$largeAndUp    : "only screen and (min-width : #{$mediumScreenUp})" !default;
+
+$smallAnd-down : "only screen and (max-width : #{$smallScreen})" !default;
+$mediumAnd-down: "only screen and (max-width : #{$mediumScreen})" !default;
+
+$mediumOnly    : "only screen and (min-width : #{$smallScreenUp}) and (max-width : #{$mediumScreen})" !default;
