@@ -603,5 +603,10 @@ video.responsive {
 @media only screen and (min-width: 993px) {
   .hideOnLarge {
     display: none !important; } }
+.screenHeight {
+  height: 100vh; }
+
+.screenWidth {
+  width: 100vw; }
 
 /*# sourceMappingURL=sculptor.css.map */
