@@ -577,4 +577,31 @@ a {
   .formControl:focus {
     border: 1px solid #0086C4; }
 
+.floatRight {
+  float: right; }
+
+.floatLeft {
+  float: left; }
+
+img.responsive,
+video.responsive {
+  max-width: 100%;
+  height: auto; }
+
+@media only screen and (max-width: 600px) {
+  .hideOnSmall {
+    display: none !important; } }
+@media only screen and (max-width: 992px) {
+  .hideOnMediumAndDown {
+    display: none !important; } }
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .hideOnMedium {
+    display: none !important; } }
+@media only screen and (min-width: 601px) {
+  .hideOnMediumAndUp {
+    display: none !important; } }
+@media only screen and (min-width: 993px) {
+  .hideOnLarge {
+    display: none !important; } }
+
 /*# sourceMappingURL=sculptor.css.map */

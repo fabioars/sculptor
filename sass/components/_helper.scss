@@ -1,0 +1,58 @@
+// ==============================================
+//               Float things
+// ==============================================
+
+.floatRight{
+  float: right;
+}
+
+.floatLeft{
+  float: left;
+}
+
+// ==============================================
+//            Responsive things
+// ==============================================
+
+img.responsive,
+video.responsive{
+  max-width: 100%;
+  height: auto;
+}
+
+// ==============================================
+//              Hide Things
+// ==============================================
+
+@media #{$smallAndDown} {
+  .hideOnSmall {
+    display: none !important;
+  }
+}
+
+@media #{$mediumAndDown} {
+  .hideOnMediumAndDown{
+    display: none !important;
+  }
+}
+
+@media #{$mediumOnly} {
+  .hideOnMedium{
+    display: none !important;
+  }
+}
+
+@media #{$mediumAndUp} {
+  .hideOnMediumAndUp{
+    display: none !important;
+  }
+}
+
+@media #{$largeAndUp} {
+  .hideOnLarge{
+    display: none !important;
+  }
+}
+
+
+
