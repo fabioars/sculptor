@@ -9,3 +9,23 @@
     padding: $columnPadding;
   }
 }
+
+// ==============================================
+//               Container
+// ==============================================
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+}
+@media #{$mediumAndUp} {
+  .container {
+    width: 85%;
+  }
+}
+@media #{$largeAndUp} {
+  .container {
+    width: 70%;
+  }
+}
