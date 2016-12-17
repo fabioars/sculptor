@@ -438,11 +438,17 @@ template {
   background: -o-linear-gradient(135deg, #00EEB7, #0086C4);
   background: linear-gradient(135deg, #00EEB7, #0086C4); }
 
-.niceSundown {
+.niceBluePeach {
   background: -webkit-linear-gradient(135deg, #0086C4, #FFB98D);
   background: -moz-linear-gradient(135deg, #0086C4, #FFB98D);
   background: -o-linear-gradient(135deg, #0086C4, #FFB98D);
   background: linear-gradient(135deg, #0086C4, #FFB98D); }
+
+.niceSundown {
+  background: -webkit-linear-gradient(135deg, #0086C4, #CE152D);
+  background: -moz-linear-gradient(135deg, #0086C4, #CE152D);
+  background: -o-linear-gradient(135deg, #0086C4, #CE152D);
+  background: linear-gradient(135deg, #0086C4, #CE152D); }
 
 .niceRose {
   background: -webkit-linear-gradient(135deg, #CE152D, #f17282);
@@ -493,6 +499,9 @@ h6 {
 p {
   font-size: 1em;
   font-weight: 200; }
+
+.indent {
+  text-indent: 2em; }
 
 .flexRow {
   display: flex; }

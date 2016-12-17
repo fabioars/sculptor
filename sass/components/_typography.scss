@@ -23,7 +23,14 @@ h6{ font-size: $h6Size; font-weight: $fontFat   }
 // ==============================================
 //                  Paragraph
 // ==============================================
-p{ font-size: $paragraphSize; font-weight: $fontLight; }
+
+p{
+  font-size: $paragraphSize; font-weight: $fontLight;
+}
+
+.indent{
+  text-indent: 2em;
+}
 
 
 

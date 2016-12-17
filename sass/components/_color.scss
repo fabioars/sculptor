@@ -48,8 +48,12 @@ $complementaryBrown : #C46B00;
   @include niceBackground($niceGreen, $niceBlue);
 }
 
-.niceSundown{
+.niceBluePeach{
   @include niceBackground($niceBlue, $nicePeach);
+}
+
+.niceSundown{
+  @include niceBackground($niceBlue, $niceRed);
 }
 
 .niceRose{
