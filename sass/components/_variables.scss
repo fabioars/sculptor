@@ -27,7 +27,7 @@ $linkColor: lighten($niceBlue, 10%) !default;
 // ==============================================
 //                Typography
 // ==============================================
-$h1Size: 2.0em;
+$h1Size: 2.2em;
 $h2Size: 1.5em;
 $h3Size: 1.2em;
 $h4Size: 1.0em;
@@ -65,12 +65,6 @@ $mediumOnly    : "only screen and (min-width : #{$smallScreenUp}) and (max-width
 // ==============================================
 
 $columnPadding: 5px;
-
-// ==============================================
-//            Nice Background
-// ==============================================
-
-$niceBackgroundAngle: 135deg;
 
 // ==============================================
 //            Transition

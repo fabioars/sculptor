@@ -1,4 +1,5 @@
 @mixin niceBackground($fistColor, $lastColor){
+  $niceBackgroundAngle: 135deg;
   background: -webkit-linear-gradient($niceBackgroundAngle, $fistColor, $lastColor);
   background: -moz-linear-gradient($niceBackgroundAngle, $fistColor, $lastColor);
   background: -o-linear-gradient($niceBackgroundAngle, $fistColor, $lastColor);

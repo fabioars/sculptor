@@ -8,6 +8,9 @@ $transparent: transparent;
 $black      : #000000;
 $white      : #FFFFFF;
 
+
+$niceWhiteTransparent: rgba(238,238,238, .3);
+
 // ==============================================
 //             Primary Colors
 // ==============================================
@@ -28,4 +31,28 @@ $nicePurple: #B469BC;
 $complementaryGreen : #15CE3C;
 $complementaryPurple: #6C2BD6;
 $complementaryBrown : #C46B00;
+
+.niceMarry{
+  @include niceBackground($niceBlue, $nicePurple);
+}
+
+.niceMarryDark{
+  @include niceBackground(darken($niceBlue, 25%), $complementaryPurple);
+}
+
+.niceSunThree{
+  @include niceBackground($niceGreen, $nicePeach);
+}
+
+.niceCoral{
+  @include niceBackground($niceGreen, $niceBlue);
+}
+
+.niceSundown{
+  @include niceBackground($niceBlue, $nicePeach);
+}
+
+.niceRose{
+  @include niceBackground($niceRed, lighten($niceRed, 25%));
+}
 

@@ -1,4 +1,23 @@
 // ==============================================
+//                  Text
+// ==============================================
+.textWhite {
+  color: $niceWhite;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.textRight {
+  text-align: right;
+}
+
+.textJustify {
+  text-align: justify;
+}
+
+// ==============================================
 //               Float things
 // ==============================================
 
@@ -64,3 +83,23 @@ video.responsive{
 .screenWidth{
   width: 100vw;
 }
+
+// ==============================================
+//              Aligner
+// ==============================================
+.aligner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & .center{
+    align-self: center;
+  }
+  & .top{
+    align-self: flex-start;
+  }
+  & .bottom{
+    align-self: flex-end;
+  }
+}
+
