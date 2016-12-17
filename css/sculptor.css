@@ -445,12 +445,30 @@ h6 {
   font-size: 0.8em;
   font-weight: 600; }
 
+p {
+  font-size: 1em;
+  font-weight: 200; }
+
+a {
+  color: #00a9f7;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 300ms; }
+  a:hover {
+    color: #0075ab; }
+  a:active {
+    color: #006391; }
+  a:visited {
+    color: #ce9ed4; }
+
 .flexRow {
   display: flex; }
   .flexRow .column {
     flex: 1;
-    background: #0086C4;
-    border: 1px solid #ce9ed4;
+    background: -webkit-linear-gradient(135deg, #0086C4, #ce9ed4);
+    background: -moz-linear-gradient(135deg, #0086C4, #ce9ed4);
+    background: -o-linear-gradient(135deg, #0086C4, #ce9ed4);
+    background: linear-gradient(135deg, #0086C4, #ce9ed4);
     width: 100%;
     padding: 5px; }
 

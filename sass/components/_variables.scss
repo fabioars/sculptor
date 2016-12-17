@@ -18,7 +18,7 @@ $primaryColorDark: darken($primaryColor, 15%) !default;
 $secondaryColor: lighten($nicePurple, 15%) !default;
 $successColor: $niceGreen !default;
 $errorColor: darken($niceRed, 15%) !default;
-$linkColor: $niceBlue !default;
+$linkColor: lighten($niceBlue, 10%) !default;
 
 // ==============================================
 //                Typography
@@ -29,6 +29,12 @@ $h3Size: 1.2em;
 $h4Size: 1.0em;
 $h5Size: 0.9em;
 $h6Size: 0.8em;
+
+$paragraphSize: 1em;
+
+$fontLight: 200;
+$fontFit  : 400;
+$fontFat  : 600;
 
 // ==============================================
 //              Media Queries
@@ -55,3 +61,13 @@ $mediumOnly    : "only screen and (min-width : #{$smallScreenUp}) and (max-width
 // ==============================================
 
 $columnPadding: 5px;
+
+// ==============================================
+//            Nice Background
+// ==============================================
+$niceBackgroundAngle: 135deg;
+
+// ==============================================
+//            Transition
+// ==============================================
+$transitionTime: 300ms;

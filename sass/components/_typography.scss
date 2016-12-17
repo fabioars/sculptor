@@ -1,16 +1,41 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,400,600');
 
+// ==============================================
+//               For All Texts
+// ==============================================
+
 * { font-family: 'Raleway', Helvetica, Ubuntu, sans-serif;  }
+
 // ==============================================
 //                   Headers
 // ==============================================
-h1{ font-size: $h1Size; font-weight: 200 }
-h2{ font-size: $h2Size; font-weight: 400 }
-h3{ font-size: $h3Size; font-weight: 600 }
-h4{ font-size: $h4Size; font-weight: 600 }
-h5{ font-size: $h5Size; font-weight: 600 }
-h6{ font-size: $h6Size; font-weight: 600 }
+
+h1{ font-size: $h1Size; font-weight: $fontLight }
+h2{ font-size: $h2Size; font-weight: $fontFit   }
+h3{ font-size: $h3Size; font-weight: $fontFat   }
+h4{ font-size: $h4Size; font-weight: $fontFat   }
+h5{ font-size: $h5Size; font-weight: $fontFat   }
+h6{ font-size: $h6Size; font-weight: $fontFat   }
+
 // ==============================================
 //                  Paragraph
 // ==============================================
+p{ font-size: $paragraphSize; font-weight: $fontLight; }
 
+a {
+  color: $linkColor;
+  text-decoration: none;
+  @include niceTransition(color);
+
+  &:hover{
+    color: darken($linkColor, 15%);
+  }
+
+  &:active{
+    color: darken($linkColor, 20%);
+  }
+
+  &:visited{
+    color: $secondaryColor;
+  }
+}
