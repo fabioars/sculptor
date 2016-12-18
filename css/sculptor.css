@@ -497,14 +497,15 @@ p {
   text-indent: 2em; }
 
 .flexRow {
-  display: flex; }
+  display: flex;
+  box-sizing: border-box; }
   .flexRow .column {
     flex: 1;
     width: 100%;
     padding: 5px;
     box-sizing: border-box; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {
   .flexRow {
     display: block; } }
 .container {
@@ -623,6 +624,9 @@ pre {
   background: -o-linear-gradient(135deg, #002f45, #001d2b);
   background: linear-gradient(135deg, #002f45, #001d2b);
   overflow: auto; }
+
+footer {
+  padding-bottom: 40px; }
 
 .textWhite {
   color: #EEEEEE; }

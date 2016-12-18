@@ -1,5 +1,7 @@
 pre{
   @include niceBackground(darken($primaryColor, 25%), darken($primaryColor, 30%));
   overflow: auto;
-
+}
+footer{
+  padding-bottom: $buttonPadding*4;
 }
