@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <title>Sculptor | The future web experience</title>
+    <link rel="stylesheet" href="css/sculptor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rainbow/1.2.0/themes/blackboard.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header class="screenHeight niceSundown aligner">
+    <div class="center textCenter">
+        <h1 class="textWhite">Sculptor</h1>
+        <p class="textWhite">The future web experience</p>
+        <a href="#getting-started" class="button blur">Getting Started</a><br>
+        <small class="textWhite">v0.0.1</small>
+    </div>
+</header>
+<section class="container">
+    <article>
+        <h1><a id="about" class="anchor" href="#about" aria-hidden="true"></a>About</h1>
+
+        <p>Sculptor is a CSS Framework that allows you make beautiful web-based applications.
+            We've got inspired in designs we believe is real futuristic.
+            Created by <a href="http://facebook.com/1fabiosoares">Fabio Soares</a> on a 2016 saturday afternoon.</p>
+
+        <h1><a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"></a>Getting Started</h1>
+
+        <ul>
+            <li><a href="https://github.com/1fabiosoares/sculptor/releases">Download</a> on Github Releases</li>
+            <li>Clone our repository <code>git clone git@github.com:1fabiosoares/sculptor.git</code></li>
+            <li>Use <a href="https://raw.githubusercontent.com/1fabiosoares/sculptor/master/css/sculptor.css">Github's Raw</a> <em>not recomended</em></li>
+            <li>Download npm package <code>*future*</code></li>
+            <li>Download bower package <code>*future*</code></li>
+            <li>Download composer package <code>*future*</code></li>
+        </ul>
+
+        <p>Put it on you HTML page</p>
+
+        <pre><code data-language="html">&lt;link rel="stylesheet" href="css/sculptor.min.css"&gt;</code></pre>
+    </article>
+</section>
+<header class="screenHeight niceSunThree aligner" id="typography">
+    <div class="center textCenter">
+        <h1 class="textWhite">Typography</h1>
+    </div>
+</header>
+<section class="container">
+    <article>
+        <h1>Heading</h1>
+        <h2>Heading</h2>
+        <h3>Heading</h3>
+        <h4>Heading</h4>
+        <h5>Heading</h5>
+        <h6>Heading</h6>
+        <pre><code data-language="html">&lt;h1&gt;Heading&lt;/h1&gt;
+&lt;h2&gt;Heading&lt;/h2&gt;
+&lt;h3&gt;Heading&lt;/h3&gt;
+&lt;h4&gt;Heading&lt;/h4&gt;
+&lt;h5&gt;Heading&lt;/h5&gt;
+&lt;h6&gt;Heading&lt;/h6&gt;</code></pre>
+        <h2>Text Modifiers</h2>
+        <div class="flexRow">
+            <div class="column">
+                <p>
+                <pre><code data-language="html">&lt;p&gt;Lorem ipsum&lt;/p&gt;</code></pre>
+                </p>
+            </div>
+            <div class="column">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum convallis bibendum.</p>
+            </div>
+        </div>
+        <div class="flexRow">
+            <div class="column">
+                <p>
+                <pre><code data-language="html">&lt;p class="intent"&gt;Lorem ipsum...&lt;/p&gt;</code></pre>
+                </p>
+            </div>
+            <div class="column">
+                <p class="indent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum convallis bibendum.</p>
+            </div>
+        </div>
+        <div class="flexRow">
+            <div class="column">
+                <p>
+                <pre><code data-language="html">&lt;p class="textRight"&gt;Lorem ipsum...&lt;/p&gt;</code></pre>
+                </p>
+            </div>
+            <div class="column">
+                <p class="textRight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum convallis bibendum.</p>
+            </div>
+        </div>
+        <div class="flexRow">
+            <div class="column">
+                <p>
+                <pre><code data-language="html">&lt;p class="textCenter"&gt;Lorem ipsum...&lt;/p&gt;</code></pre>
+                </p>
+            </div>
+            <div class="column">
+                <p class="textCenter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum convallis bibendum.</p>
+            </div>
+        </div>
+        <div class="flexRow">
+            <div class="column">
+                <p>
+                <pre><code data-language="html">&lt;p class="textJustify"&gt;Lorem ipsum...&lt;/p&gt;</code></pre>
+                </p>
+            </div>
+            <div class="column">
+                <p class="textJustify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum convallis bibendum.</p>
+            </div>
+        </div>
+    </article>
+</section>
+
+<header class="screenHeight niceBluePeach aligner" id="grid">
+    <div class="center textCenter">
+        <h1 class="textWhite">Grid</h1>
+    </div>
+</header>
+
+<section class="container">
+    <p>Our grid is not responsive <i>yet</i>. But the one we have is flexible.</p>
+    <p>As many child .column you add, they will fit in one row.</p>
+    <div class="flexRow">
+        <div class="column">
+            <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.column</div>
+        </div>
+        <div class="column">
+            <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.column</div>
+        </div>
+        <div class="column">
+            <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.column</div>
+        </div>
+        <div class="column">
+            <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.column</div>
+        </div>
+    </div>
+    <pre><code data-language="html">&lt;div class="flexRow"&gt;
+    &lt;div class="column"&gt;
+        &lt;div&gt;.column&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="column"&gt;
+        &lt;div&gt;.column&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="column"&gt;
+        &lt;div&gt;.column&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="column"&gt;
+        &lt;div&gt;.column&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</section>
+
+<header class="screenHeight niceCoral aligner" id="formsandbuttons">
+    <div class="center textCenter">
+        <h1 class="textWhite">Forms and Buttons</h1>
+    </div>
+</header>
+<section class="container">
+    <h2>Input</h2>
+    <input type="text" class="formControl" placeholder="Write your name here">
+    <pre><code data-language="html">&lt;input type="text" class="formControl" placeholder="Write your name here"&gt;</code></pre>
+    <h2>Input + Grids</h2>
+    <div class="flexRow">
+        <div class="column">
+            <input type="text" class="formControl" placeholder=".column">
+        </div>
+        <div class="column">
+            <input type="text" class="formControl" placeholder=".column">
+        </div>
+    </div>
+    <div class="flexRow">
+        <div class="column">
+            <input type="text" class="formControl" placeholder=".column">
+        </div>
+        <div class="column">
+            <input type="text" class="formControl" placeholder=".column">
+        </div>
+        <div class="column">
+            <input type="text" class="formControl" placeholder=".column">
+        </div>
+    </div>
+    <h2>Text Area</h2>
+    <textarea rows="10" class="formControl" placeholder="Write your message here"></textarea>
+    <pre><code data-language="html">&lt;textarea rows="10" class="formControl" placeholder="Write your message here"&gt;&lt;/textarea&gt;</code></pre>
+
+    <h2>Buttons</h2>
+    <div class="flexRow">
+        <div class="column">
+            <pre><code data-language="html">&lt;button class="button"&gt;Button&lt;/button&gt;</code></pre>
+        </div>
+        <div class="column">
+            <button class="button">Button</button>
+        </div>
+    </div>
+    <div class="flexRow">
+        <div class="column">
+            <pre><code data-language="html">&lt;button class="button primary"&gt;Button&lt;/button&gt;</code></pre>
+        </div>
+        <div class="column">
+            <button class="button primary">Button</button>
+        </div>
+    </div>
+    <div class="flexRow">
+        <div class="column">
+            <pre><code data-language="html">&lt;button class="button secondary"&gt;Button&lt;/button&gt;</code></pre>
+        </div>
+        <div class="column">
+            <button class="button secondary">Button</button>
+        </div>
+    </div>
+    <div class="flexRow">
+        <div class="column">
+            <pre><code data-language="html">&lt;button class="button danger"&gt;Button&lt;/button&gt;</code></pre>
+        </div>
+        <div class="column">
+            <button class="button danger">Button</button>
+        </div>
+    </div>
+    <div class="flexRow">
+        <div class="column">
+            <pre><code data-language="html">&lt;button class="button warning"&gt;Button&lt;/button&gt;</code></pre>
+        </div>
+        <div class="column">
+            <button class="button warning">Button</button>
+        </div>
+    </div>
+    <div class="flexRow">
+        <div class="column">
+            <pre><code data-language="html">&lt;button class="button success"&gt;Button&lt;/button&gt;</code></pre>
+        </div>
+        <div class="column">
+            <button class="button success">Button</button>
+        </div>
+    </div>
+    <div class="flexRow">
+        <div class="column">
+            <pre><code data-language="html">&lt;button class="button primary large"&gt;Button&lt;/button&gt;</code></pre>
+        </div>
+        <div class="column">
+            <button class="button primary large">Button</button>
+        </div>
+    </div>
+    <div class="flexRow">
+        <div class="column">
+            <pre><code data-language="html">&lt;button class="button primary small"&gt;Button&lt;/button&gt;</code></pre>
+        </div>
+        <div class="column">
+            <button class="button primary small">Button</button>
+        </div>
+    </div>
+    <div class="flexRow">
+        <div class="column">
+            <pre><code data-language="html">&lt;button class="button primary block"&gt;Button&lt;/button&gt;</code></pre>
+        </div>
+        <div class="column">
+            <button class="button primary block">Button</button>
+        </div>
+    </div>
+    <div class="flexRow">
+        <div class="column">
+            <pre><code data-language="html">&lt;button class="button blur block"&gt;Button&lt;/button&gt;</code></pre>
+        </div>
+        <div class="column">
+            <button class="button blur block">Button</button>
+        </div>
+    </div>
+</section>
+
+<footer class="niceMarryDark textWhite">
+    <div class="container">
+        <p>Made for the universe under <a href="#" target="_blank">GPL-3.0</a> Licence.</p>
+        <a href="https://github.com/1fabiosoares/sculptor" target="_blank" class="button blur">
+            <i class="fa fa-github"></i> Github
+        </a>
+        <a href="https://facebook.com/1fabiosoares" target="_blank" class="button blur">
+            <i class="fa fa-facebook"></i> Fabio Soares
+        </a>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rainbow/1.2.0/js/rainbow.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rainbow/1.2.0/js/language/html.min.js"></script>
+</body>
+</html>
