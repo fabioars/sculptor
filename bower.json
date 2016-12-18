@@ -1,0 +1,26 @@
+{
+  "name": "sculptor",
+  "description": "The future web experience in CSS",
+  "main": "index.js",
+  "authors": [
+    "Fabio Soares <fabioars@live.com> (https://1fabiosores.github.io/sculptor)"
+  ],
+  "license": "GPL-3.0",
+  "keywords": [
+    "css",
+    "sass",
+    "mobile-fist",
+    "responsive",
+    "framework",
+    "web",
+    "app"
+  ],
+  "homepage": "https://github.com/1fabiosoares/sculptor",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

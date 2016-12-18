@@ -1,0 +1,28 @@
+{
+  "name": "sculptor",
+  "version": "0.0.1",
+  "description": "The future web experience in CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1fabiosoares/sculptor.git"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "mobile-fist",
+    "responsive",
+    "framework",
+    "web",
+    "app"
+  ],
+  "author": "Fabio Soares <fabioars@live.com> (https://1fabiosores.github.io/sculptor)",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/1fabiosoares/sculptor/issues"
+  },
+  "homepage": "https://github.com/1fabiosoares/sculptor#readme"
+}
