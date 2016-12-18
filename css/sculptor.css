@@ -603,7 +603,7 @@ a {
     box-sizing: border-box; }
 
 .formControl {
-  min-width: 100%;
+  width: 100%;
   box-sizing: border-box;
   padding: 10px 20px;
   margin: 10px 0;
@@ -617,6 +617,19 @@ a {
     border: 1px solid #606C76; }
   .formControl:focus {
     border: 1px solid #0086C4; }
+
+.card {
+  border: 1px solid #b0b8bf;
+  border-radius: 8px;
+  margin: 5px; }
+  .card .header {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    font-weight: 200; }
+  .card .content {
+    padding: 10px; }
 
 pre {
   background: -webkit-linear-gradient(135deg, #002f45, #001d2b);

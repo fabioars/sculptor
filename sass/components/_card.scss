@@ -1,0 +1,25 @@
+// ==============================================
+//                    Card
+// ==============================================
+.card{
+  border: 1px solid lighten($niceGrey, 30%);
+  border-radius: $radiusLight;
+  margin: $buttonPadding/2;
+  // ==============================================
+  //                Card Header
+  // ==============================================
+  & .header{
+    border-top-left-radius: $radiusLight;
+    border-top-right-radius: $radiusLight;
+    padding: $buttonPadding $buttonPadding*2;
+    font-size: $h2Size;
+    font-weight: $fontLight;
+  }
+  // ==============================================
+  //                Card Content
+  // ==============================================
+  & .content{
+    padding: $buttonPadding;
+  }
+
+}
