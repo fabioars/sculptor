@@ -1,6 +1,6 @@
 {
   "name": "sculptorcss",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The future web experience in CSS",
   "main": "index.js",
   "scripts": {
