@@ -7,6 +7,13 @@
     flex: 1;
     width: 100%;
     padding: $columnPadding;
+    box-sizing: border-box;
+  }
+}
+
+@media #{$smallAndDown} {
+  .flexRow{
+    display: block;
   }
 }
 
