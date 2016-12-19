@@ -1,0 +1,8 @@
+{
+  "name": "1fabiosoaes/sculptor",
+  "description": "The future web experience in CSS",
+  "require": {
+    "php": "^5.3.3 || ^7.0",
+    "another-vendor/package": "1.*"
+  }
+}
