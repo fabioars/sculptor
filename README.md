@@ -13,7 +13,7 @@ Created by [Fabio Soares](http://facebook.com/1fabiosoares) on a 2016 saturday a
 - Use [CDN](https://unpkg.com/sculptorcss@0.0.2/css/sculptor.min.css) `https://unpkg.com/sculptorcss@0.0.2/css/sculptor.min.css`
 - Download npm package `npm install sculptorcss`
 - Download bower package `bower install sculptor`
-- Download composer package `*future*`
+- Download composer package `composer require 1fabiosoares/sculptor`
 
 Put it on you HTML page
 
