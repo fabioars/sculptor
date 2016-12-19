@@ -1,5 +1,5 @@
 {
-  "name": "1fabiosoaes/sculptor",
+  "name": "1fabiosoares/sculptor",
   "description": "The future web experience in CSS",
   "require": {
     "php": "^5.3.3 || ^7.0",
