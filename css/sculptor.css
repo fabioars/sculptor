@@ -438,6 +438,12 @@ template {
   background: -o-linear-gradient(135deg, #0086C4, #FFB98D);
   background: linear-gradient(135deg, #0086C4, #FFB98D); }
 
+.niceBluePeachDark {
+  background: -webkit-linear-gradient(135deg, #002f45, #FFB98D);
+  background: -moz-linear-gradient(135deg, #002f45, #FFB98D);
+  background: -o-linear-gradient(135deg, #002f45, #FFB98D);
+  background: linear-gradient(135deg, #002f45, #FFB98D); }
+
 .niceSundown {
   background: -webkit-linear-gradient(135deg, #0086C4, #CE152D);
   background: -moz-linear-gradient(135deg, #0086C4, #CE152D);
@@ -607,16 +613,20 @@ a {
   box-sizing: border-box;
   padding: 10px 20px;
   margin: 10px 0;
-  background: #FFFFFF;
+  background: rgba(238, 238, 238, 0.8);
   border: 1px solid #86929d;
   border-radius: 8px;
   resize: none;
-  transition-property: border;
+  transition-property: border, background;
   transition-duration: 300ms; }
   .formControl:hover {
     border: 1px solid #606C76; }
   .formControl:focus {
-    border: 1px solid #0086C4; }
+    border: 1px solid #0086C4;
+    background: #FFFFFF; }
+  .formControl:disabled {
+    background: #EEEEEE;
+    cursor: not-allowed; }
 
 .card {
   border: 1px solid #b0b8bf;

@@ -10,7 +10,7 @@ Created by [Fabio Soares](http://facebook.com/1fabiosoares) on a 2016 saturday a
 
 - [Download](https://github.com/1fabiosoares/sculptor/releases) on Github Releases
 - Clone our repository `git clone git@github.com:1fabiosoares/sculptor.git`
-- Use [CDN](https://unpkg.com/sculptorcss@0.0.2/css/sculptor.min.css) `https://unpkg.com/sculptorcss@0.0.2/css/sculptor.min.css`
+- Use [CDN](https://unpkg.com/sculptorcss@0.0.3/css/sculptor.min.css) `https://unpkg.com/sculptorcss@0.0.3/css/sculptor.min.css`
 - Download npm package `npm install sculptorcss`
 - Download bower package `bower install sculptor`
 - Download composer package `composer require 1fabiosoares/sculptor`
@@ -19,7 +19,7 @@ Put it on you HTML page
 
 Using CDN
 
-    <link rel="stylesheet" href="https://unpkg.com/sculptorcss@0.0.2/css/sculptor.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/sculptorcss@0.0.3/css/sculptor.min.css">
 
 or using a local reference
 

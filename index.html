@@ -14,7 +14,7 @@
         <h1 class="textWhite">Sculptor</h1>
         <p class="textWhite">The future web experience</p>
         <a href="#getting-started" class="button blur">Getting Started</a><br>
-        <small class="textWhite">v0.0.2</small>
+        <small class="textWhite">v0.0.3</small>
     </div>
 </header>
 <section class="container">
@@ -30,7 +30,7 @@
         <ul>
             <li><a href="https://github.com/1fabiosoares/sculptor/releases">Download</a> on Github Releases</li>
             <li>Clone our repository <code>git clone git@github.com:1fabiosoares/sculptor.git</code></li>
-            <li>Use <a href="https://unpkg.com/sculptorcss@0.0.2/css/sculptor.min.css">CDN</a> <code>https://unpkg.com/sculptorcss@0.0.2/css/sculptor.min.css</code></li>
+            <li>Use <a href="https://unpkg.com/sculptorcss@0.0.3/css/sculptor.min.css">CDN</a> <code>https://unpkg.com/sculptorcss@0.0.3/css/sculptor.min.css</code></li>
             <li>Download npm package <code>npm install sculptorcss</code></li>
             <li>Download bower package <code>bower install sculptor</code></li>
             <li>Download composer package <code>composer require 1fabiosoares/sculptor</code></li>
@@ -38,9 +38,15 @@
 
         <p>Put it on you HTML page</p>
         <p>Using CDN</p>
-        <pre><code data-language="html">&lt;link rel="stylesheet" href="https://unpkg.com/sculptorcss@0.0.2/css/sculptor.min.css"&gt;</code></pre>
+        <pre><code data-language="html">&lt;link rel="stylesheet" href="https://unpkg.com/sculptorcss@0.0.3/css/sculptor.min.css"&gt;</code></pre>
         <p>or using a local reference</p>
         <pre><code data-language="html">&lt;link rel="stylesheet" href="css/sculptor.min.css"&gt;</code></pre>
+
+        <h2>Examples</h2>
+        <ul>
+            <li><a href="examples/login" target="_blank">Login</a></li>
+            <li><a href="examples/frontpage" target="_blank">Front page</a></li>
+        </ul>
     </article>
 </section>
 <header class="screenHeight niceSunThree aligner" id="typography">
@@ -302,14 +308,23 @@
         </div>
     </div>
     <h2>Text Area</h2>
-    <textarea rows="10" class="formControl" placeholder="Write your message here"></textarea>
-    <pre><code data-language="html">&lt;textarea rows="10" class="formControl" placeholder="Write your message here"&gt;&lt;/textarea&gt;</code></pre>
+    <textarea rows="3" class="formControl" placeholder="Write your message here"></textarea>
+    <pre><code data-language="html">&lt;textarea rows="3" class="formControl" placeholder="Write your message here"&gt;&lt;/textarea&gt;</code></pre>
     <h2>Select</h2>
     <select class="formControl">
-        <option value="#">Option 1</option>
-        <option value="#">Option 2</option>
-        <option value="#">Option 3</option>
+        <option value="1">Option 1</option>
+        <option value="2" disabled>Option 2</option>
+        <option value="3">Option 3</option>
     </select>
+    <pre><code data-language="html">&lt;select class="formControl"&gt;
+    &lt;option value="1"&gt;Option 1&lt;/option&gt;
+    &lt;option value="2" disabled&gt;Option 2&lt;/option&gt;
+    &lt;option value="3"&gt;Option 3&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+
+    <h2>Disabled</h2>
+    <input type="text" class="formControl" placeholder="Disabled" disabled>
+    <pre><code data-language="html">&lt;input type="text" class="formControl" placeholder="Disabled" disabled&gt;</code></pre>
     <h2>Buttons</h2>
     <div class="flexRow">
         <div class="column">
