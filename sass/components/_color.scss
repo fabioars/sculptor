@@ -10,6 +10,7 @@ $white      : #FFFFFF;
 
 
 $niceWhiteTransparent: rgba(238,238,238, .3);
+$niceWhiteForms: rgba(238,238,238, .8);
 
 // ==============================================
 //             Primary Colors
@@ -50,6 +51,9 @@ $complementaryBrown : #C46B00;
 
 .niceBluePeach{
   @include niceBackground($niceBlue, $nicePeach);
+}
+.niceBluePeachDark{
+  @include niceBackground(darken($niceBlue, 25%), $nicePeach);
 }
 
 .niceSundown{
