@@ -34,8 +34,7 @@
 
         <h1 id="getting-started">Getting Started</h1>
         <p><a href="https://github.com/1fabiosoares/sculptor/releases">Download</a> on Github Releases or
-        use <a href="https://unpkg.com/sculptorcss@0.0.4/css/sculptor.min.css">CDN</a>
-        <code>https://unpkg.com/sculptorcss@0.0.4/css/sculptor.min.css</code></p>
+        use <a href="https://unpkg.com/sculptorcss@0.0.4/css/sculptor.min.css">CDN</a></p>
         <p>Clone our repository: </p>
         <pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>$&nbsp;git&nbsp;clone&nbsp;git@github.com:1fabiosoares/sculptor.git</span></span></span></div></pre><p>Download npm package </p>
         <pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>$&nbsp;npm&nbsp;install&nbsp;sculptorcss</span></span></span></div></pre><p>Download bower package </p>
@@ -331,84 +330,52 @@
     <h2>Buttons</h2>
     <div class="flexRow">
         <div class="column">
-            <pre><code data-language="html">&lt;button class="button"&gt;Button&lt;/button&gt;</code></pre>
+            <button class="button">.button</button>
         </div>
         <div class="column">
-            <button class="button">Button</button>
+            <button class="button primary">.button.primary</button>
+        </div>
+        <div class="column">
+            <button class="button secondary">.button.secondary</button>
+        </div>
+        <div class="column">
+            <button class="button danger">.button.danger</button>
+        </div>
+        <div class="column">
+            <button class="button warning">.button.warning</button>
+        </div>
+        <div class="column">
+            <button class="button success">.button.success</button>
         </div>
     </div>
+
     <div class="flexRow">
         <div class="column">
-            <pre><code data-language="html">&lt;button class="button primary"&gt;Button&lt;/button&gt;</code></pre>
+            <button class="button primary large">.button.primary.large</button>
         </div>
+
         <div class="column">
-            <button class="button primary">Button</button>
+            <button class="button primary small">.button.primary.small</button>
+        </div>
+
+        <div class="column">
+            <button class="button primary block">.button.primary.block</button>
         </div>
     </div>
-    <div class="flexRow">
-        <div class="column">
-            <pre><code data-language="html">&lt;button class="button secondary"&gt;Button&lt;/button&gt;</code></pre>
-        </div>
-        <div class="column">
-            <button class="button secondary">Button</button>
-        </div>
-    </div>
-    <div class="flexRow">
-        <div class="column">
-            <pre><code data-language="html">&lt;button class="button danger"&gt;Button&lt;/button&gt;</code></pre>
-        </div>
-        <div class="column">
-            <button class="button danger">Button</button>
-        </div>
-    </div>
-    <div class="flexRow">
-        <div class="column">
-            <pre><code data-language="html">&lt;button class="button warning"&gt;Button&lt;/button&gt;</code></pre>
-        </div>
-        <div class="column">
-            <button class="button warning">Button</button>
-        </div>
-    </div>
-    <div class="flexRow">
-        <div class="column">
-            <pre><code data-language="html">&lt;button class="button success"&gt;Button&lt;/button&gt;</code></pre>
-        </div>
-        <div class="column">
-            <button class="button success">Button</button>
-        </div>
-    </div>
-    <div class="flexRow">
-        <div class="column">
-            <pre><code data-language="html">&lt;button class="button primary large"&gt;Button&lt;/button&gt;</code></pre>
-        </div>
-        <div class="column">
-            <button class="button primary large">Button</button>
-        </div>
-    </div>
-    <div class="flexRow">
-        <div class="column">
-            <pre><code data-language="html">&lt;button class="button primary small"&gt;Button&lt;/button&gt;</code></pre>
-        </div>
-        <div class="column">
-            <button class="button primary small">Button</button>
-        </div>
-    </div>
-    <div class="flexRow">
-        <div class="column">
-            <pre><code data-language="html">&lt;button class="button primary block"&gt;Button&lt;/button&gt;</code></pre>
-        </div>
-        <div class="column">
-            <button class="button primary block">Button</button>
-        </div>
-    </div>
-    <div class="flexRow">
-        <div class="column">
-            <pre><code data-language="html">&lt;button class="button blur block"&gt;Button&lt;/button&gt;</code></pre>
-        </div>
-        <div class="column">
-            <button class="button blur block">Button</button>
-        </div>
-    </div>
+
+
+
+    <pre><code data-language="html">&lt;button class="button"&gt;Button&lt;/button&gt;
+&lt;button class="button primary"&gt;Button&lt;/button&gt;
+&lt;button class="button secondary"&gt;Button&lt;/button&gt;
+&lt;button class="button danger"&gt;Button&lt;/button&gt;
+&lt;button class="button warning"&gt;Button&lt;/button&gt;
+&lt;button class="button success"&gt;Button&lt;/button&gt;
+&lt;button class="button primary large"&gt;Button&lt;/button&gt;
+&lt;button class="button primary small"&gt;Button&lt;/button&gt;
+&lt;button class="button primary block"&gt;Button&lt;/button&gt;
+&lt;button class="button blur"&gt;Button&lt;/button&gt;</code></pre>
+
 </section>
 
 <header class="screenHeight niceMarry aligner" id="cards">
@@ -421,6 +388,9 @@
     <h2>Simple Cards</h2>
     <div class="flexRow">
         <div class="column">
+            &nbsp;
+        </div>
+        <div class="column">
             <div class="card">
                 <div class="content">
                     <p class="indent textJustify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum convallis bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum convallis bibendum.</p>
@@ -428,15 +398,19 @@
             </div>
         </div>
         <div class="column">
-            <pre><code data-language="html">&lt;div class="card"&gt;
+            &nbsp;
+        </div>
+    </div>
+    <pre><code data-language="html">&lt;div class="card"&gt;
     &lt;div class="content"&gt;
         &lt;p&gt;Lorem ipsum dolor sit amet...&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-        </div>
-    </div>
     <h2>With header</h2>
     <div class="flexRow">
+        <div class="column">
+            &nbsp;
+        </div>
         <div class="column">
             <div class="card">
                 <header class="header">
@@ -448,7 +422,10 @@
             </div>
         </div>
         <div class="column">
-<pre><code data-language="html">&lt;div class="card"&gt;
+            &nbsp;
+        </div>
+    </div>
+    <pre><code data-language="html">&lt;div class="card"&gt;
     &lt;div class="header"&gt;
         Content here
     &lt;/div&gt;
@@ -456,10 +433,12 @@
         &lt;p&gt;Lorem ipsum dolor sit amet...&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-        </div>
-    </div>
+
     <h2>With Nice Background on header</h2>
     <div class="flexRow">
+        <div class="column">
+            &nbsp;
+        </div>
         <div class="column">
             <div class="card">
                 <header class="header niceSunThree textWhite">
@@ -471,7 +450,10 @@
             </div>
         </div>
         <div class="column">
-<pre><code data-language="html">&lt;div class="card"&gt;
+            &nbsp;
+        </div>
+    </div>
+    <pre><code data-language="html">&lt;div class="card"&gt;
     &lt;div class="header niceSunThree textWhite"&gt;
         Content here
     &lt;/div&gt;
@@ -479,10 +461,12 @@
         &lt;p&gt;Lorem ipsum dolor sit amet...&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-        </div>
-    </div>
+
     <h2>With nice background and action</h2>
     <div class="flexRow">
+        <div class="column">
+            &nbsp;
+        </div>
         <div class="column">
             <div class="card niceBluePeach textWhite">
                 <header class="header">
@@ -495,7 +479,10 @@
             </div>
         </div>
         <div class="column">
-<pre><code data-language="html">&lt;div class="card niceBluePeach textWhite"&gt;
+            &nbsp;
+        </div>
+    </div>
+    <pre><code data-language="html">&lt;div class="card niceBluePeach textWhite"&gt;
     &lt;div class="header"&gt;
         Content here
     &lt;/div&gt;
@@ -504,8 +491,7 @@
         &lt;button class="button blur block"&gt;Share now&lt;/button&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-        </div>
-    </div>
+
 </section>
 
 <footer class="niceMarryDark textWhite">
