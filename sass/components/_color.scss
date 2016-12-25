@@ -3,7 +3,7 @@
 // ==============================================
 $niceBlack  : #222222;
 $niceWhite  : #EEEEEE;
-$niceGrey   : #606C76;
+$niceGrey   : #F4F5F6;
 $transparent: transparent;
 $black      : #000000;
 $white      : #FFFFFF;
@@ -63,4 +63,3 @@ $complementaryBrown : #C46B00;
 .niceRose{
   @include niceBackground($niceRed, lighten($niceRed, 25%));
 }
-
