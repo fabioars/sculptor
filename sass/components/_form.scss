@@ -11,7 +11,7 @@
   resize: none;
 
   @include niceTransition(border, background);
-  
+
   &:hover{
     border: 1px solid $niceGrey;
   }
@@ -20,7 +20,7 @@
     background: $white;
   }
   &:disabled{
-    background: $niceWhite;
+    background: darken($niceGrey, 15%);
     cursor: not-allowed;
   }
 }

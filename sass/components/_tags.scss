@@ -1,6 +1,9 @@
 pre{
-  @include niceBackground(darken($primaryColor, 25%), darken($primaryColor, 30%));
+  @include niceBackground(lighten($niceGrey, 0%), lighten($niceGrey, 5%));
+  font-weight: $fontLight;
   overflow: auto;
+  padding: $buttonPadding;
+  border-left: 4px solid $primaryColor;
 }
 footer{
   padding-bottom: $buttonPadding*4;

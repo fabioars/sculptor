@@ -1,5 +1,5 @@
 /*!
- * Sculptor v0.0.2
+ * Sculptor v0.0.4
  * https://github.com/1fabiosoares/sculptor
  *
  * Copyright (c) 2016 Fabio Soares
@@ -614,22 +614,22 @@ a {
   padding: 10px 20px;
   margin: 10px 0;
   background: rgba(238, 238, 238, 0.8);
-  border: 1px solid #86929d;
+  border: 1px solid white;
   border-radius: 8px;
   resize: none;
   transition-property: border, background;
   transition-duration: 300ms; }
   .formControl:hover {
-    border: 1px solid #606C76; }
+    border: 1px solid #F4F5F6; }
   .formControl:focus {
     border: 1px solid #0086C4;
     background: #FFFFFF; }
   .formControl:disabled {
-    background: #EEEEEE;
+    background: #cacfd4;
     cursor: not-allowed; }
 
 .card {
-  border: 1px solid #b0b8bf;
+  border: 1px solid #a0a9b1;
   border-radius: 8px;
   margin: 5px; }
   .card .header {
@@ -642,11 +642,14 @@ a {
     padding: 10px; }
 
 pre {
-  background: -webkit-linear-gradient(135deg, #002f45, #001d2b);
-  background: -moz-linear-gradient(135deg, #002f45, #001d2b);
-  background: -o-linear-gradient(135deg, #002f45, #001d2b);
-  background: linear-gradient(135deg, #002f45, #001d2b);
-  overflow: auto; }
+  background: -webkit-linear-gradient(135deg, #f4f5f6, white);
+  background: -moz-linear-gradient(135deg, #f4f5f6, white);
+  background: -o-linear-gradient(135deg, #f4f5f6, white);
+  background: linear-gradient(135deg, #f4f5f6, white);
+  font-weight: 200;
+  overflow: auto;
+  padding: 10px;
+  border-left: 4px solid #0086C4; }
 
 footer {
   padding-bottom: 40px; }
