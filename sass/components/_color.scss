@@ -63,3 +63,7 @@ $complementaryBrown : #C46B00;
 .niceRose{
   @include niceBackground($niceRed, lighten($niceRed, 25%));
 }
+
+.niceRealPeach{
+  @include niceBackground($niceRed, $nicePeach);
+}
