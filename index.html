@@ -14,7 +14,7 @@
         <h1 class="textWhite">Sculptor</h1>
         <p class="textWhite">The future web experience</p>
         <a href="#getting-started" class="button blur">Getting Started</a><br>
-        <small class="textWhite">v0.0.4</small>
+        <small class="textWhite">v0.1.0</small>
     </div>
 </header>
 <section class="container">
@@ -34,14 +34,14 @@
 
         <h1 id="getting-started">Getting Started</h1>
         <p><a href="https://github.com/1fabiosoares/sculptor/releases">Download</a> on Github Releases or
-        use <a href="https://unpkg.com/sculptorcss@0.0.4/css/sculptor.min.css">CDN</a></p>
+        use <a href="https://unpkg.com/sculptorcss/css/sculptor.min.css">CDN</a></p>
         <p>Clone our repository: </p>
         <pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>$&nbsp;git&nbsp;clone&nbsp;git@github.com:1fabiosoares/sculptor.git</span></span></span></div></pre><p>Download npm package </p>
         <pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>$&nbsp;npm&nbsp;install&nbsp;sculptorcss</span></span></span></div></pre><p>Download bower package </p>
         <pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>$&nbsp;bower&nbsp;install&nbsp;sculptor</span></span></span></div></pre><p>Download composer package </p>
         <pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>composer&nbsp;require&nbsp;1fabiosoares/sculptor</span></span></span></div></pre><p>Put it on you HTML page</p>
         <p>Using CDN</p>
-        <pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;link&nbsp;rel=&quot;stylesheet&quot;&nbsp;href=&quot;</span><span class="markup underline link https hyperlink"><span>https://unpkg.com/sculptorcss@0.0.4/css/sculptor.min.css</span></span><span>&quot;&gt;</span></span></span></div></pre><p>or using a local reference</p>
+        <pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;link&nbsp;rel=&quot;stylesheet&quot;&nbsp;href=&quot;</span><span class="markup underline link https hyperlink"><span>https://unpkg.com/sculptorcss/css/sculptor.min.css</span></span><span>&quot;&gt;</span></span></span></div></pre><p>or using a local reference</p>
         <pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;link&nbsp;rel=&quot;stylesheet&quot;&nbsp;href=&quot;css/sculptor.min.css&quot;&gt;</span></span></span></div></pre>
 
         <h2>Examples</h2>
@@ -133,23 +133,12 @@
 <section class="container">
     <p>Our grid is not responsive <i>yet</i>. But the one we have is flexible.</p>
     <p>As many child .column you add, they will fit in one row.</p>
-    <div class="flexRow">
+    <div class="flexRow hideOnMediumAndDown">
         <div class="column">
             <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.column</div>
         </div>
     </div>
-    <div class="flexRow">
-        <div class="column">
-            <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.column</div>
-        </div>
-        <div class="column">
-            <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.column</div>
-        </div>
-    </div>
-    <div class="flexRow">
-        <div class="column">
-            <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.column</div>
-        </div>
+    <div class="flexRow hideOnMediumAndDown">
         <div class="column">
             <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.column</div>
         </div>
@@ -167,14 +156,8 @@
         <div class="column">
             <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.column</div>
         </div>
-        <div class="column">
-            <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.column</div>
-        </div>
     </div>
-    <div class="flexRow">
-        <div class="column">
-            <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.column</div>
-        </div>
+    <div class="flexRow hideOnMediumAndDown">
         <div class="column">
             <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.column</div>
         </div>
@@ -188,10 +171,7 @@
             <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.column</div>
         </div>
     </div>
-    <div class="flexRow">
-        <div class="column">
-            <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.column</div>
-        </div>
+    <div class="flexRow hideOnMediumAndDown">
         <div class="column">
             <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.column</div>
         </div>
@@ -208,7 +188,27 @@
             <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.column</div>
         </div>
     </div>
-    <div class="flexRow">
+    <div class="flexRow hideOnMediumAndDown">
+        <div class="column">
+            <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.column</div>
+        </div>
+        <div class="column">
+            <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.column</div>
+        </div>
+        <div class="column">
+            <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.column</div>
+        </div>
+        <div class="column">
+            <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.column</div>
+        </div>
+        <div class="column">
+            <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.column</div>
+        </div>
+        <div class="column">
+            <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.column</div>
+        </div>
+    </div>
+    <div class="flexRow hideOnMediumAndDown">
         <div class="column">
             <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.column</div>
         </div>
@@ -292,7 +292,7 @@
             <input type="text" class="formControl" placeholder=".column">
         </div>
     </div>
-    <div class="flexRow">
+    <div class="flexRow hideOnMediumAndDown">
         <div class="column">
             <input type="text" class="formControl" placeholder=".column">
         </div>
@@ -494,9 +494,199 @@
 
 </section>
 
+<header class="screenHeight niceRealPeach aligner" id="tables">
+    <div class="center textCenter">
+        <h1 class="textWhite">Tables</h1>
+    </div>
+</header>
+<section class="container">
+    <h1>Tables</h1>
+
+    <table class="table">
+        <tr>
+            <th align="right">#</th>
+            <th align="left">Name</th>
+            <th align="center">Currency</th>
+            <th align="right">Value</th>
+        </tr>
+        <tr>
+            <td align="right">1</td>
+            <td align="left">Ross</td>
+            <td align="center">BRL</td>
+            <td align="right">40.000</td>
+        </tr>
+        <tr>
+            <td align="right">2</td>
+            <td align="left">Rachel</td>
+            <td align="center">USD</td>
+            <td align="right">5.000</td>
+        </tr>
+        <tr>
+            <td align="right">3</td>
+            <td align="left">Joey</td>
+            <td align="center">BRL</td>
+            <td align="right">40.000</td>
+        </tr>
+    </table>
+    <pre><code>&lt;table class="table"&gt;
+    ...
+&lt;/table&gt;</code></pre>
+    <h2>Hoverable table</h2>
+    <table class="table hoverRow">
+        <tr>
+            <th align="right">#</th>
+            <th align="left">Name</th>
+            <th align="center">Currency</th>
+            <th align="right">Value</th>
+        </tr>
+        <tr>
+            <td align="right">1</td>
+            <td align="left">Ross</td>
+            <td align="center">BRL</td>
+            <td align="right">40.000</td>
+        </tr>
+        <tr>
+            <td align="right">2</td>
+            <td align="left">Rachel</td>
+            <td align="center">USD</td>
+            <td align="right">5.000</td>
+        </tr>
+        <tr>
+            <td align="right">3</td>
+            <td align="left">Joey</td>
+            <td align="center">BRL</td>
+            <td align="right">40.000</td>
+        </tr>
+    </table>
+    <pre><code>&lt;table class="table hoverRow"&gt;
+    ...
+&lt;/table&gt;</code></pre>
+<table class="table hoverCell">
+    <tr>
+        <th align="right">#</th>
+        <th align="left">Name</th>
+        <th align="center">Currency</th>
+        <th align="right">Value</th>
+    </tr>
+    <tr>
+        <td align="right">1</td>
+        <td align="left">Ross</td>
+        <td align="center">BRL</td>
+        <td align="right">40.000</td>
+    </tr>
+    <tr>
+        <td align="right">2</td>
+        <td align="left">Rachel</td>
+        <td align="center">USD</td>
+        <td align="right">5.000</td>
+    </tr>
+    <tr>
+        <td align="right">3</td>
+        <td align="left">Joey</td>
+        <td align="center">BRL</td>
+        <td align="right">40.000</td>
+    </tr>
+</table>
+<pre><code>&lt;table class="table hoverCell"&gt;
+...
+&lt;/table&gt;</code></pre>
+<h2>Clean table</h2>
+<table class="table clean">
+    <tr>
+        <th align="right">#</th>
+        <th align="left">Name</th>
+        <th align="center">Currency</th>
+        <th align="right">Value</th>
+    </tr>
+    <tr>
+        <td align="right">1</td>
+        <td align="left">Ross</td>
+        <td align="center">BRL</td>
+        <td align="right">40.000</td>
+    </tr>
+    <tr>
+        <td align="right">2</td>
+        <td align="left">Rachel</td>
+        <td align="center">USD</td>
+        <td align="right">5.000</td>
+    </tr>
+    <tr>
+        <td align="right">3</td>
+        <td align="left">Joey</td>
+        <td align="center">BRL</td>
+        <td align="right">40.000</td>
+    </tr>
+</table>
+<pre><code>&lt;table class="table clean"&gt;
+...
+&lt;/table&gt;</code></pre>
+<h2>Responsive table</h2>
+<table class="table responsive">
+    <tr>
+        <th align="right">#</th>
+        <th align="left">Name</th>
+        <th align="center">Currency</th>
+        <th align="right">Value</th>
+    </tr>
+    <tr>
+        <td align="right">1</td>
+        <td align="left">Ross</td>
+        <td align="center">BRL</td>
+        <td align="right">40.000</td>
+    </tr>
+    <tr>
+        <td align="right">2</td>
+        <td align="left">Rachel</td>
+        <td align="center">USD</td>
+        <td align="right">5.000</td>
+    </tr>
+    <tr>
+        <td align="right">3</td>
+        <td align="left">Joey</td>
+        <td align="center">BRL</td>
+        <td align="right">40.000</td>
+    </tr>
+</table>
+<pre><code>&lt;table class="table responsive"&gt;
+...
+&lt;/table&gt;</code></pre>
+<h2>Striped table</h2>
+<table class="table striped">
+    <tr>
+        <th align="right">#</th>
+        <th align="left">Name</th>
+        <th align="center">Currency</th>
+        <th align="right">Value</th>
+    </tr>
+    <tr>
+        <td align="right">1</td>
+        <td align="left">Ross</td>
+        <td align="center">BRL</td>
+        <td align="right">40.000</td>
+    </tr>
+    <tr>
+        <td align="right">2</td>
+        <td align="left">Rachel</td>
+        <td align="center">USD</td>
+        <td align="right">5.000</td>
+    </tr>
+    <tr>
+        <td align="right">3</td>
+        <td align="left">Joey</td>
+        <td align="center">BRL</td>
+        <td align="right">40.000</td>
+    </tr>
+</table>
+<pre><code>&lt;table class="table striped"&gt;
+...
+&lt;/table&gt;</code></pre>
+</section>
+
+
 <footer class="niceMarryDark textWhite">
-    <div class="container">
+    <div class="container textCenter">
         <p>Made for the universe under <a href="#" target="_blank">GPL-3.0</a> Licence.</p>
+        
         <a href="https://github.com/1fabiosoares/sculptor" target="_blank" class="button blur">
             <i class="fa fa-github"></i> Github
         </a>
@@ -505,7 +695,5 @@
         </a>
     </div>
 </footer>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/rainbow/1.2.0/js/rainbow.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/rainbow/1.2.0/js/language/html.min.js"></script> -->
 </body>
 </html>

@@ -19,8 +19,8 @@ Give us a star on GitHub and share with friends.
 ## Getting Started
 
 [Download](https://github.com/1fabiosoares/sculptor/releases) on Github Releases or
-use [CDN](https://unpkg.com/sculptorcss@0.0.4/css/sculptor.min.css)
-`https://unpkg.com/sculptorcss@0.0.4/css/sculptor.min.css`
+use [CDN](https://unpkg.com/sculptorcss/css/sculptor.min.css)
+`https://unpkg.com/sculptorcss/css/sculptor.min.css`
 
 Clone our repository:
 
@@ -42,7 +42,7 @@ Put it on you HTML page
 
 Using CDN
 
-    <link rel="stylesheet" href="https://unpkg.com/sculptorcss@0.0.4/css/sculptor.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/sculptorcss/css/sculptor.min.css">
 
 or using a local reference
 

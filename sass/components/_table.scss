@@ -1,0 +1,37 @@
+.table{
+    width: 100%;
+
+    & tr th{
+        padding: $buttonPadding 0 $buttonPadding/2;
+        border-bottom: 3px solid $primaryColor;
+    }
+    & tr td{
+        padding: $buttonPadding 0 $buttonPadding/2;
+        border-bottom: 1px solid darken($niceWhite, 15%);
+    }
+    &.striped tr:nth-child(even){
+        background-color: $niceWhite;
+    }
+    &.clean{
+        & tr td{
+            padding: $buttonPadding 0 $buttonPadding/2;
+            border-bottom: 1px solid $transparent;
+        }
+    }
+
+    &.hoverCell{
+        & tr td:hover{
+            background-color: $niceWhite;
+        }
+    }
+
+    &.hoverRow{
+        & tr:hover{
+            background-color: $niceWhite;
+        }
+    }
+
+    &.responsive{
+        overflow: auto;
+    }
+}
