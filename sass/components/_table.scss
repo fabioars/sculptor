@@ -1,12 +1,13 @@
 .table{
     width: 100%;
+    border-spacing: 0;
 
     & tr th{
-        padding: $buttonPadding 0 $buttonPadding/2;
+        padding: $buttonPadding $buttonPadding/4 $buttonPadding/2;
         border-bottom: 3px solid $primaryColor;
     }
     & tr td{
-        padding: $buttonPadding 0 $buttonPadding/2;
+        padding: $buttonPadding $buttonPadding/2 $buttonPadding/2;
         border-bottom: 1px solid darken($niceWhite, 15%);
     }
     &.striped tr:nth-child(even){
@@ -14,7 +15,6 @@
     }
     &.clean{
         & tr td{
-            padding: $buttonPadding 0 $buttonPadding/2;
             border-bottom: 1px solid $transparent;
         }
     }

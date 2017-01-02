@@ -1,5 +1,5 @@
 /*!
- * Sculptor v0.1.0
+ * Sculptor v0.1.1
  * https://github.com/1fabiosoares/sculptor
  *
  * Copyright (c) 2016 Fabio Soares
@@ -716,17 +716,17 @@ video.responsive {
     align-self: flex-end; }
 
 .table {
-  width: 100%; }
+  width: 100%;
+  border-spacing: 0; }
   .table tr th {
-    padding: 10px 0 5px;
+    padding: 10px 2.5px 5px;
     border-bottom: 3px solid #0086C4; }
   .table tr td {
-    padding: 10px 0 5px;
+    padding: 10px 5px 5px;
     border-bottom: 1px solid #c8c8c8; }
   .table.striped tr:nth-child(even) {
     background-color: #EEEEEE; }
   .table.clean tr td {
-    padding: 10px 0 5px;
     border-bottom: 1px solid transparent; }
   .table.hoverCell tr td:hover {
     background-color: #EEEEEE; }
