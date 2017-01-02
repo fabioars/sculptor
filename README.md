@@ -36,7 +36,7 @@ Download bower package
 
 Download composer package
 
-    composer require 1fabiosoares/sculptor
+    $ composer require 1fabiosoares/sculptor
 
 Put it on you HTML page
 

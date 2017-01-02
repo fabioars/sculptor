@@ -10,14 +10,15 @@
 </head>
 <body>
 <header class="screenHeight niceSundown aligner">
-    <div class="center textCenter">
-        <h1 class="textWhite">Sculptor</h1>
-        <p class="textWhite">The future web experience</p>
+    <div class="center textCenter textWhite">
+        <h1>Sculptor</h1>
+        <p>The future web experience</p>
         <a href="#getting-started" class="button blur">Getting Started</a><br>
-        <small class="textWhite">v0.1.0</small>
+        <small>v0.1.1</small><br>
+
     </div>
 </header>
-<section class="container">
+<section class="container" id="sculptor">
     <article>
         <h1><a id="about" class="anchor" href="#about" aria-hidden="true"></a>About</h1>
         <p>Sculptor is a CSS Framework that allows you make beautiful web-based applications.
@@ -32,6 +33,8 @@
         <a class="button" href="https://plus.google.com/share?url=https://github.com/1fabiosoares/sculptor"><i class="fa fa-google-plus"></i> Google+</a>
         <a class="button" href="https://www.linkedin.com/shareArticle?url=https://github.com/1fabiosoares/sculptor&amp;title=Sculptor%20-%20The%20future%20web%20experience"><i class="fa fa-linkedin"></i> LinkedIn</a>
 
+        <h1>Github</h1>
+        Last commit: <a :href="url" v-text="sha"></a> <span v-text="date"></span>
         <h1 id="getting-started">Getting Started</h1>
         <p><a href="https://github.com/1fabiosoares/sculptor/releases">Download</a> on Github Releases or
         use <a href="https://unpkg.com/sculptorcss/css/sculptor.min.css">CDN</a></p>
@@ -39,15 +42,15 @@
         <pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>$&nbsp;git&nbsp;clone&nbsp;git@github.com:1fabiosoares/sculptor.git</span></span></span></div></pre><p>Download npm package </p>
         <pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>$&nbsp;npm&nbsp;install&nbsp;sculptorcss</span></span></span></div></pre><p>Download bower package </p>
         <pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>$&nbsp;bower&nbsp;install&nbsp;sculptor</span></span></span></div></pre><p>Download composer package </p>
-        <pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>composer&nbsp;require&nbsp;1fabiosoares/sculptor</span></span></span></div></pre><p>Put it on you HTML page</p>
+        <pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>$&nbsp;composer&nbsp;require&nbsp;1fabiosoares/sculptor</span></span></span></div></pre><p>Put it on you HTML page</p>
         <p>Using CDN</p>
         <pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;link&nbsp;rel=&quot;stylesheet&quot;&nbsp;href=&quot;</span><span class="markup underline link https hyperlink"><span>https://unpkg.com/sculptorcss/css/sculptor.min.css</span></span><span>&quot;&gt;</span></span></span></div></pre><p>or using a local reference</p>
         <pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;link&nbsp;rel=&quot;stylesheet&quot;&nbsp;href=&quot;css/sculptor.min.css&quot;&gt;</span></span></span></div></pre>
 
         <h2>Examples</h2>
         <ul>
-            <li><a href="examples/login" target="_blank">Login</a></li>
-            <li><a href="examples/frontpage" target="_blank">Front page</a></li>
+            <li><a href="examples/login">Login</a></li>
+            <li><a href="examples/frontpage">Front page</a></li>
         </ul>
     </article>
 </section>
@@ -329,32 +332,29 @@
     <pre><code data-language="html">&lt;input type="text" class="formControl" placeholder="Disabled" disabled&gt;</code></pre>
     <h2>Buttons</h2>
     <div class="flexRow">
-        <div class="column">
-            <button class="button">.button</button>
-        </div>
-        <div class="column">
+        <div class="column textCenter">
             <button class="button primary">.button.primary</button>
         </div>
-        <div class="column">
+        <div class="column textCenter">
             <button class="button secondary">.button.secondary</button>
         </div>
-        <div class="column">
+        <div class="column textCenter">
             <button class="button danger">.button.danger</button>
         </div>
-        <div class="column">
+        <div class="column textCenter">
             <button class="button warning">.button.warning</button>
         </div>
-        <div class="column">
+        <div class="column textCenter">
             <button class="button success">.button.success</button>
         </div>
     </div>
 
     <div class="flexRow">
-        <div class="column">
+        <div class="column textCenter">
             <button class="button primary large">.button.primary.large</button>
         </div>
 
-        <div class="column">
+        <div class="column textCenter">
             <button class="button primary small">.button.primary.small</button>
         </div>
 
@@ -686,7 +686,7 @@
 <footer class="niceMarryDark textWhite">
     <div class="container textCenter">
         <p>Made for the universe under <a href="#" target="_blank">GPL-3.0</a> Licence.</p>
-        
+
         <a href="https://github.com/1fabiosoares/sculptor" target="_blank" class="button blur">
             <i class="fa fa-github"></i> Github
         </a>
@@ -695,5 +695,37 @@
         </a>
     </div>
 </footer>
+<!-- https://api.github.com/repos/1fabiosoares/sculptor/commits/master -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script type="text/javascript">
+    var app = new Vue({
+        el: "#sculptor",
+        data: {
+            sha: "",
+            url: "",
+            date: "",
+            git: {}
+        },
+        methods: {
+            getGitHubData: () =>{
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function(res){
+                    if(this.status == 200 && this.readyState == 4){
+                        let data = JSON.parse(this.responseText);
+                        app.git = data;
+                        app.sha = data.sha;
+                        app.url = data.html_url;
+                        app.date = data.commit.author.date;
+                        console.log(data.commit.author.date);
+
+                    }
+                }
+                xhttp.open('get', 'https://api.github.com/repos/1fabiosoares/sculptor/commits/master')
+                xhttp.send();
+            }
+        }
+    });
+    app.getGitHubData();
+</script>
 </body>
 </html>
