@@ -1,5 +1,5 @@
 /*!
- * Sculptor v0.1.1
+ * Sculptor v0.1.2
  * https://github.com/1fabiosoares/sculptor
  *
  * Copyright (c) 2016 Fabio Soares
@@ -409,58 +409,64 @@ template {
   outline: none; }
 
 .niceMarry {
-  background: -webkit-linear-gradient(135deg, #0086C4, #B469BC);
-  background: -moz-linear-gradient(135deg, #0086C4, #B469BC);
-  background: -o-linear-gradient(135deg, #0086C4, #B469BC);
-  background: linear-gradient(135deg, #0086C4, #B469BC); }
+  background: -webkit-linear-gradient(135deg, #30499B, #844D9E);
+  background: -moz-linear-gradient(135deg, #30499B, #844D9E);
+  background: -o-linear-gradient(135deg, #30499B, #844D9E);
+  background: linear-gradient(135deg, #30499B, #844D9E); }
 
 .niceMarryDark {
-  background: -webkit-linear-gradient(135deg, #002f45, #6C2BD6);
-  background: -moz-linear-gradient(135deg, #002f45, #6C2BD6);
-  background: -o-linear-gradient(135deg, #002f45, #6C2BD6);
-  background: linear-gradient(135deg, #002f45, #6C2BD6); }
+  background: -webkit-linear-gradient(135deg, #121b3a, #6C2BD6);
+  background: -moz-linear-gradient(135deg, #121b3a, #6C2BD6);
+  background: -o-linear-gradient(135deg, #121b3a, #6C2BD6);
+  background: linear-gradient(135deg, #121b3a, #6C2BD6); }
 
 .niceSunThree {
-  background: -webkit-linear-gradient(135deg, #00EEB7, #FFB98D);
-  background: -moz-linear-gradient(135deg, #00EEB7, #FFB98D);
-  background: -o-linear-gradient(135deg, #00EEB7, #FFB98D);
-  background: linear-gradient(135deg, #00EEB7, #FFB98D); }
+  background: -webkit-linear-gradient(135deg, #56B949, #FFB98D);
+  background: -moz-linear-gradient(135deg, #56B949, #FFB98D);
+  background: -o-linear-gradient(135deg, #56B949, #FFB98D);
+  background: linear-gradient(135deg, #56B949, #FFB98D); }
 
 .niceCoral {
-  background: -webkit-linear-gradient(135deg, #00EEB7, #0086C4);
-  background: -moz-linear-gradient(135deg, #00EEB7, #0086C4);
-  background: -o-linear-gradient(135deg, #00EEB7, #0086C4);
-  background: linear-gradient(135deg, #00EEB7, #0086C4); }
+  background: -webkit-linear-gradient(135deg, #56B949, #30499B);
+  background: -moz-linear-gradient(135deg, #56B949, #30499B);
+  background: -o-linear-gradient(135deg, #56B949, #30499B);
+  background: linear-gradient(135deg, #56B949, #30499B); }
 
 .niceBluePeach {
-  background: -webkit-linear-gradient(135deg, #0086C4, #FFB98D);
-  background: -moz-linear-gradient(135deg, #0086C4, #FFB98D);
-  background: -o-linear-gradient(135deg, #0086C4, #FFB98D);
-  background: linear-gradient(135deg, #0086C4, #FFB98D); }
+  background: -webkit-linear-gradient(135deg, #30499B, #FFB98D);
+  background: -moz-linear-gradient(135deg, #30499B, #FFB98D);
+  background: -o-linear-gradient(135deg, #30499B, #FFB98D);
+  background: linear-gradient(135deg, #30499B, #FFB98D); }
 
 .niceBluePeachDark {
-  background: -webkit-linear-gradient(135deg, #002f45, #FFB98D);
-  background: -moz-linear-gradient(135deg, #002f45, #FFB98D);
-  background: -o-linear-gradient(135deg, #002f45, #FFB98D);
-  background: linear-gradient(135deg, #002f45, #FFB98D); }
+  background: -webkit-linear-gradient(135deg, #121b3a, #FFB98D);
+  background: -moz-linear-gradient(135deg, #121b3a, #FFB98D);
+  background: -o-linear-gradient(135deg, #121b3a, #FFB98D);
+  background: linear-gradient(135deg, #121b3a, #FFB98D); }
 
 .niceSundown {
-  background: -webkit-linear-gradient(135deg, #0086C4, #CE152D);
-  background: -moz-linear-gradient(135deg, #0086C4, #CE152D);
-  background: -o-linear-gradient(135deg, #0086C4, #CE152D);
-  background: linear-gradient(135deg, #0086C4, #CE152D); }
+  background: -webkit-linear-gradient(135deg, #30499B, #EE4035);
+  background: -moz-linear-gradient(135deg, #30499B, #EE4035);
+  background: -o-linear-gradient(135deg, #30499B, #EE4035);
+  background: linear-gradient(135deg, #30499B, #EE4035); }
 
 .niceRose {
-  background: -webkit-linear-gradient(135deg, #CE152D, #f17282);
-  background: -moz-linear-gradient(135deg, #CE152D, #f17282);
-  background: -o-linear-gradient(135deg, #CE152D, #f17282);
-  background: linear-gradient(135deg, #CE152D, #f17282); }
+  background: -webkit-linear-gradient(135deg, #EE4035, #f8afab);
+  background: -moz-linear-gradient(135deg, #EE4035, #f8afab);
+  background: -o-linear-gradient(135deg, #EE4035, #f8afab);
+  background: linear-gradient(135deg, #EE4035, #f8afab); }
 
 .niceRealPeach {
-  background: -webkit-linear-gradient(135deg, #CE152D, #FFB98D);
-  background: -moz-linear-gradient(135deg, #CE152D, #FFB98D);
-  background: -o-linear-gradient(135deg, #CE152D, #FFB98D);
-  background: linear-gradient(135deg, #CE152D, #FFB98D); }
+  background: -webkit-linear-gradient(135deg, #EE4035, #FFB98D);
+  background: -moz-linear-gradient(135deg, #EE4035, #FFB98D);
+  background: -o-linear-gradient(135deg, #EE4035, #FFB98D);
+  background: linear-gradient(135deg, #EE4035, #FFB98D); }
+
+.niceBlue {
+  background: -webkit-linear-gradient(135deg, #30499B, #121b3a);
+  background: -moz-linear-gradient(135deg, #30499B, #121b3a);
+  background: -o-linear-gradient(135deg, #30499B, #121b3a);
+  background: linear-gradient(135deg, #30499B, #121b3a); }
 
 /**
   * Variables
@@ -532,20 +538,20 @@ p {
   .container {
     width: 70%; } }
 a {
-  color: #00a9f7;
+  color: #ee9817;
   text-decoration: none;
   transition-property: color;
   transition-duration: 300ms; }
   a:hover {
-    color: #0075ab; }
+    color: #ad6d0c; }
   a:active {
-    color: #006391; }
+    color: #955e0b; }
 
 .button {
   display: inline-block;
   background: transparent;
-  border: solid 1px #0086C4;
-  color: #0086C4;
+  border: solid 1px #30499B;
+  color: #30499B;
   padding: 10px 20px;
   border-radius: 52px;
   cursor: pointer;
@@ -553,49 +559,49 @@ a {
   transition-duration: 300ms; }
   .button:hover {
     color: #EEEEEE;
-    background: #0086C4; }
+    background: #30499B; }
   .button:active {
-    background: #005278; }
+    background: #1e2d61; }
   .button.primary {
-    border: solid 1px #0086C4;
-    color: #0086C4; }
+    border: solid 1px #30499B;
+    color: #30499B; }
     .button.primary:hover {
       color: #EEEEEE;
-      background: #0086C4; }
+      background: #30499B; }
     .button.primary:active {
-      background: #005278; }
+      background: #1e2d61; }
   .button.secondary {
-    border: solid 1px #ce9ed4;
-    color: #ce9ed4; }
+    border: solid 1px #c47c0e;
+    color: #c47c0e; }
     .button.secondary:hover {
       color: #EEEEEE;
-      background: #ce9ed4; }
+      background: #c47c0e; }
     .button.secondary:active {
-      background: #b469bc; }
+      background: #7d4f09; }
   .button.danger {
-    border: solid 1px #CE152D;
-    color: #CE152D; }
+    border: solid 1px #EE4035;
+    color: #EE4035; }
     .button.danger:hover {
       color: #EEEEEE;
-      background: #CE152D; }
+      background: #EE4035; }
     .button.danger:active {
-      background: #890e1e; }
+      background: #c61b11; }
   .button.warning {
-    border: solid 1px #D6CF2B;
-    color: #D6CF2B; }
+    border: solid 1px #F0A32F;
+    color: #F0A32F; }
     .button.warning:hover {
       color: #EEEEEE;
-      background: #D6CF2B; }
+      background: #F0A32F; }
     .button.warning:active {
-      background: #97921d; }
+      background: #c47c0e; }
   .button.success {
-    border: solid 1px #00EEB7;
-    color: #00EEB7; }
+    border: solid 1px #56B949;
+    color: #56B949; }
     .button.success:hover {
       color: #EEEEEE;
-      background: #00EEB7; }
+      background: #56B949; }
     .button.success:active {
-      background: #00a27c; }
+      background: #3c8332; }
   .button.blur {
     background: rgba(238, 238, 238, 0.3);
     color: #EEEEEE;
@@ -628,7 +634,7 @@ a {
   .formControl:hover {
     border: 1px solid #F4F5F6; }
   .formControl:focus {
-    border: 1px solid #0086C4;
+    border: 1px solid #30499B;
     background: #FFFFFF; }
   .formControl:disabled {
     background: #cacfd4;
@@ -655,7 +661,7 @@ pre {
   font-weight: 200;
   overflow: auto;
   padding: 10px;
-  border-left: 4px solid #0086C4; }
+  border-left: 4px solid #30499B; }
 
 footer {
   padding-bottom: 40px; }
@@ -720,7 +726,7 @@ video.responsive {
   border-spacing: 0; }
   .table tr th {
     padding: 10px 2.5px 5px;
-    border-bottom: 3px solid #0086C4; }
+    border-bottom: 3px solid #30499B; }
   .table tr td {
     padding: 10px 5px 5px;
     border-bottom: 1px solid #c8c8c8; }
