@@ -19,10 +19,10 @@ $primaryColor: $niceBlue !default;
 $primaryColorLight: lighten($primaryColor, 15%) !default;
 $primaryColorDark: darken($primaryColor, 15%) !default;
 
-$secondaryColor: lighten($nicePurple, 15%) !default;
+$secondaryColor: darken($niceYellow, 15%) !default;
 $successColor: $niceGreen !default;
 $errorColor: darken($niceRed, 15%) !default;
-$linkColor: lighten($niceBlue, 10%) !default;
+$linkColor: lighten($secondaryColor, 10%) !default;
 
 // ==============================================
 //                Typography

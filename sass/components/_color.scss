@@ -15,16 +15,16 @@ $niceWhiteForms: rgba(238,238,238, .8);
 // ==============================================
 //             Primary Colors
 // ==============================================
-$niceBlue  : #0086C4;
-$niceRed   : #CE152D;
-$niceYellow: #D6CF2B;
+$niceBlue  : #30499B;
+$niceRed   : #EE4035;
+$niceYellow: #F0A32F;
 
 // ==============================================
 //            Secondary Colors
 // ==============================================
-$niceGreen : #00EEB7;
+$niceGreen : #56B949;
 $nicePeach : #FFB98D;
-$nicePurple: #B469BC;
+$nicePurple: #844D9E;
 
 // ==============================================
 //         Complementary Colors
@@ -32,6 +32,11 @@ $nicePurple: #B469BC;
 $complementaryGreen : #15CE3C;
 $complementaryPurple: #6C2BD6;
 $complementaryBrown : #C46B00;
+
+// ==============================================
+//         More Nice Colors
+// ==============================================
+$niceOrange: #F0A32F;
 
 .niceMarry{
   @include niceBackground($niceBlue, $nicePurple);
@@ -66,4 +71,8 @@ $complementaryBrown : #C46B00;
 
 .niceRealPeach{
   @include niceBackground($niceRed, $nicePeach);
+}
+
+.niceBlue{
+  @include niceBackground($niceBlue, darken($niceBlue, 25%));
 }
