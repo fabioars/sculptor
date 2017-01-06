@@ -1,5 +1,5 @@
 /*!
- * Sculptor v0.1.2
+ * Sculptor v0.1.3
  * https://github.com/1fabiosoares/sculptor
  *
  * Copyright (c) 2016 Fabio Soares
@@ -650,6 +650,20 @@ a {
     padding: 10px 20px;
     font-size: 1.5em;
     font-weight: 200; }
+    .card .header.image {
+      display: flex;
+      align-items: flex-end;
+      padding: 0;
+      overflow: hidden;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px; }
+      .card .header.image span {
+        position: absolute;
+        padding: 10px; }
+      .card .header.image img {
+        display: block;
+        max-width: 100%;
+        height: auto; }
   .card .content {
     padding: 10px; }
 
