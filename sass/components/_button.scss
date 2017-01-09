@@ -39,6 +39,17 @@ a {
   &:active{
     background: darken($primaryColor, 15%);
   }
+  &.solid{
+    background-color: $primaryColor;
+    color: $white;
+    &:hover{
+      color: $niceWhite;
+      background: lighten($primaryColor, 15%);
+    }
+    &:active{
+      background: darken($primaryColor, 25%);
+    }
+  }
 // ==============================================
 //            Primary Button
 // ==============================================
@@ -52,6 +63,18 @@ a {
     }
     &:active{
       background: darken($primaryColor, 15%);
+    }
+
+    &.solid{
+      background-color: $primaryColor;
+      color: $white;
+      &:hover{
+        color: $niceWhite;
+        background: lighten($primaryColor, 15%);
+      }
+      &:active{
+        background: darken($primaryColor, 25%);
+      }
     }
   }
   // ==============================================
@@ -67,6 +90,17 @@ a {
     &:active{
       background: darken($secondaryColor, 15%);
     }
+    &.solid{
+      background-color: $secondaryColor;
+      color: $white;
+      &:hover{
+        color: $niceWhite;
+        background: lighten($secondaryColor, 15%);
+      }
+      &:active{
+        background: darken($secondaryColor, 25%);
+      }
+    }
   }
   // ==============================================
   //            Danger Button
@@ -80,6 +114,17 @@ a {
     }
     &:active{
       background: darken($niceRed, 15%);
+    }
+    &.solid{
+      background-color: $niceRed;
+      color: $white;
+      &:hover{
+        color: $niceWhite;
+        background: lighten($niceRed, 15%);
+      }
+      &:active{
+        background: darken($niceRed, 25%);
+      }
     }
   }
 // ==============================================
@@ -95,6 +140,17 @@ a {
     &:active{
       background: darken($niceYellow, 15%);
     }
+    &.solid{
+      background-color: $niceYellow;
+      color: $white;
+      &:hover{
+        color: $niceWhite;
+        background: lighten($niceYellow, 15%);
+      }
+      &:active{
+        background: darken($niceYellow, 25%);
+      }
+    }
   }
 // ==============================================
 //            Success Button
@@ -109,6 +165,17 @@ a {
     &:active{
       background: darken($niceGreen, 15%);
     }
+    &.solid{
+      background-color: $niceGreen;
+      color: $white;
+      &:hover{
+        color: $niceWhite;
+        background: lighten($niceGreen, 15%);
+      }
+      &:active{
+        background: darken($niceGreen, 25%);
+      }
+    }
   }
 // ==============================================
 //              Blur Button
@@ -117,6 +184,7 @@ a {
     background: $niceWhiteTransparent;
     color: $niceWhite;
     border: none;
+
     &:hover{
       color: $niceWhite;
       background: darken($niceWhiteTransparent, 25%);

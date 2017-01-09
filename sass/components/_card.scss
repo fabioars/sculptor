@@ -2,6 +2,7 @@
 //                    Card
 // ==============================================
 .card{
+  background-color: $niceWhiteTransparent;
   border: 1px solid darken($niceGrey, 30%);
   border-radius: $radiusLight;
   margin: $buttonPadding/2;
