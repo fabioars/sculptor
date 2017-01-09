@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,user-scalable=no">
     <title>Sculptor | The future web experience</title>
-    <link rel="stylesheet" href="css/sculptor.css">
+    <link rel="stylesheet" href="css/sculptor.min.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rainbow/1.2.0/themes/blackboard.min.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -14,7 +14,7 @@
         <h1>Sculptor</h1>
         <p>The future web experience</p>
         <a href="#getting-started" class="button blur">Getting Started</a><br>
-        <small>v0.1.3</small><br>
+        <small>v0.1.4</small><br>
 
     </div>
 </header>
@@ -51,6 +51,7 @@
         <ul>
             <li><a href="examples/login">Login</a></li>
             <li><a href="examples/frontpage">Front page</a></li>
+            <li><a href="examples/portifolio">Portifolio</a></li>
         </ul>
     </article>
 </section>
@@ -362,9 +363,6 @@
             <button class="button primary block">.button.primary.block</button>
         </div>
     </div>
-
-
-
     <pre><code data-language="html">&lt;button class="button"&gt;Button&lt;/button&gt;
 &lt;button class="button primary"&gt;Button&lt;/button&gt;
 &lt;button class="button secondary"&gt;Button&lt;/button&gt;
@@ -375,6 +373,48 @@
 &lt;button class="button primary small"&gt;Button&lt;/button&gt;
 &lt;button class="button primary block"&gt;Button&lt;/button&gt;
 &lt;button class="button blur"&gt;Button&lt;/button&gt;</code></pre>
+
+    <h2>Buttons solid</h2>
+    <div class="flexRow">
+        <div class="column textCenter">
+            <button class="button solid primary">.button.primary</button>
+        </div>
+        <div class="column textCenter">
+            <button class="button solid secondary">.button.secondary</button>
+        </div>
+        <div class="column textCenter">
+            <button class="button solid danger">.button.danger</button>
+        </div>
+        <div class="column textCenter">
+            <button class="button solid warning">.button.warning</button>
+        </div>
+        <div class="column textCenter">
+            <button class="button solid success">.button.success</button>
+        </div>
+    </div>
+
+    <div class="flexRow">
+        <div class="column textCenter">
+            <button class="button solid primary large">.button.primary.large</button>
+        </div>
+
+        <div class="column textCenter">
+            <button class="button solid primary small">.button.primary.small</button>
+        </div>
+
+        <div class="column">
+            <button class="button solid primary block">.button.primary.block</button>
+        </div>
+    </div>
+    <pre><code data-language="html">&lt;button class="button solid"&gt;Button&lt;/button&gt;
+&lt;button class="button solid primary"&gt;Button&lt;/button&gt;
+&lt;button class="button solid secondary"&gt;Button&lt;/button&gt;
+&lt;button class="button solid danger"&gt;Button&lt;/button&gt;
+&lt;button class="button solid warning"&gt;Button&lt;/button&gt;
+&lt;button class="button solid success"&gt;Button&lt;/button&gt;
+&lt;button class="button solid primary large"&gt;Button&lt;/button&gt;
+&lt;button class="button solid primary small"&gt;Button&lt;/button&gt;
+&lt;button class="button solid primary block"&gt;Button&lt;/button&gt;</code></pre>
 
 </section>
 
@@ -715,7 +755,7 @@
 
 <footer class="niceMarryDark textWhite">
     <div class="container textCenter">
-        <p>Made for the universe under <a href="#" target="_blank">GPL-3.0</a> Licence.</p>
+        <p>2017. Made for the universe under <a href="#" target="_blank">GPL-3.0</a> Licence.</p>
 
         <a href="https://github.com/1fabiosoares/sculptor" target="_blank" class="button blur">
             <i class="fa fa-github"></i> Github
@@ -726,7 +766,7 @@
     </div>
 </footer>
 <!-- https://api.github.com/repos/1fabiosoares/sculptor/commits/master -->
-<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue/dist/vue.min.js"></script>
 <script type="text/javascript">
     var app = new Vue({
         el: "#sculptor",
