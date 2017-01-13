@@ -1,5 +1,6 @@
 {
   "name": "1fabiosoares/sculptor",
+  "version": "0.1.4",
   "description": "The future web experience in CSS",
   "require": {
     "php": "^5.3.3 || ^7.0"
