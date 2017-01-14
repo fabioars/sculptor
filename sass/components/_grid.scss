@@ -37,3 +37,115 @@
     width: 70%;
   }
 }
+// ==============================================
+//               Column Grid
+// ==============================================
+.container .grid{
+  margin-left: (-1*$spaceBetween/2);
+  margin-right: (-1*$spaceBetween/2);
+}
+
+.grid{
+  display: block;
+  margin: 0 auto auto 0;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .column{
+    float: left;
+    box-sizing: border-box;
+    padding: 0 $spaceBetween/2;
+    min-height: 1px;
+
+    &[class*="push-"],
+    &[class*="pull-"]{
+      position: relative;
+    }
+
+    $i: 1;
+    @while($i <= $columnNumber){
+      $percentage: unquote((100/ ($columnNumber/$i))+"%");
+      &.s#{$i}{
+        width: $percentage;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+      }
+      $i: $i+1;
+    }
+    $i: 1;
+    @while($i <= $columnNumber){
+      $percentage: unquote((100/ ($columnNumber/$i))+"%");
+      &.sOff#{$i}{
+        margin-left: $percentage;
+      }
+      &.sPull#{$i}{
+        right: $percentage;
+      }
+      &.sPush#{$i}{
+        left: $percentage
+      }
+      $i: $i+1;
+    }
+
+    @media #{$mediumAndUp} {
+      $i: 1;
+      @while($i <= $columnNumber){
+        $percentage: unquote((100/ ($columnNumber/$i))+"%");
+        &.m#{$i}{
+          width: $percentage;
+          margin-left: auto;
+          left: auto;
+          right: auto;
+        }
+        $i: $i+1;
+      }
+      $i: 1;
+      @while($i <= $columnNumber){
+        $percentage: unquote((100/ ($columnNumber/$i))+"%");
+        &.mOff#{$i}{
+          margin-left: $percentage;
+        }
+        &.mPull#{$i}{
+          right: $percentage;
+        }
+        &.mPush#{$i}{
+          left: $percentage
+        }
+        $i: $i+1;
+      }
+    }
+
+    @media #{$largeAndUp} {
+      $i: 1;
+      @while($i <= $columnNumber){
+        $percentage: unquote((100/ ($columnNumber/$i))+"%");
+        &.l#{$i}{
+          width: $percentage;
+          margin-left: auto;
+          left: auto;
+          right: auto;
+        }
+        $i: $i+1;
+      }
+      $i: 1;
+      @while($i <= $columnNumber){
+        $percentage: unquote((100/ ($columnNumber/$i))+"%");
+        &.lOff#{$i}{
+          margin-left: $percentage;
+        }
+        &.lPull#{$i}{
+          right: $percentage;
+        }
+        &.lPush#{$i}{
+          left: $percentage
+        }
+        $i: $i+1;
+      }
+    }
+  }
+}

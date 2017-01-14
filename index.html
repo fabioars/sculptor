@@ -5,19 +5,54 @@
     <meta name="viewport" content="width=device-width,user-scalable=no">
     <title>Sculptor | The future web experience</title>
     <link rel="stylesheet" href="css/sculptor.min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rainbow/1.2.0/themes/blackboard.min.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .bigS{
+            font-size: 22vh;
+        }
+        .action{
+            height: 100%;
+        }
+        .nav{
+            position: fixed;
+            padding-top: 20px;
+            width: 100%;
+        }
+        .nav .logo{
+            font-size: 1.5em;
+        }
+    </style>
 </head>
 <body>
-<header class="screenHeight niceSundown aligner">
-    <div class="center textCenter textWhite">
-        <h1>Sculptor</h1>
-        <p>The future web experience</p>
-        <a href="#getting-started" class="button blur">Getting Started</a><br>
-        <small>v0.1.4</small><br>
-
+<header class="screenHeight niceSundown">
+    <nav class="nav hideOnSmall">
+        <div class="grid">
+            <div class="column s12 m3 textWhite">
+                <span class="logo">Sculptor</span>
+            </div>
+            <div class="column m9 textWhite textRight">
+                <a href="https://github.com/1fabiosoares/sculptor/releases" class="button blur"><i class="fa fa-download"></i> Download</a>
+            </div>
+        </div>
+    </nav>
+    <div class="aligner action">
+        <div class="center textCenter textWhite screenWidth">
+            <span class="bigS">S</span>
+            <p>The future web experience</p>
+            <div class="grid">
+                <div class="column s5 sOff1 m4 mOff2 l2 lOff4">
+                    <a href="#getting-started" class="button secondary solid">Get Started</a>
+                </div>
+                <div class="column s5 m4 l2">
+                    <a href="https://1fabiosoares.github.io/sculptor/" class="button blur"><i class="fa fa-github"></i> GitHub</a>
+                </div>
+            </div><br>
+            <code>npm install sculptorcss</code><br>
+            <small>v0.1.5</small><br>
+        </div>
     </div>
 </header>
+
 <section class="container" id="sculptor">
     <article>
         <h1><a id="about" class="anchor" href="#about" aria-hidden="true"></a>About</h1>
@@ -55,11 +90,13 @@
         </ul>
     </article>
 </section>
+
 <header class="screenHeight niceSunThree aligner" id="typography">
     <div class="center textCenter">
         <h1 class="textWhite">Typography</h1>
     </div>
 </header>
+
 <section class="container">
     <article>
         <h1>Heading</h1>
@@ -135,8 +172,161 @@
 </header>
 
 <section class="container">
-    <p>Our grid is not responsive <i>yet</i>. But the one we have is flexible.</p>
-    <p>As many child .column you add, they will fit in one row.</p>
+    <h2>Grid</h2>
+    <p>This is the old fashion way 12 columns grid. With this you can make yout app repesponsive.</p>
+
+    <h3>Metrics</h3>
+
+    <table class="table hideOnSmall">
+        <tr>
+            <th>&nbsp;</th>
+            <th align="left">
+                Small Devices
+                (< 600px)
+            </th>
+            <th>
+                Medium Devices
+                (> 601px)
+            </th>
+            <th>
+                Large Devices
+                (> 1201px)
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <strong>
+                    Container Width
+                </strong>
+            </td>
+            <td>
+                90%
+            </td>
+            <td>
+                85%
+            </td>
+            <td>
+                70%
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>
+                    Class prefix
+                </strong>
+            </td>
+            <td>
+                <code>.column.s#</code>
+            </td>
+            <td>
+                <code>.column.m#</code>
+            </td>
+            <td>
+                <code>.column.l#</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>
+                    Columns
+                </strong>
+            </td>
+            <td>
+                12
+            </td>
+            <td>
+                12
+            </td>
+            <td>
+                12
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>
+                    Offset
+                </strong>
+            </td>
+            <td>
+                <code>.sOff#</code>
+            </td>
+            <td>
+                <code>.mOff#</code>
+            </td>
+            <td>
+                <code>.lOff#</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>
+                    Push
+                </strong>
+            </td>
+            <td>
+                <code>.sPush#</code>
+            </td>
+            <td>
+                <code>.mPush#</code>
+            </td>
+            <td>
+                <code>.lPush#</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>
+                    Pull
+                </strong>
+            </td>
+            <td>
+                <code>.sPull#</code>
+            </td>
+            <td>
+                <code>.mPull#</code>
+            </td>
+            <td>
+                <code>.lPull#</code>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <div class="grid">
+        <div class="column s4">
+            <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.s4</div>
+        </div>
+        <div class="column s4">
+            <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.s4</div>
+        </div>
+        <div class="column s4">
+            <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.s4</div>
+        </div>
+    </div>
+    <br>
+    <div class="grid">
+        <div class="column s12 m4">
+            <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.s12.m4</div>
+        </div>
+        <div class="column s12 m4">
+            <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.s12.m4</div>
+        </div>
+        <div class="column s12 m4">
+            <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.s12.m4</div>
+        </div>
+    </div>
+    <pre data-language="html"><code>&lt;div class="grid"&gt;
+    &lt;div class="column s12 m4"&gt;
+        .s12.m4
+    &lt;/div&gt;
+    &lt;div class="column s12 m4"&gt;
+        .s12.m4
+    &lt;/div&gt;
+    &lt;div class="column s12 m4"&gt;
+        .s12.m4
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+    <h2>Flex Grid</h2>
     <div class="flexRow hideOnMediumAndDown">
         <div class="column">
             <div class="niceRose textCenter textWhite" style="padding: 10px; border-radius: 12px">.column</div>
@@ -569,6 +759,7 @@
         <h1 class="textWhite">Tables</h1>
     </div>
 </header>
+
 <section class="container">
     <h1>Tables</h1>
 
@@ -777,20 +968,18 @@
             git: {}
         },
         methods: {
-            getGitHubData: () =>{
+            getGitHubData: function() {
                 var xhttp = new XMLHttpRequest();
                 xhttp.onreadystatechange = function(res){
                     if(this.status == 200 && this.readyState == 4){
-                        let data = JSON.parse(this.responseText);
+                        var data = JSON.parse(this.responseText);
                         app.git = data;
                         app.sha = data.sha;
                         app.url = data.html_url;
                         app.date = data.commit.author.date;
-                        console.log(data.commit.author.date);
-
                     }
-                }
-                xhttp.open('get', 'https://api.github.com/repos/1fabiosoares/sculptor/commits/master')
+                };
+                xhttp.open('get', 'https://api.github.com/repos/1fabiosoares/sculptor/commits/master');
                 xhttp.send();
             }
         }
