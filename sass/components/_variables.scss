@@ -66,6 +66,11 @@ $mediumOnly    : "only screen and (min-width : #{$smallScreenUp}) and (max-width
 
 $columnPadding: 5px;
 
+$columnNumber: 12 !default;
+$spaceBetween: 1.5em !default;
+$spaceTop: $spaceBetween/3 !default;
+$spaceBottom: ($spaceBetween*2)/3 !default;
+
 // ==============================================
 //            Transition
 // ==============================================
