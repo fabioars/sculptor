@@ -1,0 +1,93 @@
+section.navbar,
+div.navbar,
+nav.navbar {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  white-space: nowrap;
+  background: $primaryColor;
+  & a{
+    display: inline-block;
+    color: $white;
+    text-align: center;
+    padding: $buttonPadding;
+    margin: 0;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: $transitionTime;
+    font-weight: $fontLight;
+    &.logo{
+      font-size: $h3Size;
+      padding: $buttonPadding/1.5 $buttonPadding $buttonPadding;
+      font-weight: $fontFit;
+    }
+    &:hover{
+      background: darken($niceWhiteTransparent, 25%);
+    }
+    &:active{
+      background: darken($niceWhiteTransparent, 50%);
+    }
+  }
+}
+
+ul.navbar{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: $primaryColor;
+  
+  & li{
+    float: left;
+
+    & a{
+      display: inline-block;
+      color: $white;
+      text-align: center;
+      padding: $buttonPadding;
+      text-decoration: none;
+      transition-property: background-color;
+      transition-duration: $transitionTime;
+      font-weight: $fontLight;
+      &.logo{
+        font-size: $h3Size;
+        padding: $buttonPadding/1.5 $buttonPadding $buttonPadding;
+        font-weight: $fontFit;
+      }
+      &:hover{
+        background: darken($niceWhiteTransparent, 25%);
+      }
+      &:active{
+        background: darken($niceWhiteTransparent, 50%);
+      }
+    }
+  }
+}
+
+.navbar.fixed{
+  position: fixed;
+}
+
+section.navbar,
+div.navbar,
+nav.navbar{
+  &.primary{
+    background-color: $primaryColor;
+  }
+  &.secondary{
+    background-color: $secondaryColor;
+  }
+  &.blur{
+    background: $niceWhiteTransparent;
+  }
+  &.danger{
+    background-color: $niceRed;
+  }
+  &.success{
+    background-color: $niceGreen;
+  }
+  &.warning{
+    background-color: $niceYellow;
+  }
+}

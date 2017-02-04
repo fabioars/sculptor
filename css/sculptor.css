@@ -1,5 +1,5 @@
 /*!
- * Sculptor v0.1.5
+ * Sculptor v0.1.6
  * https://github.com/1fabiosoares/sculptor
  *
  * Copyright (c) 2017 Fabio Soares
@@ -408,64 +408,64 @@ template {
   outline: none; }
 
 .niceMarry {
-  background: -webkit-linear-gradient(135deg, #30499B, #844D9E);
-  background: -moz-linear-gradient(135deg, #30499B, #844D9E);
-  background: -o-linear-gradient(135deg, #30499B, #844D9E);
-  background: linear-gradient(135deg, #30499B, #844D9E); }
+  background: -webkit-linear-gradient(135deg, #30499B, #844D9E) !important;
+  background: -moz-linear-gradient(135deg, #30499B, #844D9E) !important;
+  background: -o-linear-gradient(135deg, #30499B, #844D9E) !important;
+  background: linear-gradient(135deg, #30499B, #844D9E) !important; }
 
 .niceMarryDark {
-  background: -webkit-linear-gradient(135deg, #121b3a, #6C2BD6);
-  background: -moz-linear-gradient(135deg, #121b3a, #6C2BD6);
-  background: -o-linear-gradient(135deg, #121b3a, #6C2BD6);
-  background: linear-gradient(135deg, #121b3a, #6C2BD6); }
+  background: -webkit-linear-gradient(135deg, #121b3a, #6C2BD6) !important;
+  background: -moz-linear-gradient(135deg, #121b3a, #6C2BD6) !important;
+  background: -o-linear-gradient(135deg, #121b3a, #6C2BD6) !important;
+  background: linear-gradient(135deg, #121b3a, #6C2BD6) !important; }
 
 .niceSunThree {
-  background: -webkit-linear-gradient(135deg, #56B949, #FFB98D);
-  background: -moz-linear-gradient(135deg, #56B949, #FFB98D);
-  background: -o-linear-gradient(135deg, #56B949, #FFB98D);
-  background: linear-gradient(135deg, #56B949, #FFB98D); }
+  background: -webkit-linear-gradient(135deg, #56B949, #FFB98D) !important;
+  background: -moz-linear-gradient(135deg, #56B949, #FFB98D) !important;
+  background: -o-linear-gradient(135deg, #56B949, #FFB98D) !important;
+  background: linear-gradient(135deg, #56B949, #FFB98D) !important; }
 
 .niceCoral {
-  background: -webkit-linear-gradient(135deg, #56B949, #30499B);
-  background: -moz-linear-gradient(135deg, #56B949, #30499B);
-  background: -o-linear-gradient(135deg, #56B949, #30499B);
-  background: linear-gradient(135deg, #56B949, #30499B); }
+  background: -webkit-linear-gradient(135deg, #56B949, #30499B) !important;
+  background: -moz-linear-gradient(135deg, #56B949, #30499B) !important;
+  background: -o-linear-gradient(135deg, #56B949, #30499B) !important;
+  background: linear-gradient(135deg, #56B949, #30499B) !important; }
 
 .niceBluePeach {
-  background: -webkit-linear-gradient(135deg, #30499B, #FFB98D);
-  background: -moz-linear-gradient(135deg, #30499B, #FFB98D);
-  background: -o-linear-gradient(135deg, #30499B, #FFB98D);
-  background: linear-gradient(135deg, #30499B, #FFB98D); }
+  background: -webkit-linear-gradient(135deg, #30499B, #FFB98D) !important;
+  background: -moz-linear-gradient(135deg, #30499B, #FFB98D) !important;
+  background: -o-linear-gradient(135deg, #30499B, #FFB98D) !important;
+  background: linear-gradient(135deg, #30499B, #FFB98D) !important; }
 
 .niceBluePeachDark {
-  background: -webkit-linear-gradient(135deg, #121b3a, #FFB98D);
-  background: -moz-linear-gradient(135deg, #121b3a, #FFB98D);
-  background: -o-linear-gradient(135deg, #121b3a, #FFB98D);
-  background: linear-gradient(135deg, #121b3a, #FFB98D); }
+  background: -webkit-linear-gradient(135deg, #121b3a, #FFB98D) !important;
+  background: -moz-linear-gradient(135deg, #121b3a, #FFB98D) !important;
+  background: -o-linear-gradient(135deg, #121b3a, #FFB98D) !important;
+  background: linear-gradient(135deg, #121b3a, #FFB98D) !important; }
 
 .niceSundown {
-  background: -webkit-linear-gradient(135deg, #30499B, #EE4035);
-  background: -moz-linear-gradient(135deg, #30499B, #EE4035);
-  background: -o-linear-gradient(135deg, #30499B, #EE4035);
-  background: linear-gradient(135deg, #30499B, #EE4035); }
+  background: -webkit-linear-gradient(135deg, #30499B, #EE4035) !important;
+  background: -moz-linear-gradient(135deg, #30499B, #EE4035) !important;
+  background: -o-linear-gradient(135deg, #30499B, #EE4035) !important;
+  background: linear-gradient(135deg, #30499B, #EE4035) !important; }
 
 .niceRose {
-  background: -webkit-linear-gradient(135deg, #EE4035, #f8afab);
-  background: -moz-linear-gradient(135deg, #EE4035, #f8afab);
-  background: -o-linear-gradient(135deg, #EE4035, #f8afab);
-  background: linear-gradient(135deg, #EE4035, #f8afab); }
+  background: -webkit-linear-gradient(135deg, #EE4035, #f8afab) !important;
+  background: -moz-linear-gradient(135deg, #EE4035, #f8afab) !important;
+  background: -o-linear-gradient(135deg, #EE4035, #f8afab) !important;
+  background: linear-gradient(135deg, #EE4035, #f8afab) !important; }
 
 .niceRealPeach {
-  background: -webkit-linear-gradient(135deg, #EE4035, #FFB98D);
-  background: -moz-linear-gradient(135deg, #EE4035, #FFB98D);
-  background: -o-linear-gradient(135deg, #EE4035, #FFB98D);
-  background: linear-gradient(135deg, #EE4035, #FFB98D); }
+  background: -webkit-linear-gradient(135deg, #EE4035, #FFB98D) !important;
+  background: -moz-linear-gradient(135deg, #EE4035, #FFB98D) !important;
+  background: -o-linear-gradient(135deg, #EE4035, #FFB98D) !important;
+  background: linear-gradient(135deg, #EE4035, #FFB98D) !important; }
 
 .niceBlue {
-  background: -webkit-linear-gradient(135deg, #30499B, #121b3a);
-  background: -moz-linear-gradient(135deg, #30499B, #121b3a);
-  background: -o-linear-gradient(135deg, #30499B, #121b3a);
-  background: linear-gradient(135deg, #30499B, #121b3a); }
+  background: -webkit-linear-gradient(135deg, #30499B, #121b3a) !important;
+  background: -moz-linear-gradient(135deg, #30499B, #121b3a) !important;
+  background: -o-linear-gradient(135deg, #30499B, #121b3a) !important;
+  background: linear-gradient(135deg, #30499B, #121b3a) !important; }
 
 /**
   * Variables
@@ -1133,10 +1133,10 @@ a {
     padding: 10px; }
 
 pre {
-  background: -webkit-linear-gradient(135deg, #f4f5f6, white);
-  background: -moz-linear-gradient(135deg, #f4f5f6, white);
-  background: -o-linear-gradient(135deg, #f4f5f6, white);
-  background: linear-gradient(135deg, #f4f5f6, white);
+  background: -webkit-linear-gradient(135deg, #f4f5f6, white) !important;
+  background: -moz-linear-gradient(135deg, #f4f5f6, white) !important;
+  background: -o-linear-gradient(135deg, #f4f5f6, white) !important;
+  background: linear-gradient(135deg, #f4f5f6, white) !important;
   font-weight: 200;
   overflow: auto;
   padding: 10px;
@@ -1219,5 +1219,95 @@ video.responsive {
     background-color: #EEEEEE; }
   .table.responsive {
     overflow: auto; }
+
+section.navbar,
+div.navbar,
+nav.navbar {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  white-space: nowrap;
+  background: #30499B; }
+  section.navbar a,
+  div.navbar a,
+  nav.navbar a {
+    display: inline-block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 300ms;
+    font-weight: 200; }
+    section.navbar a.logo,
+    div.navbar a.logo,
+    nav.navbar a.logo {
+      font-size: 1.2em;
+      padding: 6.66667px 10px 10px;
+      font-weight: 400; }
+    section.navbar a:hover,
+    div.navbar a:hover,
+    nav.navbar a:hover {
+      background: rgba(174, 174, 174, 0.2); }
+    section.navbar a:active,
+    div.navbar a:active,
+    nav.navbar a:active {
+      background: rgba(111, 111, 111, 0.2); }
+
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #30499B; }
+  ul.navbar li {
+    float: left; }
+    ul.navbar li a {
+      display: inline-block;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      transition-property: background-color;
+      transition-duration: 300ms;
+      font-weight: 200; }
+      ul.navbar li a.logo {
+        font-size: 1.2em;
+        padding: 6.66667px 10px 10px;
+        font-weight: 400; }
+      ul.navbar li a:hover {
+        background: rgba(174, 174, 174, 0.2); }
+      ul.navbar li a:active {
+        background: rgba(111, 111, 111, 0.2); }
+
+.navbar.fixed {
+  position: fixed; }
+
+section.navbar.primary,
+div.navbar.primary,
+nav.navbar.primary {
+  background-color: #30499B; }
+section.navbar.secondary,
+div.navbar.secondary,
+nav.navbar.secondary {
+  background-color: #c47c0e; }
+section.navbar.blur,
+div.navbar.blur,
+nav.navbar.blur {
+  background: rgba(238, 238, 238, 0.2); }
+section.navbar.danger,
+div.navbar.danger,
+nav.navbar.danger {
+  background-color: #EE4035; }
+section.navbar.success,
+div.navbar.success,
+nav.navbar.success {
+  background-color: #56B949; }
+section.navbar.warning,
+div.navbar.warning,
+nav.navbar.warning {
+  background-color: #F0A32F; }
 
 /*# sourceMappingURL=sculptor.css.map */

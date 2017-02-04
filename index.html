@@ -13,26 +13,23 @@
         .action{
             height: 100%;
         }
-        .nav{
-            position: fixed;
-            padding-top: 20px;
-            width: 100%;
-        }
-        .nav .logo{
-            font-size: 1.5em;
+        .footer{
+            padding: 20px;
         }
     </style>
 </head>
 <body>
 <header class="screenHeight niceSundown">
-    <nav class="nav hideOnSmall">
-        <div class="grid">
-            <div class="column s12 m3 textWhite">
-                <span class="logo">Sculptor</span>
-            </div>
-            <div class="column m9 textWhite textRight">
-                <a href="https://github.com/1fabiosoares/sculptor/releases" class="button blur"><i class="fa fa-download"></i> Download</a>
-            </div>
+    <nav class="nav">
+        <div class="navbar fixed">
+            <a href="#" class="logo">Sculptor</a>
+            <a href="#sculptor">About</a>
+            <a href="#typography">Typography</a>
+            <a href="#grid">Grid</a>
+            <a href="#formsandbuttons">Forms and buttons</a>
+            <a href="#navbar">Navbar</a>
+            <a href="#cards">Cards</a>
+            <a href="#tables">Tables</a>
         </div>
     </nav>
     <div class="aligner action">
@@ -48,7 +45,7 @@
                 </div>
             </div><br>
             <code>npm install sculptorcss</code><br>
-            <small>v0.1.5</small><br>
+            <small>v0.1.6</small><br>
         </div>
     </div>
 </header>
@@ -68,8 +65,6 @@
         <a class="button" href="https://plus.google.com/share?url=https://github.com/1fabiosoares/sculptor"><i class="fa fa-google-plus"></i> Google+</a>
         <a class="button" href="https://www.linkedin.com/shareArticle?url=https://github.com/1fabiosoares/sculptor&amp;title=Sculptor%20-%20The%20future%20web%20experience"><i class="fa fa-linkedin"></i> LinkedIn</a>
 
-        <h1>Github</h1>
-        Last commit: <a :href="url" v-text="sha"></a> <span v-text="date"></span>
         <h1 id="getting-started">Getting Started</h1>
         <p><a href="https://github.com/1fabiosoares/sculptor/releases">Download</a> on Github Releases or
         use <a href="https://unpkg.com/sculptorcss/css/sculptor.min.css">CDN</a></p>
@@ -608,6 +603,101 @@
 
 </section>
 
+<header class="screenHeight niceBlue aligner" id="navbar">
+    <div class="center textCenter">
+        <h1 class="textWhite">Navbar</h1>
+    </div>
+</header>
+<section class="container">
+    <h2>Simple navbar - List Based</h2>
+
+    <ul class="navbar">
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+        <li><a href="#">Item 4</a></li>
+    </ul>
+
+    <pre><code data-language="html">&lt;ul class="navbar"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Item 4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul></code></pre>
+    <h2>Simple navbar - WithLogo</h2>
+
+    <ul class="navbar">
+        <li><a href="#" class="logo">Logo</a></li>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+        <li><a href="#">Item 4</a></li>
+    </ul>
+
+    <pre><code data-language="html">&lt;ul class="navbar"&gt;
+    &lt;li&gt;&lt;a href="#" class="logo"&gt;Logo&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Item 4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul></code></pre>
+
+    <h2>Responsive navbar - Div based</h2>
+    <p>You can use responsive navbar with
+        <code>&lt;nav></code>,
+        <code>&lt;div></code> or
+        <code>&lt;section></code></p>
+    <div class="navbar">
+        <a href="#" class="logo">Logo</a>
+        <a href="#">Item 1</a>
+        <a href="#">Item 2</a>
+        <a href="#">Item 3</a>
+        <a href="#">Item 4</a>
+    </div>
+
+    <pre><code data-language="html">&lt;div class="navbar"&gt;
+    &lt;a href="#" class="logo"&gt;Logo&lt;/a&gt;
+    &lt;a href="#"&gt;Item 1&lt;/a&gt;
+    &lt;a href="#"&gt;Item 2&lt;/a&gt;
+    &lt;a href="#"&gt;Item 3&lt;/a&gt;
+    &lt;a href="#"&gt;Item 4&lt;/a&gt;
+&lt;/div></code></pre>
+
+
+    <h2>Fixed</h2>
+    <pre><code data-language="html">&lt;div class="navbar fixed"&gt;
+    &lt;a href="#" class="logo"&gt;Logo&lt;/a&gt;
+    &lt;a href="#"&gt;Item 1&lt;/a&gt;
+    &lt;a href="#"&gt;Item 2&lt;/a&gt;
+    &lt;a href="#"&gt;Item 3&lt;/a&gt;
+    &lt;a href="#"&gt;Item 4&lt;/a&gt;
+&lt;/div></code></pre>
+    <h2>With Nice backgrounds</h2>
+    <p>The background <strong>Blur</strong> is also available here</p>
+    <div class="navbar niceBluePeach">
+        <a href="#" class="logo">Logo</a>
+        <a href="#">Item 1</a>
+        <a href="#">Item 2</a>
+        <a href="#">Item 3</a>
+        <a href="#">Item 4</a>
+    </div>
+    <pre><code data-language="html">&lt;div class="navbar niceBluePeach"&gt;
+    &lt;a href="#" class="logo"&gt;Logo&lt;/a&gt;
+    &lt;a href="#"&gt;Item 1&lt;/a&gt;
+    &lt;a href="#"&gt;Item 2&lt;/a&gt;
+    &lt;a href="#"&gt;Item 3&lt;/a&gt;
+    &lt;a href="#"&gt;Item 4&lt;/a&gt;
+&lt;/div></code></pre>
+    <pre><code data-language="html">&lt;div class="navbar blur"&gt;
+    &lt;a href="#" class="logo"&gt;Logo&lt;/a&gt;
+    &lt;a href="#"&gt;Item 1&lt;/a&gt;
+    &lt;a href="#"&gt;Item 2&lt;/a&gt;
+    &lt;a href="#"&gt;Item 3&lt;/a&gt;
+    &lt;a href="#"&gt;Item 4&lt;/a&gt;
+&lt;/div></code></pre>
+
+</section>
+
 <header class="screenHeight niceMarry aligner" id="cards">
     <div class="center textCenter">
         <h1 class="textWhite">Cards</h1>
@@ -944,7 +1034,7 @@
 </section>
 
 
-<footer class="niceMarryDark textWhite">
+<footer class="niceMarryDark footer textWhite">
     <div class="container textCenter">
         <p>2017. Made for the universe under <a href="#" target="_blank">GPL-3.0</a> Licence.</p>
 
@@ -956,35 +1046,5 @@
         </a>
     </div>
 </footer>
-<!-- https://api.github.com/repos/1fabiosoares/sculptor/commits/master -->
-<script src="https://unpkg.com/vue/dist/vue.min.js"></script>
-<script type="text/javascript">
-    var app = new Vue({
-        el: "#sculptor",
-        data: {
-            sha: "",
-            url: "",
-            date: "",
-            git: {}
-        },
-        methods: {
-            getGitHubData: function() {
-                var xhttp = new XMLHttpRequest();
-                xhttp.onreadystatechange = function(res){
-                    if(this.status == 200 && this.readyState == 4){
-                        var data = JSON.parse(this.responseText);
-                        app.git = data;
-                        app.sha = data.sha;
-                        app.url = data.html_url;
-                        app.date = data.commit.author.date;
-                    }
-                };
-                xhttp.open('get', 'https://api.github.com/repos/1fabiosoares/sculptor/commits/master');
-                xhttp.send();
-            }
-        }
-    });
-    app.getGitHubData();
-</script>
 </body>
 </html>
