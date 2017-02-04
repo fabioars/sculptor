@@ -1,9 +1,9 @@
 @mixin niceBackground($fistColor, $lastColor){
   $niceBackgroundAngle: 135deg;
-  background: -webkit-linear-gradient($niceBackgroundAngle, $fistColor, $lastColor);
-  background: -moz-linear-gradient($niceBackgroundAngle, $fistColor, $lastColor);
-  background: -o-linear-gradient($niceBackgroundAngle, $fistColor, $lastColor);
-  background: linear-gradient($niceBackgroundAngle, $fistColor, $lastColor);
+  background: -webkit-linear-gradient($niceBackgroundAngle, $fistColor, $lastColor) !important;
+  background: -moz-linear-gradient($niceBackgroundAngle, $fistColor, $lastColor) !important;
+  background: -o-linear-gradient($niceBackgroundAngle, $fistColor, $lastColor) !important;
+  background: linear-gradient($niceBackgroundAngle, $fistColor, $lastColor) !important;
 }
 @mixin niceTransition($properties...){
   transition-property: $properties;
