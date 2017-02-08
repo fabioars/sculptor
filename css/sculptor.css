@@ -1,5 +1,5 @@
 /*!
- * Sculptor v0.1.6
+ * Sculptor v0.1.7
  * https://github.com/1fabiosoares/sculptor
  *
  * Copyright (c) 2017 Fabio Soares
@@ -978,6 +978,10 @@ a {
     background: #30499B; }
   .button:active {
     background: #1e2d61; }
+  .button:focus {
+    -webkit-box-shadow: 0px 0px 6px #30499B;
+    -moz-box-shadow: 0px 0px 6px #30499B;
+    box-shadow: 0px 0px 6px #30499B; }
   .button.solid {
     background-color: #30499B;
     color: #FFFFFF; }
@@ -994,6 +998,10 @@ a {
       background: #30499B; }
     .button.primary:active {
       background: #1e2d61; }
+    .button.primary:focus {
+      -webkit-box-shadow: 0px 0px 6px #30499B;
+      -moz-box-shadow: 0px 0px 6px #30499B;
+      box-shadow: 0px 0px 6px #30499B; }
     .button.primary.solid {
       background-color: #30499B;
       color: #FFFFFF; }
@@ -1010,6 +1018,10 @@ a {
       background: #c47c0e; }
     .button.secondary:active {
       background: #7d4f09; }
+    .button.secondary:focus {
+      -webkit-box-shadow: 0px 0px 6px #c47c0e;
+      -moz-box-shadow: 0px 0px 6px #c47c0e;
+      box-shadow: 0px 0px 6px #c47c0e; }
     .button.secondary.solid {
       background-color: #c47c0e;
       color: #FFFFFF; }
@@ -1026,6 +1038,10 @@ a {
       background: #EE4035; }
     .button.danger:active {
       background: #c61b11; }
+    .button.danger:focus {
+      -webkit-box-shadow: 0px 0px 6px #EE4035;
+      -moz-box-shadow: 0px 0px 6px #EE4035;
+      box-shadow: 0px 0px 6px #EE4035; }
     .button.danger.solid {
       background-color: #EE4035;
       color: #FFFFFF; }
@@ -1042,6 +1058,10 @@ a {
       background: #F0A32F; }
     .button.warning:active {
       background: #c47c0e; }
+    .button.warning:focus {
+      -webkit-box-shadow: 0px 0px 6px #F0A32F;
+      -moz-box-shadow: 0px 0px 6px #F0A32F;
+      box-shadow: 0px 0px 6px #F0A32F; }
     .button.warning.solid {
       background-color: #F0A32F;
       color: #FFFFFF; }
@@ -1058,6 +1078,10 @@ a {
       background: #56B949; }
     .button.success:active {
       background: #3c8332; }
+    .button.success:focus {
+      -webkit-box-shadow: 0px 0px 6px #56B949;
+      -moz-box-shadow: 0px 0px 6px #56B949;
+      box-shadow: 0px 0px 6px #56B949; }
     .button.success.solid {
       background-color: #56B949;
       color: #FFFFFF; }
@@ -1075,6 +1099,10 @@ a {
       background: rgba(174, 174, 174, 0.2); }
     .button.blur:active {
       background: rgba(111, 111, 111, 0.2); }
+    .button.blur:focus {
+      -webkit-box-shadow: 0px 0px 6px rgba(238, 238, 238, 0.2);
+      -moz-box-shadow: 0px 0px 6px rgba(238, 238, 238, 0.2);
+      box-shadow: 0px 0px 6px rgba(238, 238, 238, 0.2); }
   .button.small {
     padding: 5px 10px; }
   .button.large {
@@ -1141,9 +1169,8 @@ pre {
   overflow: auto;
   padding: 10px;
   border-left: 4px solid #30499B; }
-
-footer {
-  padding-bottom: 40px; }
+  pre code {
+    font-family: monospace; }
 
 .textWhite {
   color: #EEEEEE; }
@@ -1199,6 +1226,18 @@ video.responsive {
     align-self: flex-start; }
   .aligner .bottom {
     align-self: flex-end; }
+
+.radiusNone {
+  border-radius: 2px; }
+
+.radiusLight {
+  border-radius: 8px; }
+
+.radiusFit {
+  border-radius: 12px; }
+
+.radiusFat {
+  border-radius: 52px; }
 
 .table {
   width: 100%;

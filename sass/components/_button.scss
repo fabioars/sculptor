@@ -39,6 +39,9 @@ a {
   &:active{
     background: darken($primaryColor, 15%);
   }
+  &:focus{
+    @include niceBoxshadow($shadowInset, $shadowHoff, $shadowBlur,$primaryColor);
+  }
   &.solid{
     background-color: $primaryColor;
     color: $white;
@@ -64,7 +67,9 @@ a {
     &:active{
       background: darken($primaryColor, 15%);
     }
-
+    &:focus{
+      @include niceBoxshadow($shadowInset, $shadowHoff, $shadowBlur,$primaryColor);
+    }
     &.solid{
       background-color: $primaryColor;
       color: $white;
@@ -89,6 +94,9 @@ a {
     }
     &:active{
       background: darken($secondaryColor, 15%);
+    }
+    &:focus{
+      @include niceBoxshadow($shadowInset, $shadowHoff, $shadowBlur,$secondaryColor);
     }
     &.solid{
       background-color: $secondaryColor;
@@ -115,6 +123,9 @@ a {
     &:active{
       background: darken($niceRed, 15%);
     }
+    &:focus{
+      @include niceBoxshadow($shadowInset, $shadowHoff, $shadowBlur,$niceRed);
+    }
     &.solid{
       background-color: $niceRed;
       color: $white;
@@ -140,6 +151,9 @@ a {
     &:active{
       background: darken($niceYellow, 15%);
     }
+    &:focus{
+      @include niceBoxshadow($shadowInset, $shadowHoff, $shadowBlur, $niceYellow);
+    }
     &.solid{
       background-color: $niceYellow;
       color: $white;
@@ -164,6 +178,9 @@ a {
     }
     &:active{
       background: darken($niceGreen, 15%);
+    }
+    &:focus{
+      @include niceBoxshadow($shadowInset, $shadowHoff, $shadowBlur, $niceGreen);
     }
     &.solid{
       background-color: $niceGreen;
@@ -192,6 +209,9 @@ a {
     &:active{
       background: darken($niceWhiteTransparent, 50%);
     }
+    &:focus{
+      @include niceBoxshadow($shadowInset, $shadowHoff, $shadowBlur, $niceWhiteTransparent);
+    }
   }
 
 // ==============================================
@@ -209,5 +229,3 @@ a {
     box-sizing: border-box;
   }
 }
-
-
