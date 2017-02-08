@@ -21,7 +21,7 @@
 <body>
 <header class="screenHeight niceSundown">
     <nav class="nav">
-        <div class="navbar fixed">
+        <div class="navbar blur fixed">
             <a href="#" class="logo">Sculptor</a>
             <a href="#sculptor">About</a>
             <a href="#typography">Typography</a>
@@ -447,6 +447,16 @@
     <h2>Input</h2>
     <input type="text" class="formControl" placeholder="Write your name here">
     <pre><code data-language="html">&lt;input type="text" class="formControl" placeholder="Write your name here"&gt;</code></pre>
+    <h2>Input with border radius modifiers</h2>
+    <input type="text" class="formControl radiusNone" placeholder=".radiusNone">
+    <input type="text" class="formControl radiusLight" placeholder=".radiusLight">
+    <input type="text" class="formControl radiusFit" placeholder=".radiusFit">
+    <input type="text" class="formControl radiusFat" placeholder=".radiusFat">
+    <pre><code data-language="html">&lt;input type="text" class="formControl radiusNone" placeholder=".radiusNone"&gt;
+&lt;input type="text" class="formControl radiusNone" placeholder=".radiusNone"&gt;
+&lt;input type="text" class="formControl radiusLight" placeholder=".radiusLight"&gt;
+&lt;input type="text" class="formControl radiusFit" placeholder=".radiusFit"&gt;
+&lt;input type="text" class="formControl radiusFat" placeholder=".radiusFat"&gt;</code></pre>
     <h2>Input + Grids</h2>
     <div class="flexRow">
         <div class="column">
@@ -601,6 +611,22 @@
 &lt;button class="button solid primary small"&gt;Button&lt;/button&gt;
 &lt;button class="button solid primary block"&gt;Button&lt;/button&gt;</code></pre>
 
+    <h2>Button with border radius modifiers</h2>
+    <div class="flexRow">
+        <div class="column textCenter">
+            <button class="button radiusNone primary">.button.radiusNone.primary</button>
+        </div>
+        <div class="column textCenter">
+            <button class="button radiusLight danger">.button.radiusLight.danger</button>
+        </div>
+        <div class="column textCenter">
+            <button class="button radiusFit success">.button.radiusFit.success</button>
+        </div>
+    </div>
+    <pre><code data-language="html">&lt;button class="button radiusNone primary"&gt;Button&lt;/button&gt;
+&lt;button class="button radiusLight danger"&gt;Button&lt;/button&gt;
+&lt;button class="button radiusFit warning"&gt;Button&lt;/button&gt;
+&lt;button class="button radiusFat blur"&gt;Button&lt;/button&gt;</code></pre>
 </section>
 
 <header class="screenHeight niceBlue aligner" id="navbar">
