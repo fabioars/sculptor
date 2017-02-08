@@ -103,4 +103,19 @@ video.responsive{
   }
 }
 
+// ==============================================
+//              Modifies
+// ==============================================
 
+.radiusNone{
+  border-radius: $radiusNone;
+}
+.radiusLight{
+  border-radius: $radiusLight;
+}
+.radiusFit{
+  border-radius: $radiusFit;
+}
+.radiusFat{
+  border-radius: $radiusFat;
+}
