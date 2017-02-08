@@ -5,7 +5,14 @@
   background: -o-linear-gradient($niceBackgroundAngle, $fistColor, $lastColor) !important;
   background: linear-gradient($niceBackgroundAngle, $fistColor, $lastColor) !important;
 }
+
 @mixin niceTransition($properties...){
   transition-property: $properties;
   transition-duration: $transitionTime;
+}
+
+@mixin niceBoxshadow($inset, $hoff, $blur, $color){
+  -webkit-box-shadow: $inset $hoff $blur $color;
+  -moz-box-shadow: $inset $hoff $blur $color;
+  box-shadow: $inset $hoff $blur $color;
 }

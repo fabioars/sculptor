@@ -4,7 +4,8 @@ pre{
   overflow: auto;
   padding: $buttonPadding;
   border-left: 4px solid $primaryColor;
-}
-footer{
-  padding-bottom: $buttonPadding*4;
+
+  & code{
+    font-family: monospace;
+  }
 }

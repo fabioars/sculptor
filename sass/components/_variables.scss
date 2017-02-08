@@ -81,11 +81,19 @@ $transitionTime: 300ms;
 //            Radius
 // ==============================================
 
+$radiusNone : 2px;
 $radiusLight: 8px;
-$radiusFit: 12px;
-$radiusFat: 52px;
+$radiusFit  : 12px;
+$radiusFat  : 52px;
 
 // ==============================================
 //            Button
 // ==============================================
 $buttonPadding: 10px;
+
+// ==============================================
+//            Shadow
+// ==============================================
+$shadowInset: 0px;
+$shadowHoff: 0px;
+$shadowBlur: 6px;
