@@ -1349,4 +1349,20 @@ div.navbar.warning,
 nav.navbar.warning {
   background-color: #F0A32F; }
 
+.listView {
+  display: block;
+  width: 100%; }
+  .listView > .item {
+    display: block;
+    width: 100%;
+    color: #222222;
+    border-top: 1px solid #EEEEEE;
+    padding: 10px 20px;
+    box-sizing: border-box; }
+    .listView > .item:active {
+      background: #e1e1e1; }
+    @media only screen and (min-width: 993px) {
+      .listView > .item:hover {
+        background: #EEEEEE; } }
+
 /*# sourceMappingURL=sculptor.css.map */
