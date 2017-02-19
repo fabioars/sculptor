@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <title>Forms and Buttons | Sculptor</title>
+    <link rel="stylesheet" href="css/sculptor.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style> .footer{ padding: 20px;} </style>
+</head>
+<body>
+<nav class="navbar blur fixed">
+    <a href="index.html" class="logo">Sculptor</a>
+    <a href="about.html">About</a>
+    <a href="typography.html">Typography</a>
+    <a href="grid.html">Grid</a>
+    <a href="formsandbuttons.html">Forms and buttons</a>
+    <a href="navbar.html">Navbar</a>
+    <a href="cards.html">Cards</a>
+    <a href="tables.html">Tables</a>
+</nav>
+
+<header class="screenHeight niceCoral aligner" id="formsandbuttons">
+    <div class="center textCenter">
+        <h1 class="textWhite">Forms and Buttons</h1>
+    </div>
+</header>
+
+<section class="container">
+    <h2>Input</h2>
+    <input type="text" class="formControl" placeholder="Write your name here">
+    <pre><code data-language="html">&lt;input type="text" class="formControl" placeholder="Write your name here"&gt;</code></pre>
+    <h2>Input with border radius modifiers</h2>
+    <input type="text" class="formControl radiusNone" placeholder=".radiusNone">
+    <input type="text" class="formControl radiusLight" placeholder=".radiusLight">
+    <input type="text" class="formControl radiusFit" placeholder=".radiusFit">
+    <input type="text" class="formControl radiusFat" placeholder=".radiusFat">
+    <pre><code data-language="html">&lt;input type="text" class="formControl radiusNone" placeholder=".radiusNone"&gt;
+&lt;input type="text" class="formControl radiusNone" placeholder=".radiusNone"&gt;
+&lt;input type="text" class="formControl radiusLight" placeholder=".radiusLight"&gt;
+&lt;input type="text" class="formControl radiusFit" placeholder=".radiusFit"&gt;
+&lt;input type="text" class="formControl radiusFat" placeholder=".radiusFat"&gt;</code></pre>
+    <h2>Input + Grids</h2>
+    <div class="flexRow">
+        <div class="column">
+            <input type="text" class="formControl" placeholder=".column">
+        </div>
+        <div class="column">
+            <input type="text" class="formControl" placeholder=".column">
+        </div>
+    </div>
+    <div class="flexRow">
+        <div class="column">
+            <input type="text" class="formControl" placeholder=".column">
+        </div>
+        <div class="column">
+            <input type="text" class="formControl" placeholder=".column">
+        </div>
+        <div class="column">
+            <input type="text" class="formControl" placeholder=".column">
+        </div>
+    </div>
+    <div class="flexRow">
+        <div class="column">
+            <input type="text" class="formControl" placeholder=".column">
+        </div>
+        <div class="column">
+            <input type="text" class="formControl" placeholder=".column">
+        </div>
+        <div class="column">
+            <input type="text" class="formControl" placeholder=".column">
+        </div>
+        <div class="column">
+            <input type="text" class="formControl" placeholder=".column">
+        </div>
+    </div>
+    <div class="flexRow hideOnMediumAndDown">
+        <div class="column">
+            <input type="text" class="formControl" placeholder=".column">
+        </div>
+        <div class="column">
+            <input type="text" class="formControl" placeholder=".column">
+        </div>
+        <div class="column">
+            <input type="text" class="formControl" placeholder=".column">
+        </div>
+        <div class="column">
+            <input type="text" class="formControl" placeholder=".column">
+        </div>
+        <div class="column">
+            <input type="text" class="formControl" placeholder=".column">
+        </div>
+    </div>
+    <h2>Text Area</h2>
+    <textarea rows="3" class="formControl" placeholder="Write your message here"></textarea>
+    <pre><code data-language="html">&lt;textarea rows="3" class="formControl" placeholder="Write your message here"&gt;&lt;/textarea&gt;</code></pre>
+    <h2>Select</h2>
+    <select class="formControl">
+        <option value="1">Option 1</option>
+        <option value="2" disabled>Option 2</option>
+        <option value="3">Option 3</option>
+    </select>
+    <pre><code data-language="html">&lt;select class="formControl"&gt;
+    &lt;option value="1"&gt;Option 1&lt;/option&gt;
+    &lt;option value="2" disabled&gt;Option 2&lt;/option&gt;
+    &lt;option value="3"&gt;Option 3&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+
+    <h2>Disabled</h2>
+    <input type="text" class="formControl" placeholder="Disabled" disabled>
+    <pre><code data-language="html">&lt;input type="text" class="formControl" placeholder="Disabled" disabled&gt;</code></pre>
+    <h2>Buttons</h2>
+    <div class="flexRow">
+        <div class="column textCenter">
+            <button class="button primary">.button.primary</button>
+        </div>
+        <div class="column textCenter">
+            <button class="button secondary">.button.secondary</button>
+        </div>
+        <div class="column textCenter">
+            <button class="button danger">.button.danger</button>
+        </div>
+        <div class="column textCenter">
+            <button class="button warning">.button.warning</button>
+        </div>
+        <div class="column textCenter">
+            <button class="button success">.button.success</button>
+        </div>
+    </div>
+
+    <div class="flexRow">
+        <div class="column textCenter">
+            <button class="button primary large">.button.primary.large</button>
+        </div>
+
+        <div class="column textCenter">
+            <button class="button primary small">.button.primary.small</button>
+        </div>
+
+        <div class="column">
+            <button class="button primary block">.button.primary.block</button>
+        </div>
+    </div>
+    <pre><code data-language="html">&lt;button class="button"&gt;Button&lt;/button&gt;
+&lt;button class="button primary"&gt;Button&lt;/button&gt;
+&lt;button class="button secondary"&gt;Button&lt;/button&gt;
+&lt;button class="button danger"&gt;Button&lt;/button&gt;
+&lt;button class="button warning"&gt;Button&lt;/button&gt;
+&lt;button class="button success"&gt;Button&lt;/button&gt;
+&lt;button class="button primary large"&gt;Button&lt;/button&gt;
+&lt;button class="button primary small"&gt;Button&lt;/button&gt;
+&lt;button class="button primary block"&gt;Button&lt;/button&gt;
+&lt;button class="button blur"&gt;Button&lt;/button&gt;</code></pre>
+
+    <h2>Buttons solid</h2>
+    <div class="flexRow">
+        <div class="column textCenter">
+            <button class="button solid primary">.button.primary</button>
+        </div>
+        <div class="column textCenter">
+            <button class="button solid secondary">.button.secondary</button>
+        </div>
+        <div class="column textCenter">
+            <button class="button solid danger">.button.danger</button>
+        </div>
+        <div class="column textCenter">
+            <button class="button solid warning">.button.warning</button>
+        </div>
+        <div class="column textCenter">
+            <button class="button solid success">.button.success</button>
+        </div>
+    </div>
+
+    <div class="flexRow">
+        <div class="column textCenter">
+            <button class="button solid primary large">.button.primary.large</button>
+        </div>
+
+        <div class="column textCenter">
+            <button class="button solid primary small">.button.primary.small</button>
+        </div>
+
+        <div class="column">
+            <button class="button solid primary block">.button.primary.block</button>
+        </div>
+    </div>
+    <pre><code data-language="html">&lt;button class="button solid"&gt;Button&lt;/button&gt;
+&lt;button class="button solid primary"&gt;Button&lt;/button&gt;
+&lt;button class="button solid secondary"&gt;Button&lt;/button&gt;
+&lt;button class="button solid danger"&gt;Button&lt;/button&gt;
+&lt;button class="button solid warning"&gt;Button&lt;/button&gt;
+&lt;button class="button solid success"&gt;Button&lt;/button&gt;
+&lt;button class="button solid primary large"&gt;Button&lt;/button&gt;
+&lt;button class="button solid primary small"&gt;Button&lt;/button&gt;
+&lt;button class="button solid primary block"&gt;Button&lt;/button&gt;</code></pre>
+
+    <h2>Button with border radius modifiers</h2>
+    <div class="flexRow">
+        <div class="column textCenter">
+            <button class="button radiusNone primary">.button.radiusNone.primary</button>
+        </div>
+        <div class="column textCenter">
+            <button class="button radiusLight danger">.button.radiusLight.danger</button>
+        </div>
+        <div class="column textCenter">
+            <button class="button radiusFit success">.button.radiusFit.success</button>
+        </div>
+    </div>
+    <pre><code data-language="html">&lt;button class="button radiusNone primary"&gt;Button&lt;/button&gt;
+&lt;button class="button radiusLight danger"&gt;Button&lt;/button&gt;
+&lt;button class="button radiusFit warning"&gt;Button&lt;/button&gt;
+&lt;button class="button radiusFat blur"&gt;Button&lt;/button&gt;</code></pre>
+</section>
+<footer class="niceMarryDark footer textWhite">
+    <div class="container textCenter">
+        <p>2017. Made for the universe under <a href="#" target="_blank">GPL-3.0</a> Licence.</p>
+
+        <a href="https://github.com/1fabiosoares/sculptor" target="_blank" class="button blur">
+            <i class="fa fa-github"></i> Github
+        </a>
+        <a href="https://facebook.com/1fabiosoares" target="_blank" class="button blur">
+            <i class="fa fa-facebook"></i> Fabio Soares
+        </a>
+    </div>
+</footer>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-59511948-3', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>

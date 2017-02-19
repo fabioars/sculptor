@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <title>Navbar | Sculptor</title>
+    <link rel="stylesheet" href="css/sculptor.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style> .footer{ padding: 20px;} </style>
+</head>
+<body>
+<nav class="navbar blur fixed">
+    <a href="index.html" class="logo">Sculptor</a>
+    <a href="about.html">About</a>
+    <a href="typography.html">Typography</a>
+    <a href="grid.html">Grid</a>
+    <a href="formsandbuttons.html">Forms and buttons</a>
+    <a href="navbar.html">Navbar</a>
+    <a href="cards.html">Cards</a>
+    <a href="tables.html">Tables</a>
+</nav>
+<header class="screenHeight niceBlue aligner" id="navbar">
+    <div class="center textCenter">
+        <h1 class="textWhite">Navbar</h1>
+    </div>
+</header>
+<section class="container">
+    <h2>Simple navbar - List Based</h2>
+
+    <ul class="navbar">
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+        <li><a href="#">Item 4</a></li>
+    </ul>
+
+    <pre><code data-language="html">&lt;ul class="navbar"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Item 4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul></code></pre>
+    <h2>Simple navbar - WithLogo</h2>
+
+    <ul class="navbar">
+        <li><a href="#" class="logo">Logo</a></li>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+        <li><a href="#">Item 4</a></li>
+    </ul>
+
+    <pre><code data-language="html">&lt;ul class="navbar"&gt;
+    &lt;li&gt;&lt;a href="#" class="logo"&gt;Logo&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Item 4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul></code></pre>
+
+    <h2>Responsive navbar - Div based</h2>
+    <p>You can use responsive navbar with
+        <code>&lt;nav></code>,
+        <code>&lt;div></code> or
+        <code>&lt;section></code></p>
+    <div class="navbar">
+        <a href="#" class="logo">Logo</a>
+        <a href="#">Item 1</a>
+        <a href="#">Item 2</a>
+        <a href="#">Item 3</a>
+        <a href="#">Item 4</a>
+    </div>
+
+    <pre><code data-language="html">&lt;div class="navbar"&gt;
+    &lt;a href="#" class="logo"&gt;Logo&lt;/a&gt;
+    &lt;a href="#"&gt;Item 1&lt;/a&gt;
+    &lt;a href="#"&gt;Item 2&lt;/a&gt;
+    &lt;a href="#"&gt;Item 3&lt;/a&gt;
+    &lt;a href="#"&gt;Item 4&lt;/a&gt;
+&lt;/div></code></pre>
+
+
+    <h2>Fixed</h2>
+    <pre><code data-language="html">&lt;div class="navbar fixed"&gt;
+    &lt;a href="#" class="logo"&gt;Logo&lt;/a&gt;
+    &lt;a href="#"&gt;Item 1&lt;/a&gt;
+    &lt;a href="#"&gt;Item 2&lt;/a&gt;
+    &lt;a href="#"&gt;Item 3&lt;/a&gt;
+    &lt;a href="#"&gt;Item 4&lt;/a&gt;
+&lt;/div></code></pre>
+    <h2>With Nice backgrounds</h2>
+    <p>The background <strong>Blur</strong> is also available here</p>
+    <div class="navbar niceBluePeach">
+        <a href="#" class="logo">Logo</a>
+        <a href="#">Item 1</a>
+        <a href="#">Item 2</a>
+        <a href="#">Item 3</a>
+        <a href="#">Item 4</a>
+    </div>
+    <pre><code data-language="html">&lt;div class="navbar niceBluePeach"&gt;
+    &lt;a href="#" class="logo"&gt;Logo&lt;/a&gt;
+    &lt;a href="#"&gt;Item 1&lt;/a&gt;
+    &lt;a href="#"&gt;Item 2&lt;/a&gt;
+    &lt;a href="#"&gt;Item 3&lt;/a&gt;
+    &lt;a href="#"&gt;Item 4&lt;/a&gt;
+&lt;/div></code></pre>
+    <pre><code data-language="html">&lt;div class="navbar blur"&gt;
+    &lt;a href="#" class="logo"&gt;Logo&lt;/a&gt;
+    &lt;a href="#"&gt;Item 1&lt;/a&gt;
+    &lt;a href="#"&gt;Item 2&lt;/a&gt;
+    &lt;a href="#"&gt;Item 3&lt;/a&gt;
+    &lt;a href="#"&gt;Item 4&lt;/a&gt;
+&lt;/div></code></pre>
+
+</section>
+<footer class="niceMarryDark footer textWhite">
+    <div class="container textCenter">
+        <p>2017. Made for the universe under <a href="#" target="_blank">GPL-3.0</a> Licence.</p>
+
+        <a href="https://github.com/1fabiosoares/sculptor" target="_blank" class="button blur">
+            <i class="fa fa-github"></i> Github
+        </a>
+        <a href="https://facebook.com/1fabiosoares" target="_blank" class="button blur">
+            <i class="fa fa-facebook"></i> Fabio Soares
+        </a>
+    </div>
+</footer>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-59511948-3', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>
