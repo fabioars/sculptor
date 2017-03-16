@@ -5,14 +5,14 @@
   background-color: $niceWhiteTransparent;
   border: 1px solid darken($niceGrey, 30%);
   border-radius: $radiusLight;
-  margin: $buttonPadding/2;
+  margin: $defaultPadding/2;
   // ==============================================
   //                Card Header
   // ==============================================
-  & .header{
+  & >.header{
     border-top-left-radius: $radiusLight;
     border-top-right-radius: $radiusLight;
-    padding: $buttonPadding $buttonPadding*2;
+    padding: $defaultPadding $defaultPadding*2;
     font-size: $h2Size;
     font-weight: $fontLight;
     &.image{
@@ -23,12 +23,12 @@
       border-top-left-radius: $radiusLight;
       border-top-right-radius: $radiusLight;
 
-      & span{
+      & > span{
         position: absolute;
-        padding: $buttonPadding;
+        padding: $defaultPadding;
       }
 
-      & img{
+      & > img{
         display: block;
         max-width: 100%;
         height: auto;
@@ -38,8 +38,8 @@
   // ==============================================
   //                Card Content
   // ==============================================
-  & .content{
-    padding: $buttonPadding;
+  & > .content{
+    padding: $defaultPadding;
   }
 
 }

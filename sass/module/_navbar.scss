@@ -7,11 +7,11 @@ nav.navbar {
   overflow: auto;
   white-space: nowrap;
   background: $primaryColor;
-  & a{
+  & > a{
     display: inline-block;
     color: $white;
     text-align: center;
-    padding: $buttonPadding;
+    padding: $defaultPadding;
     margin: 0;
     text-decoration: none;
     transition-property: background-color;
@@ -19,7 +19,7 @@ nav.navbar {
     font-weight: $fontLight;
     &.logo{
       font-size: $h3Size;
-      padding: $buttonPadding/1.5 $buttonPadding $buttonPadding;
+      padding: $defaultPadding/1.5 $defaultPadding $defaultPadding;
       font-weight: $fontFit;
     }
     &:hover{
@@ -45,14 +45,14 @@ ul.navbar{
       display: inline-block;
       color: $white;
       text-align: center;
-      padding: $buttonPadding;
+      padding: $defaultPadding;
       text-decoration: none;
       transition-property: background-color;
       transition-duration: $transitionTime;
       font-weight: $fontLight;
       &.logo{
         font-size: $h3Size;
-        padding: $buttonPadding/1.5 $buttonPadding $buttonPadding;
+        padding: $defaultPadding/1.5 $defaultPadding $defaultPadding;
         font-weight: $fontFit;
       }
       &:hover{

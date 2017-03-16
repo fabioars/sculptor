@@ -1,0 +1,21 @@
+.listView{
+  display: block;
+  width: 100%;
+
+  & > .item{
+    display: block;
+    width: 100%;
+    color: $niceBlack;
+    border-top: 1px solid $niceWhite;
+    padding: $defaultPadding $defaultPadding*2;
+    box-sizing: border-box;
+    &:active{
+      background: darken($niceWhite, 5%)
+    }
+    @media #{$largeAndUp} {
+      &:hover{
+        background: $niceWhite;
+      }
+    }
+  }
+}

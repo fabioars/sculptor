@@ -2,7 +2,7 @@ pre{
   @include niceBackground(lighten($niceGrey, 0%), lighten($niceGrey, 5%));
   font-weight: $fontLight;
   overflow: auto;
-  padding: $buttonPadding;
+  padding: $defaultPadding;
   border-left: 4px solid $primaryColor;
 
   & code{
