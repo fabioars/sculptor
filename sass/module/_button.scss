@@ -25,7 +25,7 @@ a {
   border: solid 1px $primaryColor;
   color: $primaryColor;
 
-  padding: $buttonPadding $buttonPadding*2;
+  padding: $defaultPadding $defaultPadding*2;
   border-radius: $radiusFat;
 
   cursor: pointer;
@@ -218,10 +218,10 @@ a {
 //                Sizes
 // ==============================================
   &.small {
-    padding: $buttonPadding/2 $buttonPadding;
+    padding: $defaultPadding/2 $defaultPadding;
   }
   &.large {
-    padding: $buttonPadding $buttonPadding*2;
+    padding: $defaultPadding $defaultPadding*2;
     font-size: $h2Size;
   }
   &.block {

@@ -1,0 +1,19 @@
+// ==============================================
+//               Flexible Grid
+// ==============================================
+.flexRow{
+  display: flex;
+  box-sizing: border-box;
+  & .column{
+    flex: 1;
+    width: 100%;
+    padding: $columnPadding;
+    box-sizing: border-box;
+  }
+}
+
+@media #{$mediumAndDown} {
+  .flexRow{
+    display: block;
+  }
+}

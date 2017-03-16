@@ -4,7 +4,9 @@
 .textWhite {
   color: $niceWhite;
 }
-
+.textBlack{
+  color: $niceBlack;
+}
 .textCenter {
   text-align: center;
 }
@@ -21,11 +23,13 @@
 //               Float things
 // ==============================================
 
-.floatRight{
+.floatRight,
+.right{
   float: right;
 }
 
-.floatLeft{
+.floatLeft,
+.left{
   float: left;
 }
 

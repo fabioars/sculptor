@@ -1,6 +1,6 @@
 {
   "name": "sculptorcss",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "The future web experience in CSS",
   "main": "index.js",
   "scripts": {
@@ -24,5 +24,5 @@
   "bugs": {
     "url": "https://github.com/1fabiosoares/sculptor/issues"
   },
-  "homepage": "https://github.com/1fabiosoares/sculptor#readme"
+  "homepage": "https://github.com/1fabiosoares/sculptor"
 }
