@@ -3,5 +3,12 @@
   "description": "The future web experience in CSS",
   "require": {
     "php": "^5.3.3 || ^7.0"
-  }
+  },
+  "license": "GPL-v3",
+  "authors": [
+      {
+          "name": "Fabio Soares",
+          "email": "fabioars@live.com"
+      }
+  ]
 }
