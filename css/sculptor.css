@@ -1132,6 +1132,11 @@ a {
   .button.block {
     width: 100%;
     box-sizing: border-box; }
+  .button:disabled {
+    background: #cacfd4 !important;
+    border: solid 1px #cacfd4 !important;
+    color: #6a7681 !important;
+    cursor: not-allowed; }
 
 .formControl {
   width: 100%;
