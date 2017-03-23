@@ -969,7 +969,8 @@ h6 {
 
 p {
   font-size: 1em;
-  font-weight: 200; }
+  font-weight: 200;
+  margin: 10px 0; }
 
 .indent {
   text-indent: 2em; }
@@ -1159,10 +1160,13 @@ a {
     cursor: not-allowed; }
 
 .card {
-  background-color: rgba(238, 238, 238, 0.2);
+  background-color: #FFFFFF;
   border: 1px solid #a0a9b1;
   border-radius: 8px;
-  margin: 5px; }
+  margin: 5px;
+  -webkit-box-shadow: 0px 4px 6px #cacfd4;
+  -moz-box-shadow: 0px 4px 6px #cacfd4;
+  box-shadow: 0px 4px 6px #cacfd4; }
   .card > .header {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -1185,6 +1189,37 @@ a {
         height: auto; }
   .card > .content {
     padding: 10px; }
+  .card.primary {
+    border: 1px solid #30499B; }
+    .card.primary.solid {
+      background: #30499B;
+      color: #FFFFFF; }
+  .card.secondary {
+    border: 1px solid #c47c0e; }
+    .card.secondary.solid {
+      background: #c47c0e;
+      color: #FFFFFF; }
+  .card.danger {
+    border: 1px solid #EE4035; }
+    .card.danger.solid {
+      background: #EE4035;
+      color: #FFFFFF; }
+  .card.warning {
+    border: 1px solid #F0A32F; }
+    .card.warning.solid {
+      background: #F0A32F;
+      color: #FFFFFF; }
+  .card.success {
+    border: 1px solid #56B949; }
+    .card.success.solid {
+      background: #56B949;
+      color: #FFFFFF; }
+  .card.disabled {
+    background: #cacfd4 !important;
+    border: solid 1px #cacfd4 !important;
+    color: #6a7681 !important;
+    cursor: not-allowed;
+    filter: grayscale(100%); }
 
 .table {
   width: 100%;

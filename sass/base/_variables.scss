@@ -22,6 +22,7 @@ $primaryColorDark: darken($primaryColor, 15%) !default;
 $secondaryColor: darken($niceYellow, 15%) !default;
 $successColor: $niceGreen !default;
 $errorColor: darken($niceRed, 15%) !default;
+$waningColor: $niceYellow;
 $linkColor: lighten($secondaryColor, 10%) !default;
 
 // ==============================================
@@ -94,6 +95,7 @@ $defaultPadding: 10px;
 $shadowInset: 0px;
 $shadowHoff: 0px;
 $shadowBlur: 6px;
+$shadowCardHoff: 4px;
 
 // ==============================================
 //            ListView
