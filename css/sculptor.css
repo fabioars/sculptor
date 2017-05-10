@@ -526,7 +526,8 @@ pre {
 
 .grid {
   display: block;
-  margin: 0 auto auto 0; }
+  margin: 0 auto auto 0;
+  width: 100%; }
   .grid:after {
     content: "";
     display: table;
@@ -969,7 +970,8 @@ h6 {
 
 p {
   font-size: 1em;
-  font-weight: 200; }
+  font-weight: 200;
+  margin: 10px 0; }
 
 .indent {
   text-indent: 2em; }
@@ -1132,12 +1134,17 @@ a {
   .button.block {
     width: 100%;
     box-sizing: border-box; }
+  .button:disabled {
+    background: #cacfd4 !important;
+    border: solid 1px #cacfd4 !important;
+    color: #6a7681 !important;
+    cursor: not-allowed; }
 
 .formControl {
   width: 100%;
   box-sizing: border-box;
   padding: 10px 20px;
-  margin: 10px 0;
+  margin: 0 0;
   background: rgba(238, 238, 238, 0.8);
   border: 1px solid white;
   border-radius: 8px;
@@ -1154,10 +1161,13 @@ a {
     cursor: not-allowed; }
 
 .card {
-  background-color: rgba(238, 238, 238, 0.2);
+  background-color: #FFFFFF;
   border: 1px solid #a0a9b1;
   border-radius: 8px;
-  margin: 5px; }
+  margin: 5px;
+  -webkit-box-shadow: 0px 4px 6px #cacfd4;
+  -moz-box-shadow: 0px 4px 6px #cacfd4;
+  box-shadow: 0px 4px 6px #cacfd4; }
   .card > .header {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -1180,6 +1190,37 @@ a {
         height: auto; }
   .card > .content {
     padding: 10px; }
+  .card.primary {
+    border: 1px solid #30499B; }
+    .card.primary.solid {
+      background: #30499B;
+      color: #FFFFFF; }
+  .card.secondary {
+    border: 1px solid #c47c0e; }
+    .card.secondary.solid {
+      background: #c47c0e;
+      color: #FFFFFF; }
+  .card.danger {
+    border: 1px solid #EE4035; }
+    .card.danger.solid {
+      background: #EE4035;
+      color: #FFFFFF; }
+  .card.warning {
+    border: 1px solid #F0A32F; }
+    .card.warning.solid {
+      background: #F0A32F;
+      color: #FFFFFF; }
+  .card.success {
+    border: 1px solid #56B949; }
+    .card.success.solid {
+      background: #56B949;
+      color: #FFFFFF; }
+  .card.disabled {
+    background: #cacfd4 !important;
+    border: solid 1px #cacfd4 !important;
+    color: #6a7681 !important;
+    cursor: not-allowed;
+    filter: grayscale(100%); }
 
 .table {
   width: 100%;
@@ -1293,19 +1334,52 @@ nav.navbar.warning {
 
 .listview {
   display: block;
-  width: 100%; }
+  width: 100%;
+  font-weight: 200; }
   .listview > .item {
-    display: block;
+    display: flex;
     width: 100%;
     color: #222222;
     border-top: 1px solid #EEEEEE;
     padding: 10px 20px;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    transition-property: background;
+    transition-duration: 300ms; }
     .listview > .item:active {
       background: #e1e1e1; }
-    @media only screen and (min-width: 993px) {
-      .listview > .item:hover {
-        background: #EEEEEE; } }
+    .listview > .item:hover {
+      background: #f3f3f3; }
+    .listview > .item > * {
+      margin: 0; }
+    .listview > .item .image {
+      width: 2.5em;
+      height: auto; }
+      .listview > .item .image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 52px; }
+    .listview > .item .content {
+      width: 100%;
+      padding: 0 10px; }
+      .listview > .item .content:first-child {
+        padding: 0; }
+      .listview > .item .content p {
+        margin: 0; }
+    .listview > .item.disabled {
+      background: #c8c8c8;
+      cursor: not-allowed;
+      color: #6f6f6f; }
+      .listview > .item.disabled .image {
+        filter: grayscale(100%);
+        opacity: .5; }
+      .listview > .item.disabled:hover {
+        background: #c8c8c8; }
+    .listview > .item.header {
+      font-size: 0.9em;
+      background: #e1e1e1;
+      text-transform: uppercase; }
+      .listview > .item.header:hover {
+        background: #e1e1e1; }
 
 /**
  * State

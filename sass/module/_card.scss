@@ -2,11 +2,12 @@
 //                    Card
 // ==============================================
 .card{
-  background-color: $niceWhiteTransparent;
+  background-color: $white;
   border: 1px solid darken($niceGrey, 30%);
   border-radius: $radiusLight;
   margin: $defaultPadding/2;
-  // ==============================================
+  @include niceBoxshadow($shadowInset, $shadowCardHoff, $shadowBlur, darken($niceGrey, 15%));
+  // =============================================
   //                Card Header
   // ==============================================
   & >.header{
@@ -35,6 +36,7 @@
       }
     }
   }
+
   // ==============================================
   //                Card Content
   // ==============================================
@@ -42,4 +44,55 @@
     padding: $defaultPadding;
   }
 
+  // ==============================================
+  //                Card Modifiers
+  // ==============================================
+
+  &.primary{
+    border: 1px solid $primaryColor;
+    &.solid{
+      background: $primaryColor;
+      color: $white;
+    }
+  }
+
+  &.secondary{
+    border: 1px solid $secondaryColor;
+    &.solid{
+      background: $secondaryColor;
+      color: $white;
+    }
+  }
+
+  &.danger{
+    border: 1px solid $niceRed;
+    &.solid{
+      background: $niceRed;
+      color: $white;
+    }
+  }
+
+  &.warning{
+    border: 1px solid $waningColor;
+    &.solid{
+      background: $waningColor;
+      color: $white;
+    }
+  }
+
+  &.success{
+    border: 1px solid $successColor;
+    &.solid{
+      background: $successColor;
+      color: $white;
+    }
+  }
+
+  &.disabled{
+    background: darken($niceGrey, 15%) !important;
+    border: solid 1px darken($niceGrey, 15%) !important;
+    color: darken($niceGrey, 50%) !important;
+    cursor: not-allowed;
+    filter: grayscale(100%);
+  }
 }

@@ -25,12 +25,9 @@ h6{ font-size: $h6Size; font-weight: $fontFat   }
 
 p{
   font-size: $paragraphSize; font-weight: $fontLight;
+  margin: $defaultPadding 0;
 }
 
 .indent{
   text-indent: 2em;
 }
-
-
-
-

@@ -1,21 +1,74 @@
 .listview{
   display: block;
   width: 100%;
+  font-weight: $fontLight;
 
   & > .item{
-    display: block;
+    display: flex;
     width: 100%;
     color: $niceBlack;
     border-top: 1px solid $niceWhite;
     padding: $defaultPadding $defaultPadding*2;
     box-sizing: border-box;
+    transition-property: background;
+    transition-duration: $transitionTime;
+
     &:active{
       background: darken($niceWhite, 5%)
     }
-    @media #{$largeAndUp} {
-      &:hover{
-        background: $niceWhite;
+
+    &:hover{
+      background: lighten($niceWhite, 2%);
+    }
+
+    & > * {
+      margin: 0;
+    }
+
+    & .image{
+      width: $listViewImageSize;
+      height: auto;
+
+      & img{
+        max-width: 100%;
+        height: auto;
+        border-radius: $radiusFat;
       }
     }
+    & .content{
+      width: 100%;
+      padding: 0 $defaultPadding;
+
+      &:first-child{
+        padding: 0;
+      }
+
+      & p{
+        margin: 0;
+      }
+    }
+
+    &.disabled{
+      background: darken($niceWhite, 15%);
+      cursor: not-allowed;
+      color: darken($niceWhite, 50%);
+      & .image{
+        filter: grayscale(100%);
+        opacity: .5;
+      }
+      &:hover{
+        background: darken($niceWhite, 15%);
+      }
+    }
+
+    &.header{
+      font-size: $h5Size;
+      background: darken($niceWhite, 5%);
+      text-transform: uppercase;
+      &:hover{
+        background: darken($niceWhite, 5%);
+      }
+    }
+    
   }
 }
