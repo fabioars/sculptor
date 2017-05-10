@@ -228,4 +228,13 @@ a {
     width: 100%;
     box-sizing: border-box;
   }
+// ==============================================
+//                Modifiers
+// ==============================================
+  &:disabled{
+    background: darken($niceGrey, 15%) !important;
+    border: solid 1px darken($niceGrey, 15%) !important;
+    color: darken($niceGrey, 50%) !important;
+    cursor: not-allowed;
+  }
 }
