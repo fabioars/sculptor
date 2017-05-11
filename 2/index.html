@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <title>Sculptor 2 | The future web experience</title>
+    <link rel="stylesheet" href="../css/sculptor.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .bigS{
+            display: block;
+            font-size: 22vh;
+            text-align: center;
+        }
+        .action{
+            height: 100%;
+        }
+        .send{
+            margin-top: 10px;
+            float: right;
+        }
+        .tanks{
+            position: fixed;
+            bottom: -50px;
+            transition: all 300ms;
+        }
+        .tanks.show{
+            transform: translateY(-50px);
+        }
+    </style>
+</head>
+<body>
+<header class="screenHeight niceMarry">
+
+    <nav class="navbar blur fixed">
+        <a href="index.html" class="logo">Sculptor</a>
+    </nav>
+    <div class="aligner action container">
+        <div class="center screenWidth">
+            <span class="bigS textWhite textCenter">2</span>
+            <p class="textCenter textWhite">Soon</p>
+            <form id="newsletterForm">
+                <input type="email" id="newsletterEmail" class="formControl" placeholder="Type your email here to know more">
+                <button class="button secondary solid send" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <div class="card success tanks" id="tanks">
+        <div class="content">
+            Success! Tanks for sign our newsletter
+        </div>
+    </div>
+</header>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-59511948-3', 'auto');
+    ga('send', 'pageview');
+</script>
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCVDYFhHO7hCFhU01pZucR3pStju5aF48Y",
+        authDomain: "sculptor-app.firebaseapp.com",
+        databaseURL: "https://sculptor-app.firebaseio.com",
+        projectId: "sculptor-app",
+        storageBucket: "sculptor-app.appspot.com",
+        messagingSenderId: "170561350801"
+    };
+    var app = firebase.initializeApp(config);
+</script>
+<script>
+    String.prototype.hashCode = function() {
+        var hash = 0, i, chr;
+        if (this.length === 0) return hash;
+        for (i = 0; i < this.length; i++) {
+            chr   = this.charCodeAt(i);
+            hash  = ((hash << 5) - hash) + chr;
+            hash |= 0; // Convert to 32bit integer
+        }
+        return hash;
+    };
+
+    var form = document.getElementById('newsletterForm');
+
+    form.addEventListener('submit', function(e){
+        var email = document.getElementById('newsletterEmail').value;
+        app.database().ref('s2newsletter/').push({
+            email: email,
+            datatime: new Date().toUTCString()
+        });
+
+        document.getElementById('newsletterEmail').value = "";
+        document.getElementById('tanks').classList.add('show');
+        setTimeout(function(){
+            document.getElementById('tanks').classList.remove('show');
+        }, 3000);
+        e.preventDefault();
+        return false;
+    });
+</script>
+
+</body>
+</html>
