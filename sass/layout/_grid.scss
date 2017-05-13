@@ -9,12 +9,12 @@
   max-width: 1280px;
   width: 90%;
 }
-@media #{$mediumAndUp} {
+@media #{$medium-and-up} {
   .container {
     width: 85%;
   }
 }
-@media #{$largeAndUp} {
+@media #{$large-and-up} {
   .container {
     width: 70%;
   }
@@ -75,7 +75,7 @@
       $i: $i+1;
     }
 
-    @media #{$mediumAndUp} {
+    @media #{$medium-and-up} {
       $i: 1;
       @while($i <= $columnNumber){
         $percentage: unquote((100/ ($columnNumber/$i))+"%");
@@ -103,7 +103,7 @@
       }
     }
 
-    @media #{$largeAndUp} {
+    @media #{$large-and-up} {
       $i: 1;
       @while($i <= $columnNumber){
         $percentage: unquote((100/ ($columnNumber/$i))+"%");
