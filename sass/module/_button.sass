@@ -1,0 +1,44 @@
+.s-button
+  display: inline-block
+  margin: 0
+  padding: 0 $button-padding
+  background-color: $primaryColor
+  border: solid 1px $primaryColor
+  +border-radius($radiusFat)
+  color: $white
+  height: $button-height
+  line-height: $button-height
+  font-size: $paragraph-size
+  font-family: $font
+  text-decoration: none
+  text-align: center
+  cursor: pointer
+
+  +niceTransition(color, background, border)
+
+  &:hover
+    color: $white
+    background: lighten($primaryColor, 15%)
+    border-color: lighten($primaryColor, 15%)
+
+  &:active
+    background: darken($primaryColor, 15%)
+    border-color: darken($primaryColor, 15%)
+
+  &:focus
+    +box-shadow($shadowInset, $shadowHoff, $shadowBlur,$primaryColor)
+
++x-button('secondary', $secondaryColor, $white)
++x-button('danger'   , $niceRed       , $white)
++x-button('warning'  , $niceYellow    , $white)
++x-button('success'  , $niceGreen     , $white)
++x-button('white'    , $white         , $black)
++x-button('black'    , $black         , $white)
+
+.s-button:disabled,
+.s-button--disabled
+  background: darken($grey-light, 15%) !important
+  border: solid 1px darken($grey-light, 15%) !important
+  color: darken($grey-light, 50%) !important
+  cursor: not-allowed
+

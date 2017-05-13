@@ -16,11 +16,11 @@ nav.navbar {
     text-decoration: none;
     transition-property: background-color;
     transition-duration: $transitionTime;
-    font-weight: $fontLight;
+    font-weight: $font-light;
     &.logo{
-      font-size: $h3Size;
+      font-size: $h3-size;
       padding: $defaultPadding/1.5 $defaultPadding $defaultPadding;
-      font-weight: $fontFit;
+      font-weight: $font-regular;
     }
     &:hover{
       background: darken($niceWhiteTransparent, 25%);
@@ -49,11 +49,11 @@ ul.navbar{
       text-decoration: none;
       transition-property: background-color;
       transition-duration: $transitionTime;
-      font-weight: $fontLight;
+      font-weight: $font-light;
       &.logo{
-        font-size: $h3Size;
+        font-size: $h3-size;
         padding: $defaultPadding/1.5 $defaultPadding $defaultPadding;
-        font-weight: $fontFit;
+        font-weight: $font-regular;
       }
       &:hover{
         background: darken($niceWhiteTransparent, 25%);

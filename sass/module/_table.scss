@@ -8,10 +8,10 @@
     }
     & tr td{
         padding: $defaultPadding $defaultPadding/2 $defaultPadding/2;
-        border-bottom: 1px solid darken($niceWhite, 15%);
+        border-bottom: 1px solid darken($white, 15%);
     }
     &.striped tr:nth-child(even){
-        background-color: $niceWhite;
+        background-color: $white;
     }
     &.clean{
         & tr td{
@@ -21,13 +21,13 @@
 
     &.hoverCell{
         & tr td:hover{
-            background-color: $niceWhite;
+            background-color: $white;
         }
     }
 
     &.hoverRow{
         & tr:hover{
-            background-color: $niceWhite;
+            background-color: $white;
         }
     }
 
