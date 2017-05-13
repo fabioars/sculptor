@@ -6,21 +6,21 @@
 
   background: $niceWhiteForms;
 
-  border: 1px solid lighten($niceGrey, 15%);
+  border: 1px solid lighten($white, 15%);
   border-radius: $radiusLight;
   resize: none;
 
   @include niceTransition(border, background);
 
   &:hover{
-    border: 1px solid $niceGrey;
+    border: 1px solid $white;
   }
   &:focus{
     border: 1px solid $primaryColor;
     background: $white;
   }
   &:disabled{
-    background: darken($niceGrey, 15%);
+    background: darken($white, 15%);
     cursor: not-allowed;
   }
 

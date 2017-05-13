@@ -1,0 +1,67 @@
+// ==============================================
+//             Extremes Colors
+// ==============================================
+$black      : #222222
+$white      : #FFFFFF
+$grey-light : #F4F5F6
+$transparent: transparent
+
+
+$niceWhiteTransparent: rgba(238,238,238, .2)
+$niceWhiteForms: rgba(238,238,238, .8)
+
+// ==============================================
+//             Primary Colors
+// ==============================================
+$niceBlue  : #30499B
+$niceRed   : #EE4035
+$niceYellow: #F0A32F
+
+// ==============================================
+//            Secondary Colors
+// ==============================================
+$niceGreen : #56B949
+$nicePeach : #FFB98D
+$nicePurple: #844D9E
+
+// ==============================================
+//         Complementary Colors
+// ==============================================
+$complementaryGreen : #15CE3C
+$complementaryPurple: #6C2BD6
+$complementaryBrown : #C46B00
+
+// ==============================================
+//         More Nice Colors
+// ==============================================
+$niceOrange: #F0A32F
+
+.niceMarry
+  +grandent-background($niceBlue, $nicePurple)
+
+.niceMarryDark
+  +grandent-background(darken($niceBlue, 25%), $complementaryPurple)
+
+.niceSunThree
+  +grandent-background($niceGreen, $nicePeach)
+
+.niceCoral
+  +grandent-background($niceGreen, $niceBlue)
+
+.niceBluePeach
+  +grandent-background($niceBlue, $nicePeach)
+
+.niceBluePeachDark
+  +grandent-background(darken($niceBlue, 25%), $nicePeach)
+
+.niceSundown
+  +grandent-background($niceBlue, $niceRed)
+
+.niceRose
+  +grandent-background($niceRed, lighten($niceRed, 25%))
+
+.niceRealPeach
+  +grandent-background($niceRed, $nicePeach)
+
+.niceBlue
+  +grandent-background($niceBlue, darken($niceBlue, 25%))

@@ -1,21 +1,21 @@
 // ==============================================
 //                  Text
 // ==============================================
-.textWhite {
-  color: $niceWhite;
+.text-white {
+  color: $white;
 }
-.textBlack{
-  color: $niceBlack;
+.text-black{
+  color: $black;
 }
-.textCenter {
+.text-center {
   text-align: center;
 }
 
-.textRight {
+.text-right {
   text-align: right;
 }
 
-.textJustify {
+.text-justify {
   text-align: justify;
 }
 
@@ -23,12 +23,10 @@
 //               Float things
 // ==============================================
 
-.floatRight,
 .right{
   float: right;
 }
 
-.floatLeft,
 .left{
   float: left;
 }

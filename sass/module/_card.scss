@@ -3,10 +3,10 @@
 // ==============================================
 .card{
   background-color: $white;
-  border: 1px solid darken($niceGrey, 30%);
+  border: 1px solid darken($grey-light, 30%);
   border-radius: $radiusLight;
   margin: $defaultPadding/2;
-  @include niceBoxshadow($shadowInset, $shadowCardHoff, $shadowBlur, darken($niceGrey, 15%));
+  @include box-shadow($shadowInset, $shadowCardHoff, $shadowBlur, darken($grey-light, 15%));
   // =============================================
   //                Card Header
   // ==============================================
@@ -14,8 +14,8 @@
     border-top-left-radius: $radiusLight;
     border-top-right-radius: $radiusLight;
     padding: $defaultPadding $defaultPadding*2;
-    font-size: $h2Size;
-    font-weight: $fontLight;
+    font-size: $h2-size;
+    font-weight: $font-light;
     &.image{
       display: flex;
       align-items: flex-end;
@@ -89,9 +89,9 @@
   }
 
   &.disabled{
-    background: darken($niceGrey, 15%) !important;
-    border: solid 1px darken($niceGrey, 15%) !important;
-    color: darken($niceGrey, 50%) !important;
+    background: darken($grey-light, 15%) !important;
+    border: solid 1px darken($grey-light, 15%) !important;
+    color: darken($grey-light, 50%) !important;
     cursor: not-allowed;
     filter: grayscale(100%);
   }

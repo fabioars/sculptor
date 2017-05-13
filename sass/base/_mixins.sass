@@ -1,0 +1,40 @@
+=grandent-background($fist-color, $last-color)
+  $angle: 135deg
+  background-image: -webkit-linear-gradient($angle, $fist-color, $last-color) !important
+  background-image: -moz-linear-gradient($angle, $fist-color, $last-color) !important
+  background-image: -o-linear-gradient($angle, $fist-color, $last-color) !important
+  background-image: linear-gradient($angle, $fist-color, $last-color) !important
+
+=niceTransition($properties...)
+  transition-property: $properties
+  transition-duration: $transitionTime
+
+=box-shadow($inset, $hoff, $blur, $color)
+  -webkit-box-shadow: $inset $hoff $blur $color
+  -moz-box-shadow: $inset $hoff $blur $color
+  box-shadow: $inset $hoff $blur $color
+
+=border-radius($properties...)
+  -webkit-border-radius: $properties
+  -moz-border-radius: $properties
+  border-radius: $properties
+
+
+// EXPAND
+
+=x-button($name, $color, $font-color)
+  .s-button--#{$name}
+    background-color: $color
+    border-color: $color
+    color: $font-color
+    &:hover
+      color: $font-color
+      background: lighten($color, 15%)
+      border-color: lighten($color, 15%)
+
+    &:active
+      background: darken($color, 15%)
+      border-color: darken($color, 15%)
+
+    &:focus
+      +box-shadow($shadowInset, $shadowHoff, $shadowBlur, $color)

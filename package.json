@@ -1,6 +1,6 @@
 {
   "name": "sculptorcss",
-  "version": "0.1.8",
+  "version": "0.2.0",
   "description": "The future web experience in CSS",
   "main": "index.js",
   "scripts": {
@@ -24,5 +24,12 @@
   "bugs": {
     "url": "https://github.com/1fabiosoares/sculptor/issues"
   },
-  "homepage": "https://github.com/1fabiosoares/sculptor"
+  "homepage": "https://github.com/1fabiosoares/sculptor",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0"
+  }
 }
