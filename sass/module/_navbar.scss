@@ -6,7 +6,7 @@ nav.navbar {
   padding: 0;
   overflow: auto;
   white-space: nowrap;
-  background: $primaryColor;
+  background: $color-primary;
   & > a{
     display: inline-block;
     color: $white;
@@ -36,7 +36,7 @@ ul.navbar{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: $primaryColor;
+  background-color: $color-primary;
   
   & li{
     float: left;
@@ -73,21 +73,21 @@ section.navbar,
 div.navbar,
 nav.navbar{
   &.primary{
-    background-color: $primaryColor;
+    background-color: $color-primary;
   }
   &.secondary{
-    background-color: $secondaryColor;
+    background-color: $color-secondary;
   }
   &.blur{
     background: $niceWhiteTransparent;
   }
   &.danger{
-    background-color: $niceRed;
+    background-color: $color-error;
   }
   &.success{
-    background-color: $niceGreen;
+    background-color: $color-success;
   }
   &.warning{
-    background-color: $niceYellow;
+    background-color: $color-warning;
   }
 }

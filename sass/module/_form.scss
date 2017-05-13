@@ -16,7 +16,7 @@
     border: 1px solid $white;
   }
   &:focus{
-    border: 1px solid $primaryColor;
+    border: 1px solid $color-primary;
     background: $white;
   }
   &:disabled{

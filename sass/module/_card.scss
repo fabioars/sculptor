@@ -49,41 +49,41 @@
   // ==============================================
 
   &.primary{
-    border: 1px solid $primaryColor;
+    border: 1px solid $color-primary;
     &.solid{
-      background: $primaryColor;
+      background: $color-primary;
       color: $white;
     }
   }
 
   &.secondary{
-    border: 1px solid $secondaryColor;
+    border: 1px solid $color-secondary;
     &.solid{
-      background: $secondaryColor;
+      background: $color-secondary;
       color: $white;
     }
   }
 
   &.danger{
-    border: 1px solid $niceRed;
+    border: 1px solid $color-error;
     &.solid{
-      background: $niceRed;
+      background: $color-error;
       color: $white;
     }
   }
 
   &.warning{
-    border: 1px solid $waningColor;
+    border: 1px solid $color-warning;
     &.solid{
-      background: $waningColor;
+      background: $color-warning;
       color: $white;
     }
   }
 
   &.success{
-    border: 1px solid $successColor;
+    border: 1px solid $color-success;
     &.solid{
-      background: $successColor;
+      background: $color-success;
       color: $white;
     }
   }

@@ -7,61 +7,46 @@ $grey-light : #F4F5F6
 $transparent: transparent
 
 
-$niceWhiteTransparent: rgba(238,238,238, .2)
+$niceWhiteTransparent: rgba(254,254,254, .2)
 $niceWhiteForms: rgba(238,238,238, .8)
 
 // ==============================================
 //             Primary Colors
 // ==============================================
-$niceBlue  : #30499B
-$niceRed   : #EE4035
-$niceYellow: #F0A32F
+$blue  : #30499B
+$red   : #EE4035
+$yellow: #F0A32F
 
 // ==============================================
 //            Secondary Colors
 // ==============================================
-$niceGreen : #56B949
-$nicePeach : #FFB98D
-$nicePurple: #844D9E
-
-// ==============================================
-//         Complementary Colors
-// ==============================================
-$complementaryGreen : #15CE3C
-$complementaryPurple: #6C2BD6
-$complementaryBrown : #C46B00
-
-// ==============================================
-//         More Nice Colors
-// ==============================================
-$niceOrange: #F0A32F
+$green : #56B949
+$peach : #FFB98D
+$purple: #844D9E
 
 .niceMarry
-  +grandent-background($niceBlue, $nicePurple)
-
-.niceMarryDark
-  +grandent-background(darken($niceBlue, 25%), $complementaryPurple)
+  +grandent-background($blue, $purple)
 
 .niceSunThree
-  +grandent-background($niceGreen, $nicePeach)
+  +grandent-background($green, $peach)
 
 .niceCoral
-  +grandent-background($niceGreen, $niceBlue)
+  +grandent-background($green, $blue)
 
 .niceBluePeach
-  +grandent-background($niceBlue, $nicePeach)
+  +grandent-background($blue, $peach)
 
 .niceBluePeachDark
-  +grandent-background(darken($niceBlue, 25%), $nicePeach)
+  +grandent-background(darken($blue, 25%), $peach)
 
 .niceSundown
-  +grandent-background($niceBlue, $niceRed)
+  +grandent-background($blue, $red)
 
 .niceRose
-  +grandent-background($niceRed, lighten($niceRed, 25%))
+  +grandent-background($red, lighten($red, 25%))
 
 .niceRealPeach
-  +grandent-background($niceRed, $nicePeach)
+  +grandent-background($red, $peach)
 
 .niceBlue
-  +grandent-background($niceBlue, darken($niceBlue, 25%))
+  +grandent-background($blue, darken($blue, 25%))

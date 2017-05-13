@@ -2,8 +2,8 @@
   display: inline-block
   margin: 0
   padding: 0 $button-padding
-  background-color: $primaryColor
-  border: solid 1px $primaryColor
+  background-color: $color-primary
+  border: solid 1px $color-primary
   +border-radius($radiusFat)
   color: $white
   height: $button-height
@@ -18,22 +18,22 @@
 
   &:hover
     color: $white
-    background: lighten($primaryColor, 15%)
-    border-color: lighten($primaryColor, 15%)
+    background: lighten($color-primary, 15%)
+    border-color: lighten($color-primary, 15%)
 
   &:active
-    background: darken($primaryColor, 15%)
-    border-color: darken($primaryColor, 15%)
+    background: darken($color-primary, 15%)
+    border-color: darken($color-primary, 15%)
 
   &:focus
-    +box-shadow($shadowInset, $shadowHoff, $shadowBlur,$primaryColor)
+    +box-shadow($shadowInset, $shadowHoff, $shadowBlur,$color-primary)
 
-+x-button('secondary', $secondaryColor, $white)
-+x-button('danger'   , $niceRed       , $white)
-+x-button('warning'  , $niceYellow    , $white)
-+x-button('success'  , $niceGreen     , $white)
-+x-button('white'    , $white         , $black)
-+x-button('black'    , $black         , $white)
++x-button('secondary', $color-secondary, $white)
++x-button('danger'   , $color-error  , $white)
++x-button('warning'  , $color-warning, $white)
++x-button('success'  , $color-success, $white)
++x-button('white'    , $white        , $black)
++x-button('black'    , $black        , $white)
 
 .s-button:disabled,
 .s-button--disabled

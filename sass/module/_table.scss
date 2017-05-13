@@ -4,7 +4,7 @@
 
     & tr th{
         padding: $defaultPadding $defaultPadding/4 $defaultPadding/2;
-        border-bottom: 3px solid $primaryColor;
+        border-bottom: 3px solid $color-primary;
     }
     & tr td{
         padding: $defaultPadding $defaultPadding/2 $defaultPadding/2;
