@@ -9,6 +9,11 @@
   transition-property: $properties
   transition-duration: $transitionTime
 
+=cleafix()
+  content: ''
+  display: table
+  clear: both
+
 =box-shadow($inset, $hoff, $blur, $color)
   -webkit-box-shadow: $inset $hoff $blur $color
   -moz-box-shadow: $inset $hoff $blur $color

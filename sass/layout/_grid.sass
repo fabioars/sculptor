@@ -1,0 +1,117 @@
+.s-container
+  margin: 0 auto
+  max-width: 1280px
+  width: 90%
+
+@media #{$medium-and-up}
+  .s-container
+    width: 85%
+
+
+@media #{$large-and-up}
+  .s-container
+    width: 70%
+
+.s-container
+  &.s-row
+    margin-left: (-1*$spaceBetween/2)
+    margin-right: (-1*$spaceBetween/2)
+
+
+.s-row
+  display: block
+  margin: 0 auto auto 0
+  width: 100%
+
+  &:after
+    +cleafix
+
+.s-col
+  float: left
+  box-sizing: border-box
+  padding: 0 $spaceBetween/2
+  min-height: 1px
+
+  &[class*="s-push-"],
+  &[class*="s-pull-"]
+    position: relative
+
+
+  $i: 1
+  @while($i <= $columnNumber)
+    $percentage: unquote((100/ ($columnNumber/$i))+"%")
+    &.s-small--#{$i}
+      width: $percentage
+      margin-left: auto
+      left: auto
+      right: auto
+
+    $i: $i+1
+
+  $i: 1
+  @while($i <= $columnNumber)
+    $percentage: unquote((100/ ($columnNumber/$i))+"%")
+    &.s-offset-small--#{$i}
+      margin-left: $percentage
+
+    &.s-pull-small--#{$i}
+      right: $percentage
+
+    &.s-push-small--#{$i}
+      left: $percentage
+
+    $i: $i+1
+
+
+  @media #{$medium-and-up}
+    $i: 1
+    @while($i <= $columnNumber)
+      $percentage: unquote((100/ ($columnNumber/$i))+"%")
+      &.s-medium--#{$i}
+        width: $percentage
+        margin-left: auto
+        left: auto
+        right: auto
+
+      $i: $i+1
+
+    $i: 1
+    @while($i <= $columnNumber)
+      $percentage: unquote((100/ ($columnNumber/$i))+"%")
+      &.s-offset-medium--#{$i}
+        margin-left: $percentage
+
+      &.s-pull-medium--#{$i}
+        right: $percentage
+
+      &.s-push-medium--#{$i}
+        left: $percentage
+
+      $i: $i+1
+
+  @media #{$large-and-up}
+    $i: 1
+    @while($i <= $columnNumber)
+      $percentage: unquote((100/ ($columnNumber/$i))+"%")
+      &.s-large--#{$i}
+        width: $percentage
+        margin-left: auto
+        left: auto
+        right: auto
+
+      $i: $i+1
+
+    $i: 1
+    @while($i <= $columnNumber)
+      $percentage: unquote((100/ ($columnNumber/$i))+"%")
+
+      &.s-offset-large--#{$i}
+        margin-left: $percentage
+
+      &.s-pull-large--#{$i}
+        right: $percentage
+
+      &.s-push-large--#{$i}
+        left: $percentage
+
+      $i: $i+1
