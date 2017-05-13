@@ -4,16 +4,16 @@
 .card{
   background-color: $white;
   border: 1px solid darken($grey-light, 30%);
-  border-radius: $radiusLight;
-  margin: $defaultPadding/2;
+  border-radius: $radius-light;
+  margin: $default-padding/2;
   @include box-shadow($shadowInset, $shadowCardHoff, $shadowBlur, darken($grey-light, 15%));
   // =============================================
   //                Card Header
   // ==============================================
   & >.header{
-    border-top-left-radius: $radiusLight;
-    border-top-right-radius: $radiusLight;
-    padding: $defaultPadding $defaultPadding*2;
+    border-top-left-radius: $radius-light;
+    border-top-right-radius: $radius-light;
+    padding: $default-padding $default-padding*2;
     font-size: $h2-size;
     font-weight: $font-light;
     &.image{
@@ -21,12 +21,12 @@
       align-items: flex-end;
       padding: 0;
       overflow: hidden;
-      border-top-left-radius: $radiusLight;
-      border-top-right-radius: $radiusLight;
+      border-top-left-radius: $radius-light;
+      border-top-right-radius: $radius-light;
 
       & > span{
         position: absolute;
-        padding: $defaultPadding;
+        padding: $default-padding;
       }
 
       & > img{
@@ -41,7 +41,7 @@
   //                Card Content
   // ==============================================
   & > .content{
-    padding: $defaultPadding;
+    padding: $default-padding;
   }
 
   // ==============================================

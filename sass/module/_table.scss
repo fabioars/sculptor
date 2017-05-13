@@ -3,11 +3,11 @@
     border-spacing: 0;
 
     & tr th{
-        padding: $defaultPadding $defaultPadding/4 $defaultPadding/2;
+        padding: $default-padding $default-padding/4 $default-padding/2;
         border-bottom: 3px solid $color-primary;
     }
     & tr td{
-        padding: $defaultPadding $defaultPadding/2 $defaultPadding/2;
+        padding: $default-padding $default-padding/2 $default-padding/2;
         border-bottom: 1px solid darken($white, 15%);
     }
     &.striped tr:nth-child(even){

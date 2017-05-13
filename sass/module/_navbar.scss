@@ -11,7 +11,7 @@ nav.navbar {
     display: inline-block;
     color: $white;
     text-align: center;
-    padding: $defaultPadding;
+    padding: $default-padding;
     margin: 0;
     text-decoration: none;
     transition-property: background-color;
@@ -19,7 +19,7 @@ nav.navbar {
     font-weight: $font-light;
     &.logo{
       font-size: $h3-size;
-      padding: $defaultPadding/1.5 $defaultPadding $defaultPadding;
+      padding: $default-padding/1.5 $default-padding $default-padding;
       font-weight: $font-regular;
     }
     &:hover{
@@ -45,14 +45,14 @@ ul.navbar{
       display: inline-block;
       color: $white;
       text-align: center;
-      padding: $defaultPadding;
+      padding: $default-padding;
       text-decoration: none;
       transition-property: background-color;
       transition-duration: $transitionTime;
       font-weight: $font-light;
       &.logo{
         font-size: $h3-size;
-        padding: $defaultPadding/1.5 $defaultPadding $defaultPadding;
+        padding: $default-padding/1.5 $default-padding $default-padding;
         font-weight: $font-regular;
       }
       &:hover{

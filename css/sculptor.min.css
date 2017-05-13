@@ -1074,25 +1074,29 @@ h6 {
 .s-button--block {
   width: 100%; }
 
-.formControl {
+.s-field {
   width: 100%;
   box-sizing: border-box;
   padding: 10px 20px;
-  margin: 0 0;
-  background: rgba(238, 238, 238, 0.8);
+  margin: 0;
+  background: #FFFFFF;
   border: 1px solid white;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
   border-radius: 8px;
   resize: none;
   transition-property: border, background;
   transition-duration: 300ms; }
-  .formControl:hover {
+  .s-field:hover {
     border: 1px solid #FFFFFF; }
-  .formControl:focus {
+  .s-field:focus {
     border: 1px solid #30499B;
     background: #FFFFFF; }
-  .formControl:disabled {
-    background: #d9d9d9;
-    cursor: not-allowed; }
+
+.s-field:disabled,
+.s-field--disabled {
+  background: #d9d9d9;
+  cursor: not-allowed; }
 
 .card {
   background-color: #FFFFFF;
