@@ -1,0 +1,50 @@
+.s-right
+  float: right
+
+.s-left
+  float: left
+
+.s-img--responsive,
+.s-video--responsive
+  max-width: 100%
+  height: auto
+
+
+@media #{$smallAndDown}
+  .s-hide-on-small
+    display: none !important
+
+@media #{$mediumAndDown}
+  .s-hide-on-medium-and-down
+    display: none !important
+
+@media #{$mediumOnly}
+  .s-hide-on-medium
+    display: none !important
+
+@media #{$mediumAndUp}
+  .s-hide-on-medium-and-up
+    display: none !important
+
+@media #{$largeAndUp}
+  .s-hide-on-large
+    display: none !important
+
+.s-screen-height
+  height: 100vh
+
+.s-screen-width
+  width: 100vw
+
+.s-valigner
+  +flexbox
+  align-items: center
+
+.s-valigner__center
+    align-self: center
+
+.s-valigner__top
+    align-self: flex-start
+
+.s-valigner__bottom
+    align-self: flex-end

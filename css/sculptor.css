@@ -912,13 +912,28 @@ h6 {
   font-size: 0.8em;
   font-weight: 700; }
 
-p {
+.s-text {
   font-size: 1em;
   font-weight: 300;
   margin: 10px 0; }
 
-.indent {
+.s-text--indent {
   text-indent: 2em; }
+
+.s-text--white {
+  color: #FFFFFF; }
+
+.s-text--black {
+  color: #222222; }
+
+.s-text--center {
+  text-align: center; }
+
+.s-text--right {
+  text-align: right; }
+
+.s-text--justify {
+  text-align: justify; }
 
 .s-button {
   display: inline-block;
@@ -1303,79 +1318,57 @@ nav.navbar.warning {
 /**
  * State
  */
-.text-white {
-  color: #FFFFFF; }
-
-.text-black {
-  color: #222222; }
-
-.text-center {
-  text-align: center; }
-
-.text-right {
-  text-align: right; }
-
-.text-justify {
-  text-align: justify; }
-
-.right {
+.s-right {
   float: right; }
 
-.left {
+.s-left {
   float: left; }
 
-img.responsive,
-video.responsive {
+.s-img--responsive,
+.s-video--responsive {
   max-width: 100%;
   height: auto; }
 
 @media only screen and (max-width: 600px) {
-  .hideOnSmall {
+  .s-hide-on-small {
     display: none !important; } }
 
 @media only screen and (max-width: 992px) {
-  .hideOnMediumAndDown {
+  .s-hide-on-medium-and-down {
     display: none !important; } }
 
 @media only screen and (min-width: 601px) and (max-width: 992px) {
-  .hideOnMedium {
+  .s-hide-on-medium {
     display: none !important; } }
 
 @media only screen and (min-width: 601px) {
-  .hideOnMediumAndUp {
+  .s-hide-on-medium-and-up {
     display: none !important; } }
 
 @media only screen and (min-width: 993px) {
-  .hideOnLarge {
+  .s-hide-on-large {
     display: none !important; } }
 
-.screenHeight {
+.s-screen-height {
   height: 100vh; }
 
-.screenWidth {
+.s-screen-width {
   width: 100vw; }
 
-.aligner {
+.s-valigner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  align-items: center;
-  justify-content: center; }
-  .aligner .center {
-    align-self: center; }
-  .aligner .top {
-    align-self: flex-start; }
-  .aligner .bottom {
-    align-self: flex-end; }
+  align-items: center; }
 
-.radiusNone {
-  border-radius: 2px; }
+.s-valigner__center {
+  align-self: center; }
 
-.radiusLight {
-  border-radius: 8px; }
+.s-valigner__top {
+  align-self: flex-start; }
 
-.radiusFit {
-  border-radius: 12px; }
-
-.radiusFat {
-  border-radius: 52px; }
+.s-valigner__bottom {
+  align-self: flex-end; }
 
 /*# sourceMappingURL=sculptor.css.map */
