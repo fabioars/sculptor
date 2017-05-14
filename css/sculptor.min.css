@@ -438,17 +438,18 @@ pre {
 /*!
  * Layout
  */
-.flexRow {
+.s-flex__row {
   display: flex;
   box-sizing: border-box; }
-  .flexRow .column {
-    flex: 1;
-    width: 100%;
-    padding: 5px;
-    box-sizing: border-box; }
+
+.s-flex__col {
+  flex: 1;
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box; }
 
 @media only screen and (max-width: 992px) {
-  .flexRow {
+  .s-flex__row {
     display: block; } }
 
 .s-container {
@@ -1275,54 +1276,38 @@ div.navbar.warning,
 nav.navbar.warning {
   background-color: #F0A32F; }
 
-.listview {
+.s-list {
   display: block;
   width: 100%;
   font-weight: 300; }
-  .listview > .item {
-    display: flex;
-    width: 100%;
-    color: #222222;
-    border-top: 1px solid #FFFFFF;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    transition-property: background;
-    transition-duration: 300ms; }
-    .listview > .item:active {
-      background: #f2f2f2; }
-    .listview > .item:hover {
-      background: white; }
-    .listview > .item > * {
-      margin: 0; }
-    .listview > .item .image {
-      width: 2.5em;
-      height: auto; }
-      .listview > .item .image img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 52px; }
-    .listview > .item .content {
-      width: 100%;
-      padding: 0 10px; }
-      .listview > .item .content:first-child {
-        padding: 0; }
-      .listview > .item .content p {
-        margin: 0; }
-    .listview > .item.disabled {
-      background: #d9d9d9;
-      cursor: not-allowed;
-      color: gray; }
-      .listview > .item.disabled .image {
-        filter: grayscale(100%);
-        opacity: .5; }
-      .listview > .item.disabled:hover {
-        background: #d9d9d9; }
-    .listview > .item.header {
-      font-size: 0.9em;
-      background: #f2f2f2;
-      text-transform: uppercase; }
-      .listview > .item.header:hover {
-        background: #f2f2f2; }
+
+.s-list__item {
+  display: flex;
+  width: 100%;
+  color: #222222;
+  border-top: 1px solid #FFFFFF;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  transition-property: background;
+  transition-duration: 300ms; }
+  .s-list__item:active {
+    background: #f2f2f2; }
+  .s-list__item:hover {
+    background: white; }
+
+.s-list__item--disabled {
+  background: #d9d9d9;
+  cursor: not-allowed;
+  color: gray; }
+  .s-list__item--disabled:hover {
+    background: #d9d9d9; }
+
+.s-list__header {
+  font-size: 0.9em;
+  background: #f2f2f2;
+  text-transform: uppercase; }
+  .s-list__header:hover {
+    background: #f2f2f2; }
 
 /**
  * State

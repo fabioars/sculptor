@@ -1,59 +1,35 @@
-.listview
+.s-list
   display: block
   width: 100%
   font-weight: $font-light
 
-  & > .item
-    display: flex
-    width: 100%
-    color: $black
-    border-top: 1px solid $white
-    padding: $default-padding $default-padding*2
-    box-sizing: border-box
-    transition-property: background
-    transition-duration: $transitionTime
+.s-list__item
+  display: flex
+  width: 100%
+  color: $black
+  border-top: 1px solid $white
+  padding: $default-padding $default-padding*2
+  box-sizing: border-box
+  +niceTransition(background)
 
-    &:active
-      background: darken($white, 5%)
+  &:active
+    background: darken($white, 5%)
 
-    &:hover
-      background: lighten($white, 2%)
+  &:hover
+    background: lighten($white, 2%)
 
-    & > *
-      margin: 0
+.s-list__item--disabled
+  background: darken($white, 15%)
+  cursor: not-allowed
+  color: darken($white, 50%)
 
-    & .image
-      width: $listViewImageSize
-      height: auto
+  &:hover
+    background: darken($white, 15%)
 
-      & img
-        max-width: 100%
-        height: auto
-        border-radius: $radius-heavy
-    & .content
-      width: 100%
-      padding: 0 $default-padding
-
-      &:first-child
-        padding: 0
-
-      & p
-        margin: 0
-
-    &.disabled
-      background: darken($white, 15%)
-      cursor: not-allowed
-      color: darken($white, 50%)
-      & .image
-        filter: grayscale(100%)
-        opacity: .5
-      &:hover
-        background: darken($white, 15%)
-
-    &.header
-      font-size: $h5-size
-      background: darken($white, 5%)
-      text-transform: uppercase
-      &:hover
-        background: darken($white, 5%)
+.s-list__header
+  font-size: $h5-size
+  background: darken($white, 5%)
+  text-transform: uppercase
+  &:hover
+    background: darken($white, 5%)
 

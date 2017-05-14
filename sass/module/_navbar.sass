@@ -1,0 +1,83 @@
+section.navbar,
+div.navbar,
+nav.navbar
+  width: 100%
+  margin: 0
+  padding: 0
+  overflow: auto
+  white-space: nowrap
+  background: $color-primary
+
+  & > a
+    display: inline-block
+    color: $white
+    text-align: center
+    padding: $default-padding
+    margin: 0
+    text-decoration: none
+    +niceTransition(background-color)
+    font-weight: $font-light
+    &.logo
+      font-size: $h3-size
+      padding: $default-padding/1.5 $default-padding $default-padding
+      font-weight: $font-regular
+
+    &:hover
+      background: darken($niceWhiteTransparent, 25%)
+
+    &:active
+      background: darken($niceWhiteTransparent, 50%)
+
+ul.navbar
+  list-style-type: none
+  margin: 0
+  padding: 0
+  overflow: hidden
+  background-color: $color-primary
+  
+  & li
+    float: left
+
+    & a
+      display: inline-block
+      color: $white
+      text-align: center
+      padding: $default-padding
+      text-decoration: none
+      transition-property: background-color
+      transition-duration: $time
+      font-weight: $font-light
+      &.logo
+        font-size: $h3-size
+        padding: $default-padding/1.5 $default-padding $default-padding
+        font-weight: $font-regular
+
+      &:hover
+        background: darken($niceWhiteTransparent, 25%)
+
+      &:active
+        background: darken($niceWhiteTransparent, 50%)
+
+.navbar.fixed
+  position: fixed
+
+section.navbar,
+div.navbar,
+nav.navbar
+  &.primary
+    background-color: $color-primary
+
+  &.secondary
+    background-color: $color-secondary
+
+  &.blur
+    background: $niceWhiteTransparent
+
+  &.danger
+    background-color: $color-error
+
+  &.success
+    background-color: $color-success
+
+  &.warning
+    background-color: $color-warning

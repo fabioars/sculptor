@@ -14,8 +14,8 @@
 
 .s-container
   &.s-row
-    margin-left: (-1*$spaceBetween/2)
-    margin-right: (-1*$spaceBetween/2)
+    margin-left: (-1*$column-between/2)
+    margin-right: (-1*$column-between/2)
 
 
 .s-row
@@ -29,7 +29,7 @@
 .s-col
   float: left
   box-sizing: border-box
-  padding: 0 $spaceBetween/2
+  padding: 0 $column-between/2
   min-height: 1px
 
   &[class*="s-push-"],
@@ -38,8 +38,8 @@
 
 
   $i: 1
-  @while($i <= $columnNumber)
-    $percentage: unquote((100/ ($columnNumber/$i))+"%")
+  @while($i <= $column-number)
+    $percentage: unquote((100/ ($column-number/$i))+"%")
     &.s-small--#{$i}
       width: $percentage
       margin-left: auto
@@ -49,8 +49,8 @@
     $i: $i+1
 
   $i: 1
-  @while($i <= $columnNumber)
-    $percentage: unquote((100/ ($columnNumber/$i))+"%")
+  @while($i <= $column-number)
+    $percentage: unquote((100/ ($column-number/$i))+"%")
     &.s-offset-small--#{$i}
       margin-left: $percentage
 
@@ -65,8 +65,8 @@
 
   @media #{$medium-and-up}
     $i: 1
-    @while($i <= $columnNumber)
-      $percentage: unquote((100/ ($columnNumber/$i))+"%")
+    @while($i <= $column-number)
+      $percentage: unquote((100/ ($column-number/$i))+"%")
       &.s-medium--#{$i}
         width: $percentage
         margin-left: auto
@@ -76,8 +76,8 @@
       $i: $i+1
 
     $i: 1
-    @while($i <= $columnNumber)
-      $percentage: unquote((100/ ($columnNumber/$i))+"%")
+    @while($i <= $column-number)
+      $percentage: unquote((100/ ($column-number/$i))+"%")
       &.s-offset-medium--#{$i}
         margin-left: $percentage
 
@@ -91,8 +91,8 @@
 
   @media #{$large-and-up}
     $i: 1
-    @while($i <= $columnNumber)
-      $percentage: unquote((100/ ($columnNumber/$i))+"%")
+    @while($i <= $column-number)
+      $percentage: unquote((100/ ($column-number/$i))+"%")
       &.s-large--#{$i}
         width: $percentage
         margin-left: auto
@@ -102,8 +102,8 @@
       $i: $i+1
 
     $i: 1
-    @while($i <= $columnNumber)
-      $percentage: unquote((100/ ($columnNumber/$i))+"%")
+    @while($i <= $column-number)
+      $percentage: unquote((100/ ($column-number/$i))+"%")
 
       &.s-offset-large--#{$i}
         margin-left: $percentage

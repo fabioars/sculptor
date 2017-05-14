@@ -7,12 +7,17 @@
 
 =niceTransition($properties...)
   transition-property: $properties
-  transition-duration: $transitionTime
+  transition-duration: $time
 
 =cleafix()
   content: ''
   display: table
   clear: both
+
+=vendor($props, $properties...)
+  -webkit-#{$props}: $properties
+  -moz-#{$props}: $properties
+  #{$props}: $properties
 
 =box-shadow($inset, $hoff, $blur, $color)
   -webkit-box-shadow: $inset $hoff $blur $color
