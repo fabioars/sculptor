@@ -1,0 +1,30 @@
+.s-table
+    width: 100%
+    border-spacing: 0
+
+    & tr th
+        padding: $default-padding $default-padding/4 $default-padding/2
+        border-bottom: 3px solid $color-primary
+
+    & tr td
+        padding: $default-padding $default-padding/2 $default-padding/2
+        border-bottom: 1px solid darken($white, 15%)
+
+.s-table--striped
+    tr:nth-child(even)
+        background-color: $white
+
+.s-table--clean
+    & tr td
+        border-bottom: 1px solid $transparent
+
+.s-table--hover-cell
+    & tr td:hover
+        background-color: $white
+
+.s-table--hover-row
+    & tr:hover
+        background-color: $white
+
+.s-table--responsive
+    overflow: auto

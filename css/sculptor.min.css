@@ -1,5 +1,5 @@
 /*!
- * Sculptor v0.2.x
+ * Sculptor v0.2.0-alpha1
  * https://github.com/1fabiosoares/sculptor
  *
  * Copyright (c) 2017 Fabio Soares
@@ -1170,25 +1170,30 @@ h6 {
   cursor: not-allowed;
   filter: grayscale(100%); }
 
-.table {
+.s-table {
   width: 100%;
   border-spacing: 0; }
-  .table tr th {
+  .s-table tr th {
     padding: 10px 2.5px 5px;
     border-bottom: 3px solid #30499B; }
-  .table tr td {
+  .s-table tr td {
     padding: 10px 5px 5px;
     border-bottom: 1px solid #d9d9d9; }
-  .table.striped tr:nth-child(even) {
-    background-color: #FFFFFF; }
-  .table.clean tr td {
-    border-bottom: 1px solid transparent; }
-  .table.hoverCell tr td:hover {
-    background-color: #FFFFFF; }
-  .table.hoverRow tr:hover {
-    background-color: #FFFFFF; }
-  .table.responsive {
-    overflow: auto; }
+
+.s-table--striped tr:nth-child(even) {
+  background-color: #FFFFFF; }
+
+.s-table--clean tr td {
+  border-bottom: 1px solid transparent; }
+
+.s-table--hover-cell tr td:hover {
+  background-color: #FFFFFF; }
+
+.s-table--hover-row tr:hover {
+  background-color: #FFFFFF; }
+
+.s-table--responsive {
+  overflow: auto; }
 
 section.navbar,
 div.navbar,
