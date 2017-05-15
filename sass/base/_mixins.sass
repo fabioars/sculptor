@@ -34,34 +34,3 @@
   display: -ms-flexbox
   display: -webkit-flex
   display: flex
-
-// ==============================================
-//              EXPAND
-// ==============================================
-
-=x-button($name, $color, $font-color)
-  .s-button--#{$name}
-    background-color: $color
-    border-color: $color
-    color: $font-color
-    &:hover
-      color: $font-color
-      background: lighten($color, 15%)
-      border-color: lighten($color, 15%)
-
-    &:active
-      background: darken($color, 15%)
-      border-color: darken($color, 15%)
-
-    &:focus
-      +box-shadow($shadowInset, $shadowHoff, $shadowBlur, $color)
-
-=x-field($name, $color)
-  .s-field--#{$name}
-    border-color: lighten($color, 25%)
-
-    &:hover
-      border-color: lighten($color, 15%)
-
-    &:focus
-      border-color: $color

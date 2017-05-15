@@ -2,8 +2,9 @@
   background-color: $white
   border: 1px solid darken($grey-light, 30%)
   border-radius: $radius-light
-  margin: $default-padding/2
-  @include box-shadow($shadowInset, $shadowCardHoff, $shadowBlur, darken($grey-light, 15%))
+  margin: $default-padding/2 0
+  +box-shadow($shadowInset, $shadowCardHoff, $shadowBlur, darken($grey-light, 15%))
+  +niceTransition(transform)
 
 .s-card__header
   border-top-left-radius: $radius-light
@@ -32,35 +33,11 @@
 .s-card__content
   padding: $default-padding
 
-.s-card--primary
-  border: 1px solid $color-primary
-  &.solid
-    background: $color-primary
-    color: $white
-
-.s-card--secondary
-  border: 1px solid $color-secondary
-  &.solid
-    background: $color-secondary
-    color: $white
-
-.s-card--danger
-  border: 1px solid $color-error
-  &.solid
-    background: $color-error
-    color: $white
-
-.s-card--warning
-  border: 1px solid $color-warning
-  &.solid
-    background: $color-warning
-    color: $white
-
-.s-card--success
-  border: 1px solid $color-success
-  &.solid
-    background: $color-success
-    color: $white
++x-card('primary', $color-primary)
++x-card('secondary', $color-secondary)
++x-card('danger', $color-error)
++x-card('warning', $color-warning)
++x-card('success', $color-success)
 
 .s-card--disabled
   background: darken($grey-light, 15%) !important
@@ -68,3 +45,7 @@
   color: darken($grey-light, 50%) !important
   cursor: not-allowed
   filter: grayscale(100%)
+
+.s-card--hoverable
+  &:hover
+    transform: scale(1.01)

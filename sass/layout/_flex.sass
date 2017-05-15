@@ -3,11 +3,20 @@
   box-sizing: border-box
 
 .s-flex__col
-    flex: 1
-    width: 100%
-    padding: $column-padding
-    box-sizing: border-box
+  flex: 1
+  width: 100%
+  padding: $column-padding
+  box-sizing: border-box
+
+  &:first-child
+    padding-left: 0
+
+  &:last-child
+    padding-right: 0
 
 @media #{$medium-and-down}
   .s-flex__row
     display: block
+
+  .s-flex__col
+    padding: $column-padding 0

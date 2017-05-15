@@ -2,13 +2,13 @@
   width: 100%
   box-sizing: border-box
   padding: $default-padding $default-padding*2
-  margin: 0
+  margin: $default-padding/2 0
   background-color: transparentize($white, 0.2)
   border: 2px solid darken($grey-light, 20%)
   resize: none
   font-family: $font
   +border-radius($radius-light)
-  +niceTransition(border, background)
+  +niceTransition(border, background, transform)
 
   &:hover
     border-color: darken($grey-light, 30%)
@@ -18,6 +18,7 @@
     border-color: $color-primary
     background: $white
     outline: none
+    transform: scale(1.01)
 
 .s-field:disabled,
 .s-field--disabled

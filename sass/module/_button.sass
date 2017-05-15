@@ -1,7 +1,7 @@
 .s-button
   display: inline-block
-  margin: 0
   padding: 0 $button-padding
+  margin: $default-padding/2 0
   background-color: $color-primary
   border: solid 1px $color-primary
   +border-radius($radius-heavy)
@@ -14,8 +14,7 @@
   text-align: center
   cursor: pointer
   box-sizing: border-box
-
-  +niceTransition(color, background, border)
+  +niceTransition(color, background, border, transform)
 
   &:hover
     color: $white
@@ -25,6 +24,7 @@
   &:active
     background: darken($color-primary, 15%)
     border-color: darken($color-primary, 15%)
+    transform: scale(0.98)
 
   &:focus
     +box-shadow($shadowInset, $shadowHoff, $shadowBlur,$color-primary)
