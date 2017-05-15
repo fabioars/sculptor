@@ -15,15 +15,15 @@ gulp.task('browser-sync', function() {
 gulp.task('sass', function(){
     gulp.src('./sass/sculptor.sass')
         .pipe(sourcemaps.init())
-        .pipe(sass())
+        .pipe(sass().on('error', sass.logError))
         .pipe(sourcemaps.write("."))
         .pipe(gulp.dest('./css/'));
 
     gulp.src('./sass/sculptor.sass')
         .pipe(sourcemaps.init())
         .pipe(sass({
-            compress: true
-        }))
+            outputStyle: 'compressed'
+        }).on('error', sass.logError))
         .pipe(rename({
             suffix: '.min'
         }))
