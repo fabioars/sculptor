@@ -8,16 +8,25 @@
   width: 100%
   color: $black
   border-top: 1px solid $grey-light
+  border-left: 5px solid $white
   padding: $default-padding $default-padding*2
   text-decoration: none
   box-sizing: border-box
-  +niceTransition(background)
+  +niceTransition(background, border-color)
 
   &:active
     background: darken($white, 5%)
 
   &:hover
     background: darken($grey-light, 2%)
+    border-left-color: darken($grey-light, 2%)
+
++x-list-item("primary", $color-primary)
++x-list-item("secondary", $color-secondary)
++x-list-item("danger", $color-error)
++x-list-item("warning", $color-warning)
++x-list-item("success", $color-success)
++x-list-item("black", $black)
 
 .s-list__item--disabled
   background: darken($white, 15%)
@@ -36,3 +45,9 @@
   padding: $default-padding/2 $default-padding*2
   box-sizing: border-box
 
++x-list-header("primary", $color-primary, $white)
++x-list-header("secondary", $color-secondary, $white)
++x-list-header("danger", $color-error, $white)
++x-list-header("warning", $color-warning, $white)
++x-list-header("success", $color-success, $white)
++x-list-header("black", $black, $white)

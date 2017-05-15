@@ -28,3 +28,16 @@
 
     &:focus
       border-color: $color
+
+=x-list-header($name, $color, $font-color)
+  .s-list__header--#{$name}
+    color: $font-color
+    background-color: $color
+
+=x-list-item($name, $color)
+  .s-list__item--#{$name}
+    border-left-color: $color
+    &:hover
+      border-left-color: $color
+      background-color: transparentize($color, 0.8)
+

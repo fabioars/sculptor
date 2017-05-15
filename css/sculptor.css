@@ -1303,15 +1303,53 @@ h6, .s-h6 {
   width: 100%;
   color: #222222;
   border-top: 1px solid #F4F5F6;
+  border-left: 5px solid #FFFFFF;
   padding: 10px 20px;
   text-decoration: none;
   box-sizing: border-box;
-  transition-property: background;
+  transition-property: background, border-color;
   transition-duration: 300ms; }
   .s-list__item:active {
     background: #f2f2f2; }
   .s-list__item:hover {
-    background: #eef0f1; }
+    background: #eef0f1;
+    border-left-color: #eef0f1; }
+
+.s-list__item--primary {
+  border-left-color: #30499B; }
+  .s-list__item--primary:hover {
+    border-left-color: #30499B;
+    background-color: rgba(48, 73, 155, 0.2); }
+
+.s-list__item--secondary {
+  border-left-color: #59346b; }
+  .s-list__item--secondary:hover {
+    border-left-color: #59346b;
+    background-color: rgba(89, 52, 107, 0.2); }
+
+.s-list__item--danger {
+  border-left-color: #c61b11; }
+  .s-list__item--danger:hover {
+    border-left-color: #c61b11;
+    background-color: rgba(198, 27, 17, 0.2); }
+
+.s-list__item--warning {
+  border-left-color: #F0A32F; }
+  .s-list__item--warning:hover {
+    border-left-color: #F0A32F;
+    background-color: rgba(240, 163, 47, 0.2); }
+
+.s-list__item--success {
+  border-left-color: #56B949; }
+  .s-list__item--success:hover {
+    border-left-color: #56B949;
+    background-color: rgba(86, 185, 73, 0.2); }
+
+.s-list__item--black {
+  border-left-color: #222222; }
+  .s-list__item--black:hover {
+    border-left-color: #222222;
+    background-color: rgba(34, 34, 34, 0.2); }
 
 .s-list__item--disabled {
   background: #d9d9d9;
@@ -1328,6 +1366,30 @@ h6, .s-h6 {
   width: 100%;
   padding: 5px 20px;
   box-sizing: border-box; }
+
+.s-list__header--primary {
+  color: #FFFFFF;
+  background-color: #30499B; }
+
+.s-list__header--secondary {
+  color: #FFFFFF;
+  background-color: #59346b; }
+
+.s-list__header--danger {
+  color: #FFFFFF;
+  background-color: #c61b11; }
+
+.s-list__header--warning {
+  color: #FFFFFF;
+  background-color: #F0A32F; }
+
+.s-list__header--success {
+  color: #FFFFFF;
+  background-color: #56B949; }
+
+.s-list__header--black {
+  color: #FFFFFF;
+  background-color: #222222; }
 
 .s-right {
   float: right; }
