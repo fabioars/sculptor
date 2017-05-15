@@ -1258,6 +1258,7 @@ h6, .s-h6 {
   transition-duration: 300ms;
   font-weight: 300; }
   .s-navbar__item:hover {
+    cursor: pointer;
     background: rgba(190, 190, 190, 0.2); }
   .s-navbar__item:active {
     background: rgba(127, 127, 127, 0.2); }
