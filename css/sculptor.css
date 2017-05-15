@@ -1245,7 +1245,8 @@ h6, .s-h6 {
   padding: 0;
   overflow: auto;
   white-space: nowrap;
-  background: #30499B; }
+  background: #30499B;
+  overflow-y: hidden; }
 
 .s-navbar__item {
   display: inline-block;
