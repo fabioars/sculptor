@@ -1,5 +1,5 @@
 .s-flex__row
-  display: flex
+  +flexbox()
   box-sizing: border-box
 
 .s-flex__col
@@ -16,7 +16,7 @@
 
 @media #{$medium-and-down}
   .s-flex__row
-    display: block
+    flex-direction: column
 
   .s-flex__col
     padding: $column-padding 0

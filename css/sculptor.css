@@ -433,6 +433,9 @@ pre {
     font-family: monospace; }
 
 .s-flex__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   box-sizing: border-box; }
 
@@ -448,7 +451,7 @@ pre {
 
 @media only screen and (max-width: 992px) {
   .s-flex__row {
-    display: block; }
+    flex-direction: column; }
   .s-flex__col {
     padding: 5px 0; } }
 
@@ -1115,6 +1118,7 @@ h6, .s-h6 {
 
 .s-field:disabled,
 .s-field--disabled {
+  border-color: #bcc2c8;
   background: #d9d9d9;
   cursor: not-allowed; }
 
