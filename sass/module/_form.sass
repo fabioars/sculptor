@@ -3,17 +3,19 @@
   box-sizing: border-box
   padding: $default-padding $default-padding*2
   margin: 0
-  background: $white
-  border: 1px solid lighten($white, 15%)
-  +border-radius($radius-light)
+  background-color: transparentize($white, 0.2)
+  border: 2px solid darken($grey-light, 20%)
   resize: none
-  @include niceTransition(border, background)
+  font-family: $font
+  +border-radius($radius-light)
+  +niceTransition(border, background)
 
   &:hover
-    border: 1px solid $white
+    border-color: darken($grey-light, 30%)
+    background-color: transparentize($white, 0.1)
 
   &:focus
-    border: 1px solid $color-primary
+    border-color: $color-primary
     background: $white
     outline: none
 
@@ -21,3 +23,10 @@
 .s-field--disabled
     background: darken($white, 15%)
     cursor: not-allowed
+
++x-field('primary', $color-primary)
++x-field('secondary', $color-secondary)
++x-field('danger', $color-error)
++x-field('warning', $color-warning)
++x-field('success', $color-success)
+
