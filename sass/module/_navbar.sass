@@ -1,6 +1,4 @@
-section.navbar,
-div.navbar,
-nav.navbar
+.s-navbar
   width: 100%
   margin: 0
   padding: 0
@@ -8,76 +6,44 @@ nav.navbar
   white-space: nowrap
   background: $color-primary
 
-  & > a
-    display: inline-block
-    color: $white
-    text-align: center
-    padding: $default-padding
-    margin: 0
-    text-decoration: none
-    +niceTransition(background-color)
-    font-weight: $font-light
-    &.logo
-      font-size: $h3-size
-      padding: $default-padding/1.5 $default-padding $default-padding
-      font-weight: $font-regular
-
-    &:hover
-      background: darken($niceWhiteTransparent, 25%)
-
-    &:active
-      background: darken($niceWhiteTransparent, 50%)
-
-ul.navbar
-  list-style-type: none
+.s-navbar__item
+  display: inline-block
+  color: $white
+  text-align: center
+  padding: $default-padding
   margin: 0
-  padding: 0
-  overflow: hidden
-  background-color: $color-primary
-  
-  & li
-    float: left
+  text-decoration: none
+  +niceTransition(background-color)
+  font-weight: $font-light
 
-    & a
-      display: inline-block
-      color: $white
-      text-align: center
-      padding: $default-padding
-      text-decoration: none
-      transition-property: background-color
-      transition-duration: $time
-      font-weight: $font-light
-      &.logo
-        font-size: $h3-size
-        padding: $default-padding/1.5 $default-padding $default-padding
-        font-weight: $font-regular
+  &:hover
+    background: darken($niceWhiteTransparent, 25%)
 
-      &:hover
-        background: darken($niceWhiteTransparent, 25%)
+  &:active
+    background: darken($niceWhiteTransparent, 50%)
 
-      &:active
-        background: darken($niceWhiteTransparent, 50%)
+  &.s-navbar__item--logo
+    font-size: $h4-size
+    padding: $default-padding/1.5 $default-padding $default-padding
+    font-weight: $font-regular
 
-.navbar.fixed
+.s-navbar--fixed
   position: fixed
 
-section.navbar,
-div.navbar,
-nav.navbar
-  &.primary
+.s-navbar--primary
     background-color: $color-primary
 
-  &.secondary
+.s-navbar--secondary
     background-color: $color-secondary
 
-  &.blur
+.s-navbar--blur
     background: $niceWhiteTransparent
 
-  &.danger
+.s-navbar--danger
     background-color: $color-error
 
-  &.success
+.s-navbar--success
     background-color: $color-success
 
-  &.warning
+.s-navbar--warning
     background-color: $color-warning
