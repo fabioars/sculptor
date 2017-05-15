@@ -28,12 +28,13 @@
 
   &:focus
     +box-shadow($shadowInset, $shadowHoff, $shadowBlur,$color-primary)
+    outline: none
 
 +x-button('secondary', $color-secondary, $white)
 +x-button('danger'   , $color-error  , $white)
 +x-button('warning'  , $color-warning, $white)
 +x-button('success'  , $color-success, $white)
-+x-button('white'    , $white        , $black)
++x-button('white'    , $grey-light   , $black)
 +x-button('black'    , $black        , $white)
 
 .s-button:disabled,
@@ -45,3 +46,4 @@
 
 .s-button--block
   width: 100%
+
