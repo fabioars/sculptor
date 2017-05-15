@@ -7,8 +7,9 @@
   display: flex
   width: 100%
   color: $black
-  border-top: 1px solid $white
+  border-top: 1px solid $grey-light
   padding: $default-padding $default-padding*2
+  text-decoration: none
   box-sizing: border-box
   +niceTransition(background)
 
@@ -16,7 +17,7 @@
     background: darken($white, 5%)
 
   &:hover
-    background: lighten($white, 2%)
+    background: darken($grey-light, 2%)
 
 .s-list__item--disabled
   background: darken($white, 15%)
@@ -27,9 +28,11 @@
     background: darken($white, 15%)
 
 .s-list__header
-  font-size: $h5-size
+  display: block
+  font-size: $h6-size
   background: darken($white, 5%)
   text-transform: uppercase
-  &:hover
-    background: darken($white, 5%)
+  width: 100%
+  padding: $default-padding/2 $default-padding*2
+  box-sizing: border-box
 

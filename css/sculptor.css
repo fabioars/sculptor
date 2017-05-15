@@ -1297,15 +1297,16 @@ h6, .s-h6 {
   display: flex;
   width: 100%;
   color: #222222;
-  border-top: 1px solid #FFFFFF;
+  border-top: 1px solid #F4F5F6;
   padding: 10px 20px;
+  text-decoration: none;
   box-sizing: border-box;
   transition-property: background;
   transition-duration: 300ms; }
   .s-list__item:active {
     background: #f2f2f2; }
   .s-list__item:hover {
-    background: white; }
+    background: #eef0f1; }
 
 .s-list__item--disabled {
   background: #d9d9d9;
@@ -1315,11 +1316,13 @@ h6, .s-h6 {
     background: #d9d9d9; }
 
 .s-list__header {
-  font-size: 1.25rem;
+  display: block;
+  font-size: 1rem;
   background: #f2f2f2;
-  text-transform: uppercase; }
-  .s-list__header:hover {
-    background: #f2f2f2; }
+  text-transform: uppercase;
+  width: 100%;
+  padding: 5px 20px;
+  box-sizing: border-box; }
 
 .s-right {
   float: right; }
