@@ -1303,7 +1303,7 @@ h6, .s-h6 {
   width: 100%;
   color: #222222;
   border-top: 1px solid #F4F5F6;
-  border-left: 5px solid #FFFFFF;
+  border-left: 1px solid #FFFFFF;
   padding: 10px 20px;
   text-decoration: none;
   box-sizing: border-box;
@@ -1316,36 +1316,42 @@ h6, .s-h6 {
     border-left-color: #eef0f1; }
 
 .s-list__item--primary {
+  border-top-color: rgba(48, 73, 155, 0.2);
   border-left-color: #30499B; }
   .s-list__item--primary:hover {
     border-left-color: #30499B;
     background-color: rgba(48, 73, 155, 0.2); }
 
 .s-list__item--secondary {
+  border-top-color: rgba(89, 52, 107, 0.2);
   border-left-color: #59346b; }
   .s-list__item--secondary:hover {
     border-left-color: #59346b;
     background-color: rgba(89, 52, 107, 0.2); }
 
 .s-list__item--danger {
+  border-top-color: rgba(198, 27, 17, 0.2);
   border-left-color: #c61b11; }
   .s-list__item--danger:hover {
     border-left-color: #c61b11;
     background-color: rgba(198, 27, 17, 0.2); }
 
 .s-list__item--warning {
+  border-top-color: rgba(240, 163, 47, 0.2);
   border-left-color: #F0A32F; }
   .s-list__item--warning:hover {
     border-left-color: #F0A32F;
     background-color: rgba(240, 163, 47, 0.2); }
 
 .s-list__item--success {
+  border-top-color: rgba(86, 185, 73, 0.2);
   border-left-color: #56B949; }
   .s-list__item--success:hover {
     border-left-color: #56B949;
     background-color: rgba(86, 185, 73, 0.2); }
 
 .s-list__item--black {
+  border-top-color: rgba(34, 34, 34, 0.2);
   border-left-color: #222222; }
   .s-list__item--black:hover {
     border-left-color: #222222;

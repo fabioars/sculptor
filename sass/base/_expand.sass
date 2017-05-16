@@ -36,6 +36,7 @@
 
 =x-list-item($name, $color)
   .s-list__item--#{$name}
+    border-top-color: transparentize($color, 0.8)
     border-left-color: $color
     &:hover
       border-left-color: $color
