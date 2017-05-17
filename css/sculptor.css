@@ -955,7 +955,7 @@ h6, .s-h6 {
 
 .s-button {
   display: inline-block;
-  padding: 0 2em;
+  padding: 0.5em 2em;
   margin: 5px 0;
   background-color: #30499B;
   border: solid 1px #30499B;
@@ -1091,6 +1091,7 @@ h6, .s-h6 {
   cursor: not-allowed; }
 
 .s-button--block {
+  display: block;
   width: 100%; }
 
 .s-field {
