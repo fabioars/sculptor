@@ -1,0 +1,45 @@
+.my-wrapper {
+  height: 100vh;
+}
+
+.my-header {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.my-img--logo {
+  width: 150px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.my-main {
+  text-align: center;
+}
+
+.my-section__header {
+  height: 300px;
+  color: white;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background-attachment: fixed;
+}
+
+.n-field {
+  width: 280px;
+}
+
+.n-button {
+  display: block;
+  margin: 0 auto;
+  width: 280px;
+}
+.tanks{
+  position: fixed;
+  bottom: -50px;
+  transition: all 300ms;
+}
+.tanks.show{
+  transform: translateY(-50px);
+}
+/*# sourceMappingURL=main.css.map */

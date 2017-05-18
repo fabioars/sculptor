@@ -1,123 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,user-scalable=no">
-    <title>Sculptor 2 | The future web experience</title>
-    <link rel="stylesheet" href="../css/sculptor.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        .bigS{
-            display: block;
-            text-align: center;
-            width: 100px;
-            margin: 0 auto;
-        }
-        .action{
-            height: 100%;
-        }
-        .send{
-            margin-top: 10px;
-            float: right;
-        }
-        .tanks{
-            position: fixed;
-            bottom: -50px;
-            transition: all 300ms;
-        }
-        .tanks.show{
-            transform: translateY(-50px);
-        }
-    </style>
-</head>
-<body>
-<header class="screenHeight niceMarry">
+    <head>
+        <meta charset="utf-8">
+        <title>Sculptor | The future web experience</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" href="/2/css/sculptor.min.css">
+        <link rel="stylesheet" href="/2/css/main.css">
+    </head>
+    <body>
+        <div class="my-wrapper">
+            <nav class="s-navbar">
+                <div class="s-container">
+                    <a href="http://sculptorcss.com/" class="s-navbar__item">Back to the past</a>
+                </div>
+            </nav>
 
-    <nav class="navbar blur fixed">
-        <a href="index.html" class="logo">Sculptor</a>
-    </nav>
-    <div class="aligner action container">
-        <div class="center screenWidth">
-            <span class="bigS textWhite textCenter">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;" xml:space="preserve">
-                    <style type="text/css">
-                        .st0{fill:#FFFFFF;}
-                    </style>
-                    <g id="XMLID_29_">
-                        <path id="XMLID_28_" class="st0" d="M129,311.3c38.2,154.6,157.9,209.4,290.1,248.7c68.9,20.5,139.5,35.8,207.1,59.9
-                            c34.9,12.5,69.3,34.2,96.2,60c63.4,60.9,55.5,161.7-13.5,216.2c-68.5,54.1-149,66.5-232.5,58.8c-303.9-28.2-481-352.5-353.9-633.7
-                            C123.5,318.8,125.3,316.8,129,311.3z"></path>
-                        <path id="XMLID_27_" class="st0" d="M909.1,672.7c-40.3-129.9-145.5-179.5-262.4-213.7c-71.6-20.9-144.3-38-215.6-60.1
-                            c-30.2-9.3-59.6-24.1-86.2-41.4c-84.8-54.9-89.7-174.8-10.2-236.8c67.8-53,147.4-59.7,228.7-50.2
-                            c203.9,23.9,375.1,199.1,379.7,440.7C944.2,565.6,927.9,642.4,909.1,672.7z"></path>
-                    </g>
-                </svg>
-            </span>
-            <p class="textCenter textWhite">Soon</p>
-            <form id="newsletterForm">
-                <input type="email" id="newsletterEmail" class="formControl" placeholder="Type your email here to know more">
-                <button class="button secondary solid send" type="submit">Send</button>
-            </form>
+            <header class="my-header">
+                <img src="/2/img/sculptor-logo-red-blue.svg" alt="Sculptor" class="my-img--logo">
+                <h1>Sculptor</h1>
+                <p>You wanna know about the future?</p>
+            </header>
+            <main class="s-container my-main">
+                <form id="myform">
+                    <input type="email" class="s-field n-field s-field--primary" placeholder="Email here, to about the future" id="myemail">
+                    <button class="s-button s-button--block n-button" type="send">Send</button>
+                </form>
+            </main>
+            <div class="s-card s-card--success tanks" id="tanks">
+                <div class="s-card__content">
+                    Success! Tanks for sign our newsletter
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="card success tanks" id="tanks">
-        <div class="content">
-            Success! Tanks for sign our newsletter
-        </div>
-    </div>
-</header>
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    </body>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-59511948-3', 'auto');
-    ga('send', 'pageview');
-</script>
-<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
-<script>
-    // Initialize Firebase
-    var config = {
-        apiKey: "AIzaSyCVDYFhHO7hCFhU01pZucR3pStju5aF48Y",
-        authDomain: "sculptor-app.firebaseapp.com",
-        databaseURL: "https://sculptor-app.firebaseio.com",
-        projectId: "sculptor-app",
-        storageBucket: "sculptor-app.appspot.com",
-        messagingSenderId: "170561350801"
-    };
-    var app = firebase.initializeApp(config);
-</script>
-<script>
-    String.prototype.hashCode = function() {
-        var hash = 0, i, chr;
-        if (this.length === 0) return hash;
-        for (i = 0; i < this.length; i++) {
-            chr   = this.charCodeAt(i);
-            hash  = ((hash << 5) - hash) + chr;
-            hash |= 0; // Convert to 32bit integer
-        }
-        return hash;
-    };
-
-    var form = document.getElementById('newsletterForm');
-
-    form.addEventListener('submit', function(e){
-        var email = document.getElementById('newsletterEmail').value;
-        app.database().ref('s2newsletter/').push({
-            email: email,
-            datatime: new Date().toUTCString()
-        });
-
-        document.getElementById('newsletterEmail').value = "";
-        document.getElementById('tanks').classList.add('show');
-        setTimeout(function(){
-            document.getElementById('tanks').classList.remove('show');
-        }, 3000);
-        e.preventDefault();
-        return false;
-    });
-</script>
-
-</body>
+        ga('create', 'UA-59511948-3', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <script src="/2/app.js"></script>
 </html>
