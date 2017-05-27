@@ -1257,11 +1257,13 @@ h6, .s-h6 {
 
 .s-navbar--medium {
   height: 192px;
-  align-items: flex-start; }
+  align-items: flex-start;
+  flex-direction: column; }
 
 .s-navbar--large {
   height: 256px;
-  align-items: flex-start; }
+  align-items: flex-start;
+  flex-direction: column; }
 
 .s-navbar--fixed {
   position: fixed; }
@@ -1289,6 +1291,7 @@ h6, .s-h6 {
 
 .s-navbar__logo {
   display: block;
+  padding: 0 10px;
   height: 64px;
   color: #FFFFFF;
   text-decoration: none;
@@ -1297,7 +1300,6 @@ h6, .s-h6 {
 
 .s-navbar__menu {
   display: flex;
-  align-self: center;
   justify-content: flex-end;
   width: 100%;
   padding: 0;
@@ -1338,6 +1340,10 @@ h6, .s-h6 {
 @media only screen and (min-width: 993px) {
   .s-navbar__container {
     width: 70%; } }
+
+.s-navbar__container--large {
+  width: 100%;
+  max-width: 100%; }
 
 .s-list {
   display: block;

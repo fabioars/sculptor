@@ -12,10 +12,12 @@
 .s-navbar--medium
   height: $navbar-height * 3
   align-items: flex-start
+  flex-direction: column
 
 .s-navbar--large
   height: $navbar-height * 4
   align-items: flex-start
+  flex-direction: column
 
 .s-navbar--fixed
   position: fixed
@@ -43,6 +45,7 @@
 
 .s-navbar__logo
   display: block
+  padding: 0 $default-padding
   height: $navbar-height
   color: $white
   text-decoration: none
@@ -51,7 +54,6 @@
 
 .s-navbar__menu
   display: flex
-  align-self: center
   justify-content: flex-end
   width: 100%
   padding: 0
@@ -94,3 +96,7 @@
 @media #{$large-and-up}
   .s-navbar__container
     width: 70%
+
+.s-navbar__container--large
+  width: 100%
+  max-width: 100%
