@@ -9,6 +9,19 @@
   max-width: 100%
   height: auto
 
+.s-img
+  border-radius: $radius-light
+
+.s-img--circle
+  border-radius: 100%
+
+.s-img--circle-rised
+  border-radius: 100%
+  +rise()
+
+.s-img--rised
+  +rise()
+
 @media #{$small-and-down}
   .s-hide-on-small
     display: none !important
