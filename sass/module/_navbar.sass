@@ -1,33 +1,21 @@
 .s-navbar
+  display: flex
+  align-items: center
   width: 100%
+  height: $navbar-height
   margin: 0
   padding: 0
-  overflow: auto
+  overflow: hidden
   white-space: nowrap
   background: $color-primary
-  overflow-y: hidden
 
-.s-navbar__item
-  display: inline-block
-  color: $white
-  text-align: center
-  padding: $default-padding
-  margin: 0
-  text-decoration: none
-  +niceTransition(background-color)
-  font-weight: $font-light
+.s-navbar--medium
+  height: $navbar-height * 3
+  align-items: flex-start
 
-  &:hover
-    cursor: pointer
-    background: darken($niceWhiteTransparent, 25%)
-
-  &:active
-    background: darken($niceWhiteTransparent, 50%)
-
-  &.s-navbar__item--logo
-    font-size: $h4-size
-    padding: $default-padding/1.5 $default-padding $default-padding
-    font-weight: $font-regular
+.s-navbar--large
+  height: $navbar-height * 4
+  align-items: flex-start
 
 .s-navbar--fixed
   position: fixed
@@ -49,3 +37,60 @@
 
 .s-navbar--warning
     background-color: $color-warning
+
+.s-navbar--black
+  background-color: $black
+
+.s-navbar__logo
+  display: block
+  height: $navbar-height
+  color: $white
+  text-decoration: none
+  font-size: $h3-size
+  line-height: $navbar-height
+
+.s-navbar__menu
+  display: flex
+  align-self: center
+  justify-content: flex-end
+  width: 100%
+  padding: 0
+  margin: 0
+
+.s-navbar__menu--left
+  justify-content: flex-start
+
+.s-navbar__item
+  display: flex
+  align-items: center
+
+.s-navbar__link
+  display: block
+  color: $white
+  text-decoration: none
+  height: $navbar-height
+  line-height: $navbar-height
+  padding: 0 $default-padding
+
+  &:hover
+    background-color: $niceWhiteTransparent
+
+.s-navbar__item
+  list-style: none
+  padding: 0 $default-padding/2
+
+.s-navbar__container
+  display: flex
+  margin: 0 auto
+  width: 90%
+  max-width: 1280px
+  height: 64px
+
+@media #{$medium-and-up}
+  .s-navbar__container
+    width: 85%
+
+
+@media #{$large-and-up}
+  .s-navbar__container
+    width: 70%

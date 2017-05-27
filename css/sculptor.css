@@ -1245,33 +1245,23 @@ h6, .s-h6 {
   overflow: auto; }
 
 .s-navbar {
+  display: flex;
+  align-items: center;
   width: 100%;
+  height: 64px;
   margin: 0;
   padding: 0;
-  overflow: auto;
+  overflow: hidden;
   white-space: nowrap;
-  background: #30499B;
-  overflow-y: hidden; }
+  background: #30499B; }
 
-.s-navbar__item {
-  display: inline-block;
-  color: #FFFFFF;
-  text-align: center;
-  padding: 10px;
-  margin: 0;
-  text-decoration: none;
-  transition-property: background-color;
-  transition-duration: 300ms;
-  font-weight: 300; }
-  .s-navbar__item:hover {
-    cursor: pointer;
-    background: rgba(190, 190, 190, 0.2); }
-  .s-navbar__item:active {
-    background: rgba(127, 127, 127, 0.2); }
-  .s-navbar__item.s-navbar__item--logo {
-    font-size: 1.5rem;
-    padding: 6.66667px 10px 10px;
-    font-weight: 400; }
+.s-navbar--medium {
+  height: 192px;
+  align-items: flex-start; }
+
+.s-navbar--large {
+  height: 256px;
+  align-items: flex-start; }
 
 .s-navbar--fixed {
   position: fixed; }
@@ -1293,6 +1283,61 @@ h6, .s-h6 {
 
 .s-navbar--warning {
   background-color: #F0A32F; }
+
+.s-navbar--black {
+  background-color: #222222; }
+
+.s-navbar__logo {
+  display: block;
+  height: 64px;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.75rem;
+  line-height: 64px; }
+
+.s-navbar__menu {
+  display: flex;
+  align-self: center;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+
+.s-navbar__menu--left {
+  justify-content: flex-start; }
+
+.s-navbar__item {
+  display: flex;
+  align-items: center; }
+
+.s-navbar__link {
+  display: block;
+  color: #FFFFFF;
+  text-decoration: none;
+  height: 64px;
+  line-height: 64px;
+  padding: 0 10px; }
+  .s-navbar__link:hover {
+    background-color: rgba(254, 254, 254, 0.2); }
+
+.s-navbar__item {
+  list-style: none;
+  padding: 0 5px; }
+
+.s-navbar__container {
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1280px;
+  height: 64px; }
+
+@media only screen and (min-width: 601px) {
+  .s-navbar__container {
+    width: 85%; } }
+
+@media only screen and (min-width: 993px) {
+  .s-navbar__container {
+    width: 70%; } }
 
 .s-list {
   display: block;
