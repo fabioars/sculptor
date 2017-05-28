@@ -953,7 +953,7 @@ h6, .s-h6 {
 .s-text--justify {
   text-align: justify; }
 
-.s-button {
+.s-button, .s-button--secondary, .s-button--danger, .s-button--warning, .s-button--success, .s-button--white, .s-button--black, .s-button--block {
   display: inline-block;
   padding: 0.5em 2em;
   margin: 5px 0;
@@ -973,15 +973,15 @@ h6, .s-h6 {
   box-sizing: border-box;
   transition-property: color, background, border, transform;
   transition-duration: 300ms; }
-  .s-button:hover {
+  .s-button:hover, .s-button--secondary:hover, .s-button--danger:hover, .s-button--warning:hover, .s-button--success:hover, .s-button--white:hover, .s-button--black:hover, .s-button--block:hover {
     color: #FFFFFF;
     background: #4f6bc8;
     border-color: #4f6bc8; }
-  .s-button:active {
+  .s-button:active, .s-button--secondary:active, .s-button--danger:active, .s-button--warning:active, .s-button--success:active, .s-button--white:active, .s-button--black:active, .s-button--block:active {
     background: #1e2d61;
     border-color: #1e2d61;
     transform: scale(0.98); }
-  .s-button:focus {
+  .s-button:focus, .s-button--secondary:focus, .s-button--danger:focus, .s-button--warning:focus, .s-button--success:focus, .s-button--white:focus, .s-button--black:focus, .s-button--block:focus {
     -webkit-box-shadow: 0px 0px 6px #30499B;
     -moz-box-shadow: 0px 0px 6px #30499B;
     box-shadow: 0px 0px 6px #30499B;
@@ -1083,7 +1083,7 @@ h6, .s-h6 {
     -moz-box-shadow: 0px 0px 6px #222222;
     box-shadow: 0px 0px 6px #222222; }
 
-.s-button:disabled,
+.s-button:disabled, .s-button--secondary:disabled, .s-button--danger:disabled, .s-button--warning:disabled, .s-button--success:disabled, .s-button--white:disabled, .s-button--black:disabled, .s-button--block:disabled,
 .s-button--disabled {
   background: #cacfd4 !important;
   border: solid 1px #cacfd4 !important;
@@ -1094,7 +1094,8 @@ h6, .s-h6 {
   display: block;
   width: 100%; }
 
-.s-field {
+.s-field, .s-field:disabled,
+.s-field--disabled, .s-field--primary, .s-field--secondary, .s-field--danger, .s-field--warning, .s-field--success {
   width: 100%;
   box-sizing: border-box;
   padding: 10px 20px;
@@ -1108,16 +1109,19 @@ h6, .s-h6 {
   border-radius: 4px;
   transition-property: border, background, transform;
   transition-duration: 300ms; }
-  .s-field:hover {
+  .s-field:hover,
+  .s-field--disabled:hover, .s-field--primary:hover, .s-field--secondary:hover, .s-field--danger:hover, .s-field--warning:hover, .s-field--success:hover {
     border-color: #a0a9b1;
     background-color: rgba(255, 255, 255, 0.9); }
-  .s-field:focus {
+  .s-field:focus,
+  .s-field--disabled:focus, .s-field--primary:focus, .s-field--secondary:focus, .s-field--danger:focus, .s-field--warning:focus, .s-field--success:focus {
     border-color: #30499B;
     background: #FFFFFF;
     outline: none;
     transform: scale(1.01); }
 
 .s-field:disabled,
+.s-field--disabled:disabled, .s-field--primary:disabled, .s-field--secondary:disabled, .s-field--danger:disabled, .s-field--warning:disabled, .s-field--success:disabled,
 .s-field--disabled {
   border-color: #bcc2c8;
   background: #d9d9d9;
@@ -1158,7 +1162,7 @@ h6, .s-h6 {
   .s-field--success:focus {
     border-color: #56B949; }
 
-.s-card {
+.s-card, .s-card--primary, .s-card--secondary, .s-card--danger, .s-card--warning, .s-card--success, .s-card--disabled, .s-card--hoverable {
   background-color: #FFFFFF;
   border: 1px solid #a0a9b1;
   border-radius: 4px;
@@ -1183,13 +1187,6 @@ h6, .s-h6 {
   overflow: hidden;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px; }
-  .s-card__image > span {
-    position: absolute;
-    padding: 10px; }
-    .s-card__image > span > img {
-      display: block;
-      max-width: 100%;
-      height: auto; }
 
 .s-card__content {
   padding: 10px; }
@@ -1244,7 +1241,7 @@ h6, .s-h6 {
 .s-table--responsive {
   overflow: auto; }
 
-.s-navbar {
+.s-navbar, .s-navbar--medium, .s-navbar--large, .s-navbar--fixed, .s-navbar--primary, .s-navbar--secondary, .s-navbar--blur, .s-navbar--danger, .s-navbar--success, .s-navbar--warning, .s-navbar--black {
   display: flex;
   align-items: center;
   width: 100%;
@@ -1298,7 +1295,7 @@ h6, .s-h6 {
   font-size: 1.75rem;
   line-height: 64px; }
 
-.s-navbar__menu {
+.s-navbar__menu, .s-navbar__menu--left {
   display: flex;
   justify-content: flex-end;
   width: 100%;
@@ -1310,7 +1307,10 @@ h6, .s-h6 {
 
 .s-navbar__item {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0 5px; }
 
 .s-navbar__link {
   display: block;
@@ -1322,11 +1322,7 @@ h6, .s-h6 {
   .s-navbar__link:hover {
     background-color: rgba(254, 254, 254, 0.2); }
 
-.s-navbar__item {
-  list-style: none;
-  padding: 0 5px; }
-
-.s-navbar__container {
+.s-navbar__container, .s-navbar__container--large {
   display: flex;
   margin: 0 auto;
   width: 90%;
@@ -1334,11 +1330,11 @@ h6, .s-h6 {
   height: 64px; }
 
 @media only screen and (min-width: 601px) {
-  .s-navbar__container {
+  .s-navbar__container, .s-navbar__container--large {
     width: 85%; } }
 
 @media only screen and (min-width: 993px) {
-  .s-navbar__container {
+  .s-navbar__container, .s-navbar__container--large {
     width: 70%; } }
 
 .s-navbar__container--large {
@@ -1350,7 +1346,7 @@ h6, .s-h6 {
   width: 100%;
   font-weight: 300; }
 
-.s-list__item {
+.s-list__item, .s-list__item--primary, .s-list__item--secondary, .s-list__item--danger, .s-list__item--warning, .s-list__item--success, .s-list__item--black {
   display: flex;
   width: 100%;
   color: #222222;
@@ -1361,9 +1357,9 @@ h6, .s-h6 {
   box-sizing: border-box;
   transition-property: background, border-color;
   transition-duration: 300ms; }
-  .s-list__item:active {
+  .s-list__item:active, .s-list__item--primary:active, .s-list__item--secondary:active, .s-list__item--danger:active, .s-list__item--warning:active, .s-list__item--success:active, .s-list__item--black:active {
     background: #f2f2f2; }
-  .s-list__item:hover {
+  .s-list__item:hover, .s-list__item--primary:hover, .s-list__item--secondary:hover, .s-list__item--danger:hover, .s-list__item--warning:hover, .s-list__item--success:hover, .s-list__item--black:hover {
     background: #eef0f1;
     border-left-color: #eef0f1; }
 
@@ -1416,7 +1412,7 @@ h6, .s-h6 {
   .s-list__item--disabled:hover {
     background: #d9d9d9; }
 
-.s-list__header {
+.s-list__header, .s-list__header--primary, .s-list__header--secondary, .s-list__header--danger, .s-list__header--warning, .s-list__header--success, .s-list__header--black {
   display: block;
   font-size: 1rem;
   background: #f2f2f2;

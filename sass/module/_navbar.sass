@@ -10,37 +10,47 @@
   background: $color-primary
 
 .s-navbar--medium
+  @extend .s-navbar
   height: $navbar-height * 3
   align-items: flex-start
   flex-direction: column
 
 .s-navbar--large
+  @extend .s-navbar
   height: $navbar-height * 4
   align-items: flex-start
   flex-direction: column
 
 .s-navbar--fixed
+  @extend .s-navbar
   position: fixed
 
 .s-navbar--primary
-    background-color: $color-primary
+  @extend .s-navbar
+  background-color: $color-primary
 
 .s-navbar--secondary
-    background-color: $color-secondary
+  @extend .s-navbar
+  background-color: $color-secondary
 
 .s-navbar--blur
-    background: $niceWhiteTransparent
+  @extend .s-navbar
+  background: $niceWhiteTransparent
 
 .s-navbar--danger
-    background-color: $color-error
+  @extend .s-navbar
+  background-color: $color-error
 
 .s-navbar--success
-    background-color: $color-success
+  @extend .s-navbar
+  background-color: $color-success
 
 .s-navbar--warning
-    background-color: $color-warning
+  @extend .s-navbar
+  background-color: $color-warning
 
 .s-navbar--black
+  @extend .s-navbar
   background-color: $black
 
 .s-navbar__logo
@@ -60,11 +70,15 @@
   margin: 0
 
 .s-navbar__menu--left
+  @extend .s-navbar__menu
   justify-content: flex-start
 
 .s-navbar__item
   display: flex
   align-items: center
+  justify-content: center
+  list-style: none
+  padding: 0 $default-padding/2
 
 .s-navbar__link
   display: block
@@ -76,10 +90,6 @@
 
   &:hover
     background-color: $niceWhiteTransparent
-
-.s-navbar__item
-  list-style: none
-  padding: 0 $default-padding/2
 
 .s-navbar__container
   display: flex
@@ -98,5 +108,6 @@
     width: 70%
 
 .s-navbar__container--large
+  @extend .s-navbar__container
   width: 100%
   max-width: 100%

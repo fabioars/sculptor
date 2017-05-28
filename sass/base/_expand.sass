@@ -1,5 +1,6 @@
 =x-button($name, $color, $font-color)
   .s-button--#{$name}
+    @extend .s-button
     background-color: $color
     border-color: $color
     color: $font-color
@@ -17,10 +18,12 @@
 
 =x-card($name, $color)
   .s-card--#{$name}
+    @extend .s-card
     border-color: $color
 
 =x-field($name, $color)
   .s-field--#{$name}
+    @extend .s-field
     border-color: lighten($color, 25%)
 
     &:hover
@@ -31,13 +34,16 @@
 
 =x-list-header($name, $color, $font-color)
   .s-list__header--#{$name}
+    @extend .s-list__header
     color: $font-color
     background-color: $color
 
 =x-list-item($name, $color)
   .s-list__item--#{$name}
+    @extend .s-list__item
     border-top-color: transparentize($color, 0.8)
     border-left-color: $color
+
     &:hover
       border-left-color: $color
       background-color: transparentize($color, 0.8)
